@@ -47,6 +47,10 @@
         margin-right: 1%;
         margin-top: 20px;
     }
+    table {
+        text-align:center;
+        margin-left:10%;
+        }
     
     .price {
         color: grey;
