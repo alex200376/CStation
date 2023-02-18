@@ -176,13 +176,15 @@ $(document).ready(function() {
             return false;
         });
     });
-    var totalprice = 0;
+
     $('.add_to_cart').click(function() {
         var productCard = $(this).parent();
         var position = productCard.offset();
         var productImage = $(productCard).find('img').get(0).src;
         var productName = $(productCard).find('.product_name').get(0).innerHTML;
         var productprice = $(productCard).find('.price').get(0).innerHTML;
+
+
         $("body").append('<div class="floating-cart"></div>');
         var cart = $('div.floating-cart');
         productCard.clone().appendTo(cart);
@@ -191,8 +193,8 @@ $(document).ready(function() {
         setTimeout(function() {
             $('div.floating-cart').remove();
             $("body").removeClass("MakeFloatingCart");
-            var cartItem = "<div class='cart-item'><div class='img-wrap'><img src='" + productImage + "' alt='' /></div><span>" + productName + "</span><strong>" + productprice + "</strong><div class='cart-item-border'></div><div class='delete-item'></div></div>";
-
+            var cartItem = "<div class='cart-item'><div class='img-wrap'><img src='" + productImage + "' alt='' /></div><span>" + productName + "</span><strong> $" + productprice + "</strong><div class='cart-item-border'></div><div class='delete-item' style='margin-left:200px'></div></div>";
+            $('#total').append(total);
             $("#cart .empty").hide();
             $("#cart").append(cartItem);
             $("#checkout").fadeIn(500);
