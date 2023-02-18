@@ -728,3 +728,167 @@ xcustom form elements
         display: none;
     }
 }
+
+._cart {
+    position: relative;
+    top: 80px;
+    left: 50%;
+    add_towidth: 152px;
+    font-size: 15px;
+    margin-left: -78px;
+    border: 2px solid #fff;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 10px 0;
+    opacity: 0;
+    -webkit-transition: all 200ms ease-out;
+    -moz-transition: all 200ms ease-out;
+    -o-transition: all 200ms ease-out;
+    transition: all 200ms ease-out;
+}
+
+.add_to_cart:hover {
+    background: #fff;
+    color: #5ff7d2;
+    cursor: pointer;
+}
+
+#checkout {
+    border: 2px solid #331ca3;
+    font-size: 13px;
+    font-weight: 700;
+    padding: 3px;
+    position: relative;
+    margin-left: 200px;
+    top: 20px;
+    color: #1b31b1;
+}
+
+.cart-item .img-wrap img {
+    max-width: 50px;
+    float: left;
+    border: 1px solid #edeff0;
+    margin-bottom: 5px;
+}
+
+.cart-item .img-wrap {
+    max-width: 50px;
+    border: 1px solid #edeff0;
+}
+
+.cart-item {
+    margin-top: 15px;
+}
+
+.cart-item .delete-item {
+    background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/delete-item.png") 0 0 no-repeat;
+    width: 15px;
+    height: 15px;
+    float: right;
+    margin-right: 18px;
+    display: none;
+}
+
+.cart-item:hover .delete-item {
+    display: block;
+    cursor: pointer
+}
+
+div.cart-icon-top {
+    position: absolute;
+    background: #fff url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/cart.png") 0 -3px no-repeat;
+    margin: 0;
+    width: 21px;
+    height: 3px;
+    z-index: 1;
+    top: 140px;
+    left: 90px;
+}
+
+div.cart-icon-bottom {
+    position: absolute;
+    background: #fff url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/cart.png") 0 -3px no-repeat;
+    margin: 0;
+    width: 21px;
+    height: 19px;
+    z-index: 1;
+    top: 143px;
+    left: 90px;
+}
+
+body.MakeFloatingCart div.cart-icon-top {
+    z-index: 30;
+}
+
+body.MakeFloatingCart div.cart-icon-bottom {
+    z-index: 300;
+}
+
+.cart-item {
+    padding: 11px 0 5px 110px;
+    height: 62px;
+    width: 210px;
+    margin-left: -45px;
+    position: relative;
+    background: #fff;
+    -webkit-transition: all 1000ms ease-out;
+    -moz-transition: all 1000ms ease-out;
+    -ms-transition: all 1000ms ease-out;
+    -o-transition: all 1000ms ease-out;
+    transition: all 1000ms ease-out;
+}
+
+.cart-item.flash {
+    background: #fffeb0;
+}
+
+.cart-item-border {
+    position: absolute;
+    bottom: 0;
+    left: 45px;
+    background: #edeff0;
+    height: 1px;
+    width: 230px;
+}
+
+.cart-item .img-wrap {
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    border: 1px solid #edeff0;
+    float: left;
+    margin-left: -65px;
+}
+
+.cart-item img {
+    width: 100%;
+    position: relative;
+    top: -10px;
+}
+
+.cart-item strong {
+    color: #5ff7d2;
+    font-size: 16px;
+}
+
+.cart-item span {
+    color: #393c45;
+    display: block;
+    font-size: 14px;
+}
+
+.cart-item .delete-item {
+    background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/delete-item.png") 0 0 no-repeat;
+    width: 15px;
+    height: 15px;
+    float: right;
+    margin-right: 18px;
+    display: none;
+}
+
+.cart-item:hover .delete-item {
+    display: block;
+    cursor: pointer
+}
