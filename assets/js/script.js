@@ -176,7 +176,7 @@ $(document).ready(function() {
             return false;
         });
     });
-
+    var totalprice = 0;
     $('.add_to_cart').click(function() {
         var productCard = $(this).parent();
         var position = productCard.offset();
@@ -191,14 +191,11 @@ $(document).ready(function() {
         setTimeout(function() {
             $('div.floating-cart').remove();
             $("body").removeClass("MakeFloatingCart");
-
-
             var cartItem = "<div class='cart-item'><div class='img-wrap'><img src='" + productImage + "' alt='' /></div><span>" + productName + "</span><strong>" + productprice + "</strong><div class='cart-item-border'></div><div class='delete-item'></div></div>";
 
             $("#cart .empty").hide();
             $("#cart").append(cartItem);
             $("#checkout").fadeIn(500);
-
             $("#cart .cart-item").last()
                 .addClass("flash")
                 .find(".delete-item").click(function() {
@@ -207,6 +204,7 @@ $(document).ready(function() {
                         if ($("#cart .cart-item").size() == 0) {
                             $("#cart .empty").fadeIn(500);
                             $("#checkout").fadeOut(500);
+                            $('#total').fadeOut(500);
                         }
                     })
                 });

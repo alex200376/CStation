@@ -27,14 +27,14 @@
     <link href="assets/css/style1.css" rel="stylesheet">
     <!-- Resource style -->
     <script src="assets/js/modernizr.js"></script>
-    <title>CPU</title>
+    <title>Products</title>
 
 </head>
 
 
 <body>
     <!-- ======= Header ======= -->
-    <header id="header" class="fixed-top ">
+    <header id="header" class="fixed-top">
         <div class="container d-flex align-items-center">
 
             <!-- Uncomment below if you prefer to use an image logo -->
@@ -51,7 +51,7 @@
                     <li><a class="nav-link scrollto" href="TAC.html">Terms and conditions</a></li>
                     <li><a class="nav-link scrollto" href="FAQ.html">FAQ</a></li>
                     <li><a class="getstarted scrollto" href="login.html"><i class="ri-login-box-line" style="font-size: 20px;"></i>Login/Sign up</a></li>
-
+                    <li><a class="getstarted scrollto" onclick="myFunction()"><i class="ri-shopping-bag-2-fill" style="font-size: 20px;"></i>Cart</a></li>
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
             </nav>
@@ -66,39 +66,40 @@
 
 
     </section>
-    <button onclick="myFunction()">Click Me</button>
-    <div class="wrapper" id="shoppingcart" style="color:black;">
-        <div id="checkout">
-            CHECKOUT
+    <div class="shopping">
+        <div class="wrapper" id="shoppingcart" style="color:black;">
+            <div id="checkout">
+                <a href="checkout.html">CHECKOUT</a>
+            </div>
+            <h3>CART</h3>
+            <div id="cart">
+                <span class="empty">No items in cart.</span>
+            </div>
+            <div id="total"></div>
         </div>
-        <h3>CART</h3>
-
-        <div id="cart">
-            <span class="empty ">No items in cart.</span>
-        </div>
-
     </div>
-    <main class="cd-main-content " style="overflow-y:scroll ">
+    <div class="background"></div>
+    <main class="cd-main-content " style="overflow-y:scroll">
 
-        <div class="cd-tab-filter-wrapper ">
-            <div class="cd-tab-filter ">
-                <ul class="cd-filters ">
+        <div class="cd-tab-filter-wrapper">
+            <div class="cd-tab-filter">
+                <ul class="cd-filters">
                     <li class="placeholder ">
-                        <a data-type="all " href="#0 ">All</a>
+                        <a data-type="all" href="#0">All</a>
                         <!-- selected option on mobile -->
                     </li>
-                    <li class="filter "><a class="selected " href="#0 " data-type="all ">All</a></li>
-                    <li class="filter " data-filter=".CPU "><a href="#0 " data-type="CPU ">CPU</a></li>
-                    <li class="filter " data-filter=".GPU "><a href="#0 " data-type="GPU ">GPU</a></li>
-                    <li class="filter " data-filter=".RAM "><a href="#0 " data-type="RAM ">RAM</a></li>
-                    <li class="filter " data-filter=".MTB "><a href="#0 " data-type="MDB ">Mother board</a></li>
-                    <li class="filter " data-filter=".FANS "><a href="#0 " data-type="FANS ">Fans</a></li>
-                    <li class="filter " data-filter=".amd "><a href="#0 " data-type="amd ">Power Supply</a></li>
-                    <li class="filter " data-filter=".amd "><a href="#0 " data-type="amd ">Cases</a></li>
-                    <li class="filter " data-filter=".intel "><a href="#0 " data-type="intel ">Storage</a></li>
-                    <li class="filter " data-filter=".amd "><a href="#0 " data-type="amd ">Cooler</a></li>
-                    <li class="filter " data-filter=".intel "><a href="#0 " data-type="intel ">Accessories</a></li>
-                    <li class="filter " data-filter=".amd "><a href="#0 " data-type="amd ">Software</a></li>
+                    <li class="filter"><a class="selected" href="#0" data-type="all">All</a></li>
+                    <li class="filter" data-filter=".CPU"><a href="#0" data-type="CPU">CPU</a></li>
+                    <li class="filter" data-filter=".GPU"><a href="#0" data-type="GPU">GPU</a></li>
+                    <li class="filter" data-filter=".RAM"><a href="#0" data-type="RAM">RAM</a></li>
+                    <li class="filter" data-filter=".MTB"><a href="#0" data-type="MDB">Mother board</a></li>
+                    <li class="filter" data-filter=".FANS"><a href="#0" data-type="FANS">Fans</a></li>
+                    <li class="filter" data-filter=".amd"><a href="#0" data-type="amd">Power Supply</a></li>
+                    <li class="filter" data-filter=".amd"><a href="#0" data-type="amd">Cases</a></li>
+                    <li class="filter" data-filter=".intel"><a href="#0" data-type="intel">Storage</a></li>
+                    <li class="filter" data-filter=".amd"><a href="#0" data-type="amd">Cooler</a></li>
+                    <li class="filter" data-filter=".intel"><a href="#0" data-type="intel">Accessories</a></li>
+                    <li class="filter" data-filter=".amd"><a href="#0" data-type="amd">Software</a></li>
 
 
                 </ul>
@@ -117,70 +118,69 @@
                     <div class="price ">$1000</div><br>
                     <div class="add_to_cart ">Add to cart</div>
                 </li>
-                <li class="mix CPU intel Core_I3 LGA1700 "><img src="assets/img/i3-13.jpg " alt="Image 2 "> Intel Core i3-13100
+                <li class="mix CPU intel Core_I3 LGA1700 "><img src="assets/img/i3-13.jpg" alt="Image 2"> Intel Core i3-13100
                 </li>
-                <li class="mix CPU intel Core_I3 LGA1700 "><img src="assets/img/i3-12.jpg " alt="Image 3 "> Intel Core i3-12100 </li>
-                <li class="mix CPU intel Core_I3 LGA1700 "><img src="assets/img/i3-12.jpg " alt="Image 4 "> Intel Core i3-12100F </li>
-                <li class="mix CPU intel Core_I5 LGA1700 "><img src="assets/img/i5-13.jpg " alt="Image 5 "> Intel Core i5-13400</li>
-                <li class="mix CPU intel Core_I5 LGA1700 "><img src="assets/img/i5-13.jpg " alt="Image 6 "> Intel Core i5-13400F</li>
-                <li class="mix CPU intel Core_I5 LGA1700 "><img src="assets/img/i5-13.jpg " alt="Image 7 "> Intel Core i5-13500</li>
-                <li class="mix CPU intel Core_I5 LGA1700 "><img src="assets/img/i5-13.jpg " alt="Image 8 "> Intel Core i5-13500F</li>
-                <li class="mix CPU intel Core_I5 LGA1700 "><img src="assets/img/i5-13.jpg " alt="Image 9 "> Intel Core i5-13600F</li>
-                <li class="mix CPU intel Core_I5 LGA1700 "><img src="assets/img/i5-13.jpg " alt="Image 10 "> Intel Core i5-13600KF</li>
-                <li class="mix CPU intel Core_I5 LGA1700 "><img src="assets/img/i5-12.jpg " alt="Image 11 "> Intel Core i5-12400</li>
-                <li class="mix CPU intel Core_I5 LGA1700 "><img src="assets/img/i5-12.jpg " alt="Image 12 "> Intel Core i5-12400F</li>
-                <li class="mix CPU intel Core_I5 LGA1700 "><img src="assets/img/i5-12.jpg " alt="Image 12 "> Intel Core i5-12600K</li>
-                <li class="mix CPU intel Core_I5 LGA1700 "><img src="assets/img/i5-12.jpg " alt="Image 12 "> Intel Core i5-12600KF</li>
-                <li class="mix CPU intel Core_I7 LGA1700 "><img src="assets/img/i7-13.jpg " alt="Image 12 "> Intel Core i7-13700</li>
-                <li class="mix CPU intel Core_I7 LGA1700 "><img src="assets/img/i7-13.jpg " alt="Image 12 "> Intel Core i7-13700F</li>
-                <li class="mix CPU intel Core_I7 LGA1700 "><img src="assets/img/i7-13.jpg " alt="Image 12 "> Intel Core i7-13700K</li>
-                <li class="mix CPU intel Core_I7 LGA1700 "><img src="assets/img/i7-13.jpg " alt="Image 12 "> Intel Core i7-13700KF</li>
-                <li class="mix CPU intel Core_I7 LGA1700 "><img src="assets/img/i7-12.jpg " alt="Image 12 "> Intel Core i7-12700</li>
-                <li class="mix CPU intel Core_I7 LGA1700 "><img src="assets/img/i7-12.jpg " alt="Image 12 "> Intel Core i7-12700F</li>
-                <li class="mix CPU intel Core_I7 LGA1700 "><img src="assets/img/i7-12.jpg " alt="Image 12 "> Intel Core i7-12700K</li>
-                <li class="mix CPU intel Core_I7 LGA1700 "><img src="assets/img/i7-12.jpg " alt="Image 12 "> Intel Core i7-12700KF</li>
-                <li class="mix CPU amd Ryzen3 AM4 "><img src="assets/img/R3.jpg " alt="Image 12 "> AMD Ryzen 3 4100</li>
-                <li class="mix CPU amd Ryzen5 AM4 "><img src="assets/img/R5.jpg " alt="Image 12 "> AMD Ryzen 5 5600</li>
-                <li class="mix CPU amd Ryzen5 AM4 "><img src="assets/img/R5.jpg " alt="Image 12 "> AMD Ryzen 5 5600X</li>
-                <li class="mix CPU amd Ryzen5 AM4 "><img src="assets/img/R5.jpg " alt="Image 12 "> AMD Ryzen 5 5600G</li>
-                <li class="mix CPU amd Ryzen5 AM4 "><img src="assets/img/R5.jpg " alt="Image 12 "> AMD Ryzen 5 5500</li>
-                <li class="mix CPU amd Ryzen9 AM5 "><img src="assets/img/R9.jpg " alt="Image 12 "> AMD Ryzen 9 7900</li>
-                <li class="gap "></li>
-                <li class="gap "></li>
-                <li class="gap "></li>
-                <li class="gap "></li>
-                <li class="gap "></li>
-                <li class="gap "></li>
+                <li class="mix CPU intel Core_I3 LGA1700"><img src="assets/img/i3-12.jpg" alt="Image 3 "> Intel Core i3-12100 </li>
+                <li class="mix CPU intel Core_I3 LGA1700"><img src="assets/img/i3-12.jpg" alt="Image 4 "> Intel Core i3-12100F </li>
+                <li class="mix CPU intel Core_I5 LGA1700"><img src="assets/img/i5-13.jpg" alt="Image 5 "> Intel Core i5-13400</li>
+                <li class="mix CPU intel Core_I5 LGA1700"><img src="assets/img/i5-13.jpg" alt="Image 6 "> Intel Core i5-13400F</li>
+                <li class="mix CPU intel Core_I5 LGA1700"><img src="assets/img/i5-13.jpg" alt="Image 7 "> Intel Core i5-13500</li>
+                <li class="mix CPU intel Core_I5 LGA1700"><img src="assets/img/i5-13.jpg" alt="Image 8 "> Intel Core i5-13500F</li>
+                <li class="mix CPU intel Core_I5 LGA1700"><img src="assets/img/i5-13.jpg" alt="Image 9 "> Intel Core i5-13600F</li>
+                <li class="mix CPU intel Core_I5 LGA1700"><img src="assets/img/i5-13.jpg" alt="Image 10 "> Intel Core i5-13600KF</li>
+                <li class="mix CPU intel Core_I5 LGA1700"><img src="assets/img/i5-12.jpg" alt="Image 11 "> Intel Core i5-12400</li>
+                <li class="mix CPU intel Core_I5 LGA1700"><img src="assets/img/i5-12.jpg" alt="Image 12 "> Intel Core i5-12400F</li>
+                <li class="mix CPU intel Core_I5 LGA1700"><img src="assets/img/i5-12.jpg" alt="Image 12 "> Intel Core i5-12600K</li>
+                <li class="mix CPU intel Core_I5 LGA1700"><img src="assets/img/i5-12.jpg" alt="Image 12 "> Intel Core i5-12600KF</li>
+                <li class="mix CPU intel Core_I7 LGA1700"><img src="assets/img/i7-13.jpg" alt="Image 12 "> Intel Core i7-13700</li>
+                <li class="mix CPU intel Core_I7 LGA1700"><img src="assets/img/i7-13.jpg" alt="Image 12 "> Intel Core i7-13700F</li>
+                <li class="mix CPU intel Core_I7 LGA1700"><img src="assets/img/i7-13.jpg" alt="Image 12 "> Intel Core i7-13700K</li>
+                <li class="mix CPU intel Core_I7 LGA1700"><img src="assets/img/i7-13.jpg" alt="Image 12 "> Intel Core i7-13700KF</li>
+                <li class="mix CPU intel Core_I7 LGA1700"><img src="assets/img/i7-12.jpg" alt="Image 12 "> Intel Core i7-12700</li>
+                <li class="mix CPU intel Core_I7 LGA1700"><img src="assets/img/i7-12.jpg" alt="Image 12 "> Intel Core i7-12700F</li>
+                <li class="mix CPU intel Core_I7 LGA1700"><img src="assets/img/i7-12.jpg" alt="Image 12 "> Intel Core i7-12700K</li>
+                <li class="mix CPU intel Core_I7 LGA1700"><img src="assets/img/i7-12.jpg" alt="Image 12 "> Intel Core i7-12700KF</li>
+                <li class="mix CPU amd Ryzen3 AM4"><img src="assets/img/R3.jpg" alt="Image 12"> AMD Ryzen 3 4100</li>
+                <li class="mix CPU amd Ryzen5 AM4"><img src="assets/img/R5.jpg" alt="Image 12"> AMD Ryzen 5 5600</li>
+                <li class="mix CPU amd Ryzen5 AM4"><img src="assets/img/R5.jpg" alt="Image 12"> AMD Ryzen 5 5600X</li>
+                <li class="mix CPU amd Ryzen5 AM4"><img src="assets/img/R5.jpg" alt="Image 12"> AMD Ryzen 5 5600G</li>
+                <li class="mix CPU amd Ryzen5 AM4"><img src="assets/img/R5.jpg" alt="Image 12"> AMD Ryzen 5 5500</li>
+                <li class="mix CPU amd Ryzen9 AM5"><img src="assets/img/R9.jpg" alt="Image 12"> AMD Ryzen 9 7900</li>
+                <li class="gap"></li>
+                <li class="gap"></li>
+                <li class="gap"></li>
+                <li class="gap"></li>
+                <li class="gap"></li>
+                <li class="gap"></li>
             </ul>
-            <div class="cd-fail-message ">No results found</div>
+            <div class="cd-fail-message">No results found</div>
         </section>
         <!-- cd-gallery -->
 
         <div class="cd-filter ">
             <form>
                 <div class="cd-filter-block ">
-
                     <h4>Search</h4>
 
-                    <div class="cd-filter-content ">
-                        <input type="search " placeholder="Try intel... ">
+                    <div class="cd-filter-content">
+                        <input type="search" placeholder="Try intel... ">
                     </div>
                     <!-- cd-filter-content -->
                 </div>
                 <!-- cd-filter-block -->
 
-                <div class="cd-filter-block ">
+                <div class="cd-filter-block">
                     <h4>brands</h4>
 
-                    <ul class="cd-filter-content cd-filters list ">
+                    <ul class="cd-filter-content cd-filters list">
                         <li>
-                            <input class="filter " data-filter=".intel " type="checkbox " id="checkbox1 ">
-                            <label class="checkbox-label " for="checkbox1 ">intel</label>
+                            <input class="filter" data-filter=".intel" type="checkbox" id="checkbox1">
+                            <label class="checkbox-label" for="checkbox1">intel</label>
                         </li>
 
                         <li>
-                            <input class="filter " data-filter=".amd " type="checkbox " id="checkbox2 ">
-                            <label class="checkbox-label " for="checkbox2 ">AMD</label>
+                            <input class="filter" data-filter=".amd" type="checkbox" id="checkbox2">
+                            <label class="checkbox-label" for="checkbox2">AMD</label>
                         </li>
 
 
@@ -195,20 +195,20 @@
                     <div class="cd-filter-content ">
                         <div class="cd-select cd-filters ">
                             <select class="filter " name="selectThis " id="selectThis ">
-								<option value=" ">Choose an option</option>
-                                <option value=".LGA1700 ">LGA 1700</option>
-								<option value=".LGA1150 ">LGA 1150</option>
-								<option value=".LGA1151 ">LGA 1151</option>
-								<option value=".LGA1155 ">LGA 1155</option>
-								<option value=".LGA1200 ">LGA 1200</option>
-                                <option value=".LGA1700 ">LGA 1700</option>
-								<option value=".LGA2011 ">LGA 2011</option>
-								<option value=".LGA2066 ">LGA 2066</option>
-								<option value=".FM2+ ">FM2+</option>
-                                <option value=".AM3+ ">AM3+</option>
-								<option value=".AM4 ">AM4</option>
-                                <option value=".AM5 ">AM5</option>
-								<option value=".others ">others</option>
+								<option value="">Choose an option</option>
+                                <option value=".LGA1700">LGA 1700</option>
+								<option value=".LGA1150">LGA 1150</option>
+								<option value=".LGA1151">LGA 1151</option>
+								<option value=".LGA1155">LGA 1155</option>
+								<option value=".LGA1200">LGA 1200</option>
+                                <option value=".LGA1700">LGA 1700</option>
+								<option value=".LGA2011">LGA 2011</option>
+								<option value=".LGA2066">LGA 2066</option>
+								<option value=".FM2+">FM2+</option>
+                                <option value=".AM3+">AM3+</option>
+								<option value=".AM4">AM4</option>
+                                <option value=".AM5">AM5</option>
+								<option value=".others">others</option>
 							
 							</select>
                         </div>
@@ -218,42 +218,42 @@
                 </div>
                 <!-- cd-filter-block -->
 
-                <div class="cd-filter-block ">
+                <div class="cd-filter-block">
                     <h4>Radio buttons</h4>
 
-                    <ul class="cd-filter-content cd-filters list ">
+                    <ul class="cd-filter-content cd-filters list">
                         <li>
-                            <input class="filter " data-filter=" " type="radio " name="radioButton " id="radio1 " checked>
-                            <label class="radio-label " for="radio1 ">All</label>
+                            <input class="filter" data-filter="all" type="radio" name="radioButton" id="radio1" checked>
+                            <label class="radio-label" for="radio1">All</label>
                         </li>
 
                         <li>
-                            <input class="filter " data-filter=".Core_I3 " type="radio " name="radioButton " id="Core_I3 ">
-                            <label class="radio-label " for="Core_I3 ">Core I3</label>
+                            <input class="filter" data-filter=".Core_I3" type="radio" name="radioButton" id="Core_I3">
+                            <label class="radio-label" for="Core_I3">Core I3</label>
                         </li>
 
                         <li>
-                            <input class="filter " data-filter=".Core_I5 " type="radio " name="radioButton " id="Core_I5 ">
-                            <label class="radio-label " for="Core_I5 ">Core I5</label>
+                            <input class="filter" data-filter=".Core_I5" type="radio" name="radioButton" id="Core_I5">
+                            <label class="radio-label" for="Core_I5">Core I5</label>
                         </li>
 
                         <li>
-                            <input class="filter " data-filter=".Core_I7 " type="radio " name="radioButton " id="Core_I7 ">
-                            <label class="radio-label " for="Core_I7 ">Core I7</label>
+                            <input class="filter" data-filter=".Core_I7" type="radio" name="radioButton" id="Core_I7">
+                            <label class="radio-label" for="Core_I7">Core I7</label>
                         </li>
 
                         <li>
-                            <input class="filter " data-filter=".Ryzen3 " type="radio " name="radioButton " id="Ryzen3 ">
-                            <label class="radio-label " for="Ryzen3 ">Ryzen 3</label>
+                            <input class="filter" data-filter=".Ryzen3" type="radio" name="radioButton" id="Ryzen3">
+                            <label class="radio-label" for="Ryzen3">Ryzen 3</label>
                         </li>
 
                         <li>
-                            <input class="filter " data-filter=".Ryzen5 " type="radio " name="radioButton " id="Ryzen5 ">
-                            <label class="radio-label " for="Ryzen5 ">Ryzen 5</label>
+                            <input class="filter" data-filter=".Ryzen5" type="radio" name="radioButton" id="Ryzen5">
+                            <label class="radio-label" for="Ryzen5">Ryzen 5</label>
                         </li>
                         <li>
-                            <input class="filter " data-filter=".Ryzen9 " type="radio " name="radioButton " id="Ryzen9 ">
-                            <label class="radio-label " for="Ryzen9 ">Ryzen 9</label>
+                            <input class="filter" data-filter=".Ryzen9" type="radio" name="radioButton" id="Ryzen9">
+                            <label class="radio-label" for="Ryzen9">Ryzen 9</label>
                         </li>
                     </ul>
                     <!-- cd-filter-content -->
