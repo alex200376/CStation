@@ -748,19 +748,12 @@ xcustom form elements
     }
 }
 
-._cart {
-    position: relative;
-    top: 80px;
-    left: 50%;
-    add_towidth: 152px;
+.cart {
     font-size: 15px;
-    margin-left: -78px;
     border: 2px solid #fff;
     color: #fff;
-    text-align: center;
     text-transform: uppercase;
     font-weight: 700;
-    padding: 10px 0;
     opacity: 0;
     -webkit-transition: all 200ms ease-out;
     -moz-transition: all 200ms ease-out;
@@ -791,14 +784,12 @@ xcustom form elements
 }
 
 .cart-item .img-wrap img {
-    max-width: 50px;
+    min-height: 50px;
     float: left;
-    border: 1px solid #edeff0;
-    margin-bottom: 5px;
 }
 
 .cart-item .img-wrap {
-    max-width: 50px;
+    min-height: 50px;
     border: 1px solid #edeff0;
 }
 
@@ -850,7 +841,7 @@ body.MakeFloatingCart div.cart-icon-bottom {
 }
 
 .cart-item {
-    padding: 11px 0 5px 110px;
+    padding: 0px 0 5px 110px;
     height: 62px;
     width: 210px;
     margin-left: -45px;

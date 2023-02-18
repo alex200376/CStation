@@ -183,8 +183,8 @@ $(document).ready(function() {
         var productImage = $(productCard).find('img').get(0).src;
         var productName = $(productCard).find('.product_name').get(0).innerHTML;
         var productprice = $(productCard).find('.price').get(0).innerHTML;
-
-
+        var total = $(productCard).find('.cs').innerHTML;
+        var sum = total + productprice;
         $("body").append('<div class="floating-cart"></div>');
         var cart = $('div.floating-cart');
         productCard.clone().appendTo(cart);
@@ -193,8 +193,8 @@ $(document).ready(function() {
         setTimeout(function() {
             $('div.floating-cart').remove();
             $("body").removeClass("MakeFloatingCart");
-            var cartItem = "<div class='cart-item'><div class='img-wrap'><img src='" + productImage + "' alt='' /></div><span>" + productName + "</span><strong> $" + productprice + "</strong><div class='cart-item-border'></div><div class='delete-item' style='margin-left:200px'></div></div>";
-            $('#total').append(total);
+            var cartItem = "<div class='cart-item'><div class='img-wrap'><img src='" + productImage + "' alt='' /></div><span>" + productName + "</span><strong class='cs'>" + productprice + "</strong><div class='cart-item-border'></div><div class='delete-item' style='margin-left:200px'></div></div>";
+            $('#total').append(sum);
             $("#cart .empty").hide();
             $("#cart").append(cartItem);
             $("#checkout").fadeIn(500);
@@ -203,6 +203,7 @@ $(document).ready(function() {
                 .find(".delete-item").click(function() {
                     $(this).parent().fadeOut(300, function() {
                         $(this).remove();
+                        $(productCard).find('.cs').innerHTML = '0';
                         if ($("#cart .cart-item").size() == 0) {
                             $("#cart .empty").fadeIn(500);
                             $("#checkout").fadeOut(500);
