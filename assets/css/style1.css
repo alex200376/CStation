@@ -42,10 +42,10 @@ Main Components
 
 .wrapper {
     padding: 10px;
-    width: 300px;
-    max-height: 90%;
+    min-width: 300px;
     margin-right: 30px;
     overflow-y: scroll;
+    max-height: 700px;
 }
 
 .wrapper::-webkit-scrollbar {
@@ -55,10 +55,7 @@ Main Components
 .shopping {
     padding-left: 30px;
     float: right;
-    height: 100%;
     width: 24%;
-    background: rgb(60, 55, 154);
-    background: linear-gradient(90deg, rgba(60, 55, 154, 1) 4%, rgba(28, 28, 150, 1) 30%, rgba(0, 212, 255, 1) 100%);
 }
 
 .cd-header {
@@ -87,7 +84,7 @@ Main Components
 .cd-main-content {
     position: relative;
     min-height: 100vh;
-    max-width: 76.3%;
+    max-width: 100%;
 }
 
 .cd-main-content:after {
