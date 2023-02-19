@@ -797,6 +797,10 @@ xcustom form elements
     margin-top: 15px;
 }
 
+.price {
+    display: inline-flex;
+}
+
 .cart-item .delete-item {
     background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/delete-item.png") 0 0 no-repeat;
     width: 15px;

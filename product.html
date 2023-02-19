@@ -77,7 +77,8 @@
             </div>
 
             Total:$
-            <div id="total" style="display: inline;">0</div>
+            <div id="total0" style="display: inline;">0</div>
+            <div id="total" style="display: inline;"></div>
 
         </div>
     </div>
@@ -116,24 +117,32 @@
         <section class="cd-gallery products ">
 
             <ul>
-                <li class="mix CPU intel Core_I3 LGA1700"><img src="assets/img/i3-13.jpg " alt="Image 1 ">
+                <li class="mix CPU intel Core_I3 LGA1700" id="cart_item"><img src="assets/img/i3-13.jpg " alt="Image 1 ">
                     <div class="product_name">Intel Core i3-13100F</div>
-                    <div class="price">$1000</div><br>
+                    <div class="price">$
+                        <div class="xd">1000</div>
+                    </div><br>
                     <div class="add_to_cart">Add to cart</div>
                 </li>
-                <li class="mix CPU intel Core_I3 LGA1700"><img src="assets/img/i3-13.jpg" alt="Image 2">
+                <li class="mix CPU intel Core_I3 LGA1700" id="cart_item"><img src="assets/img/i3-13.jpg" alt="Image 2">
                     <div class="product_name">Core i3-13100</div>
-                    <div class="price">$1234</div><br>
+                    <div class="price">$
+                        <div class="xd">1250</div>
+                    </div><br>
                     <div class="add_to_cart">Add to cart</div>
                 </li>
-                <li class="mix CPU intel Core_I3 LGA1700"><img src="assets/img/i3-12.jpg" alt="Image 3 ">
+                <li class="mix CPU intel Core_I3 LGA1700" id="cart_item"><img src="assets/img/i3-12.jpg" alt="Image 3 ">
                     <div class="product_name">Intel Core i3-12100</div>
-                    <div class="price">$1200</div><br>
+                    <div class="price">$
+                        <div class="xd">1300</div>
+                    </div><br>
                     <div class="add_to_cart">Add to cart</div>
                 </li>
-                <li class="mix CPU intel Core_I3 LGA1700"><img src="assets/img/i3-12.jpg" alt="Image 4 ">
+                <li class="mix CPU intel Core_I3 LGA1700" id="cart_item"><img src="assets/img/i3-12.jpg" alt="Image 4 ">
                     <div class="product_name">Intel Core i3-12100F</div>
-                    <div class="price">$1700</div><br>
+                    <div class="price">$
+                        <div class="xd">1220</div>
+                    </div><br>
                     <div class="add_to_cart">Add to cart</div>
                 </li>
                 <li class="mix CPU intel Core_I5 LGA1700"><img src="assets/img/i5-13.jpg" alt="Image 5 "> Intel Core i5-13400</li>
@@ -282,12 +291,12 @@
         <a href="#0 " class="cd-filter-trigger ">Filters</a>
     </main>
     <!-- ======= Footer ======= -->
-    <footer id="footer ">
-        <div class="footer-top ">
-            <div class="container ">
-                <div class="row ">
+    <footer id="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
 
-                    <div class="col-lg-3 col-md-6 footer-contact ">
+                    <div class="col-lg-3 col-md-6 footer-contact">
                         <h3>CStation</h3>
                         <h5>Contact</h5>
                         <p>
@@ -296,23 +305,23 @@
                         </p>
                     </div>
 
-                    <div class="col-lg-3 col-md-6 footer-links ">
+                    <div class="col-lg-3 col-md-6 footer-links">
                         <h4>Useful Links</h4>
                         <ul>
-                            <li><i class="bx bx-chevron-right "></i> <a href="index.html ">Home</a></li>
-                            <li><i class="bx bx-chevron-right "></i> <a href="about_us.html ">About us</a></li>
-                            <li><i class="bx bx-chevron-right "></i> <a href="TAC.html#term ">Terms of service</a></li>
-                            <li><i class="bx bx-chevron-right "></i> <a href="TAC.html#privacypolicy2 ">Privacy policy</a></li>
-                            <li><i class="bx bx-chevron-right "></i> <a href="https://docs.google.com/forms/d/e/1FAIpQLScUtwUw1Wk0iIMSkA1GfuUbYXO1dZWQcWLemcd-z3ya3x5U6g/viewform?embedded=true ">Give us feed back</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="index.html">Home</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="about_us.html">About us</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="TAC.html#term">Terms of service</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="TAC.html#privacypolicy2">Privacy policy</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="https://docs.google.com/forms/d/e/1FAIpQLScUtwUw1Wk0iIMSkA1GfuUbYXO1dZWQcWLemcd-z3ya3x5U6g/viewform?embedded=true ">Give us feed back</a></li>
                         </ul>
                     </div>
 
-                    <div class="col-lg-3 col-md-6 footer-links ">
+                    <div class="col-lg-3 col-md-6 footer-links">
                         <h4>Our Services</h4>
                         <ul>
-                            <li><i class="bx bx-chevron-right "></i> <a href="pc_create.html ">PC customization</a></li>
-                            <li><i class="bx bx-chevron-right "></i> <a href="FAQ.html ">FAQ</a></li>
-                            <li><i class="bx bx-chevron-right "></i> <a href="# ">PC repair</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="pc_create.html">PC customization</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="FAQ.html">FAQ</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">PC repair</a></li>
                         </ul>
                     </div>
                     <div class="col-lg-3 col-md-6 footer-links">
@@ -331,12 +340,12 @@
             </div>
         </div>
 
-        <div class="container footer-bottom clearfix ">
-            <div class="copyright ">
+        <div class="container footer-bottom clearfix">
+            <div class="copyright">
                 &copy; Copyright <strong><span>CStation</span></strong>. All Rights Reserved
             </div>
-            <div class="credits ">
-                Designed by <a href="https://bootstrapmade.com/ ">BootstrapMade</a>
+            <div class="credits">
+                Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
             </div>
         </div>
     </footer>
@@ -364,7 +373,7 @@
         const buttons = document.querySelectorAll('.dropdown-item');
         const boxes = document.querySelectorAll('.box');
         const searchBox = document.querySelector("#search ");
-
+        const add = document.querySelectorAll('.add_to_cart');
         /* Search Product by Textbox */
         searchBox.addEventListener('keyup', (e) => {
             searchText = e.target.value.toLowerCase().trim();
