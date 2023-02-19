@@ -18,6 +18,12 @@
         <form action="">
             <h1>Check out</h1>
             <a href="product.html" class="btn1">Back</a>
+            <div class="pricecon">
+                Total:$
+                <div id="total">0</div>
+            </div>
+
+
             <div class="row">
 
                 <div class="col">
@@ -90,12 +96,15 @@
 
             </div>
 
-            <input type="submit" value="proceed to checkout" class="submit-btn">
+            <a href="index.html"><input type="button" value="proceed to checkout" class="submit-btn" onclick="localStorage.clear()"></a>
 
         </form>
 
     </div>
-
+    <script>
+        let x = Number(localStorage.getItem('totalprice'));
+        document.getElementById('total').innerHTML = x;
+    </script>
 </body>
 
 </html>

@@ -19,6 +19,33 @@
     background: linear-gradient(90deg, #0025aa 60%, #6163a3 40.1%);
 }
 
+.pricecon {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.btn1 {
+    float: right;
+    margin-right: auto;
+    padding: 5px 20px;
+    font-size: 17px;
+    background: #382ec2;
+    color: #fff;
+    margin-top: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn1:hover {
+    background: #3f7cd8;
+}
+
+#total {
+    font-size: 28px;
+    display: inline;
+    font-weight: bolder;
+}
+
 .container form {
     padding: 20px;
     width: 700px;

@@ -19,6 +19,7 @@ $(document).ready(function() {
         $(cart).css({ 'top': position.top + 'px', "left": position.left + 'px' }).fadeIn("slow").addClass('moveToCart');
         setTimeout(function() { $("body").addClass("MakeFloatingCart"); }, 800);
         setTimeout(function() {
+
             sum += productprice;
             $('div.floating-cart').remove();
             $("body").removeClass("MakeFloatingCart");
@@ -29,8 +30,11 @@ $(document).ready(function() {
             $("#cart .empty").hide();
             $("#cart").append(cartItem);
             $("#checkout").fadeIn(500);
+            localStorage.totalprice = $('#total').html();
+
             $("#cart .cart-item").last()
-                .addClass("flash")
+
+            .addClass("flash")
                 .find(".delete-item").click(function() {
                     $(this).parent().fadeOut(300, function() {
                         var x = $(this).find('.cs').get(0).innerHTML;
