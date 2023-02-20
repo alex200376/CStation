@@ -56,6 +56,7 @@ Main Components
     padding-left: 30px;
     float: right;
     width: 24%;
+    animation: myAnim 1s ease 0s normal forwards;
 }
 
 .cd-header {
@@ -765,6 +766,15 @@ xcustom form elements
     background: #fff;
     color: #5ff7d2;
     cursor: pointer;
+}
+
+@keyframes myAnim {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-20px);
+    }
 }
 
 #checkout a {
