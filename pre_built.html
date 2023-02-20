@@ -49,6 +49,24 @@
         width: 24%;
     }
     
+    li {
+        list-style-type: none;
+    }
+    
+    .shopbtn {
+        text-align: center;
+        float: right;
+        margin-right: 20px;
+        padding-inline: 10px;
+        padding: 5px 10px;
+        margin-top: 10px;
+        border-radius: 50px;
+        color: #fff;
+        font-size: 10px;
+        border: 2px solid #47b2e4;
+        font-weight: 600;
+    }
+    
     #cart_item {
         margin-left: 15px;
         padding: 5px;
@@ -150,7 +168,7 @@
                     <li><a class="nav-link scrollto" href="TAC.html">Terms and conditions</a></li>
                     <li><a class="nav-link scrollto" href="FAQ.html">FAQ</a></li>
                     <li><a class="getstarted scrollto" href="login.html"><i class="ri-login-box-line" style="font-size: 20px;"></i>Login/Sign up</a></li>
-                    <li><a class="getstarted scrollto" onclick="myFunction()"><i class="ri-shopping-bag-2-fill" style="font-size: 20px;"></i>Cart</a></li>
+
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
             </nav>
@@ -167,7 +185,9 @@
     </section>
 
     <div class="shopping">
+
         <div class="wrapper" id="shoppingcart" style="color:black;">
+
             <div id="checkout">
                 <a href="checkout.html">CHECKOUT</a>
             </div>
@@ -186,6 +206,7 @@
     <main class="cd-main-content " style="overflow-y:scroll">
 
         <div class="cd-tab-filter-wrapper">
+            <li><a class="shopbtn" onclick="myFunction()"><i class="ri-shopping-bag-2-fill" style="font-size: 20px;"></i>Cart</a></li>
             <div class="cd-tab-filter">
                 <ul class="cd-filters">
                     <li class="placeholder ">

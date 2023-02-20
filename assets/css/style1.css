@@ -56,7 +56,24 @@ Main Components
     padding-left: 30px;
     float: right;
     width: 24%;
-    animation: myAnim 1s ease 0s normal forwards;
+}
+
+li {
+    list-style-type: none;
+}
+
+.shopbtn {
+    text-align: center;
+    float: right;
+    margin-right: 20px;
+    padding-inline: 10px;
+    padding: 5px 10px;
+    margin-top: 10px;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 10px;
+    border: 2px solid #47b2e4;
+    font-weight: 600;
 }
 
 .cd-header {
@@ -878,7 +895,7 @@ body.MakeFloatingCart div.cart-icon-bottom {
     left: 45px;
     background: #edeff0;
     height: 1px;
-    width: 230px;
+    max-width: 230px;
 }
 
 .cart-item .img-wrap {

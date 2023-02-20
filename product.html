@@ -51,9 +51,10 @@
                     <li><a class="nav-link scrollto" href="TAC.html">Terms and conditions</a></li>
                     <li><a class="nav-link scrollto" href="FAQ.html">FAQ</a></li>
                     <li><a class="getstarted scrollto" href="login.html"><i class="ri-login-box-line" style="font-size: 20px;"></i>Login/Sign up</a></li>
-                    <li><a class="getstarted scrollto" onclick="myFunction()"><i class="ri-shopping-bag-2-fill" style="font-size: 20px;"></i>Cart</a></li>
+
+                    <i class="bi bi-list mobile-nav-toggle"></i>
+
                 </ul>
-                <i class="bi bi-list mobile-nav-toggle"></i>
             </nav>
             <!-- .navbar -->
 
@@ -66,7 +67,9 @@
 
 
     </section>
+
     <div class="shopping">
+
         <div class="wrapper" id="shoppingcart" style="color:black;">
             <div id="checkout">
                 <a href="checkout.html">CHECKOUT</a>
@@ -86,6 +89,7 @@
     <main class="cd-main-content " style="overflow-y:scroll">
 
         <div class="cd-tab-filter-wrapper">
+            <li><a class="shopbtn" onclick="myFunction()" style="display: inline;"><i class="ri-shopping-bag-2-fill" style="font-size: 20px; "></i>Cart</a></li>
             <div class="cd-tab-filter">
                 <ul class="cd-filters">
                     <li class="placeholder ">
@@ -441,6 +445,10 @@
                 x.style.display = "none";
             }
         }
+
+        let x = Number(localStorage.getItem('totalprice'));
+        document.getElementById('total').innerHTML = x;
+        document.getElementById('cart').innerHTML = localStorage.cart;
         document.getElementById('cart').innerHTML = localStorage.cart;
     </script>
 
