@@ -31,7 +31,7 @@ $(document).ready(function() {
             $("#cart").append(cartItem);
             $("#checkout").fadeIn(500);
             localStorage.totalprice = $('#total').html();
-
+            localStorage.cart = $('#cart').html();
             $("#cart .cart-item").last()
 
             .addClass("flash")
