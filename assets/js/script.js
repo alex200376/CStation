@@ -1,10 +1,4 @@
 $(document).ready(function() {
-
-
-
-
-
-
     var sum = 0;
     $('.add_to_cart').click(function() {
         var productCard = $(this).parent();
