@@ -74,6 +74,7 @@ li {
     font-size: 10px;
     border: 2px solid #47b2e4;
     font-weight: 600;
+    display: flex;
 }
 
 .cd-header {
