@@ -449,6 +449,7 @@ table {
 
 .navbar {
     padding: 0;
+    float: right;
 }
 
 .navbar ul {
