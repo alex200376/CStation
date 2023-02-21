@@ -174,7 +174,7 @@ table {
     transition: all 0.5s;
     z-index: 997;
     padding: 10px 0;
-    min-width:100%;
+    min-width:1vmax;
 }
 
 #header.header-scrolled,
