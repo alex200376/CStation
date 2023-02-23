@@ -22,7 +22,7 @@
 
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet">
-    <title>FAQ</title>
+    <title>PC customization</title>
 </head>
 
 <body>
@@ -62,41 +62,86 @@
 
         </section>
         <h1 style="text-align: center;">PC customization</h1>
-        <table>
+
+        <table class="paleBlueRows">
             <thead>
                 <tr>
-                    <th>Case:</th>
-                    <th></th>
+                    <th>Parts</th>
+                    <th>items</th>
                 </tr>
             </thead>
+            <tfoot>
+                <tr>
+                    <td>Total</td>
+                    <td class="'total">&nbsp;</td>
+                </tr>
+            </tfoot>
             <tbody>
                 <tr>
-                    <td>Mother board:</td>
-                    <td></td>
+                    <td>Case</td>
+                    <td>
+                        <select name="cars" id="cars">
+                        <option value="volvo">Volvo</option>
+                        <option value="saab">Saab</option>
+                        <option value="opel">Opel</option>
+                        <option value="audi">Audi</option>
+                      </select>
+                    </td>
                 </tr>
                 <tr>
-                    <td>CPU:</td>
-                    <td></td>
+                    <td>Mother board</td>
+                    <td> <select name="cars" id="cars">
+                        <option value="volvo">Volvo</option>
+                        <option value="saab">Saab</option>
+                        <option value="opel">Opel</option>
+                        <option value="audi">Audi</option>
+                      </select></td>
                 </tr>
                 <tr>
-                    <td>GPU:</td>
-                    <td></td>
+                    <td>CPU</td>
+                    <td> <select name="cars" id="cars">
+                        <option value="volvo">Volvo</option>
+                        <option value="saab">Saab</option>
+                        <option value="opel">Opel</option>
+                        <option value="audi">Audi</option>
+                      </select></td>
                 </tr>
                 <tr>
-                    <td>RAM:</td>
-                    <td></td>
+                    <td>GPU</td>
+                    <td> <select name="cars" id="cars">
+                        <option value="volvo">Volvo</option>
+                        <option value="saab">Saab</option>
+                        <option value="opel">Opel</option>
+                        <option value="audi">Audi</option>
+                      </select></td>
                 </tr>
                 <tr>
-                    <td>Power Supply:</td>
-                    <td></td>
+                    <td>RAM</td>
+                    <td> <select name="cars" id="cars">
+                        <option value="volvo">Volvo</option>
+                        <option value="saab">Saab</option>
+                        <option value="opel">Opel</option>
+                        <option value="audi">Audi</option>
+                      </select></td>
                 </tr>
                 <tr>
-                    <td>Fans:</td>
-                    <td></td>
+                    <td>Power Supply</td>
+                    <td> <select name="cars" id="cars">
+                        <option value="volvo">Volvo</option>
+                        <option value="saab">Saab</option>
+                        <option value="opel">Opel</option>
+                        <option value="audi">Audi</option>
+                      </select>
+                    </td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
+                    <td>Fans</td>
+                    <td> <select name="cars" id="cars">
+                        <option value="volvo">Volvo</option>
+                        <option value="saab">Saab</option>
+                        <option value="opel">Opel</option>
+                        <option value="audi">Audi</option>
+                      </select></td>
                 </tr>
             </tbody>
         </table>
@@ -183,14 +228,8 @@
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
     <script>
-        function myFunction() {
-            var x = document.getElementById("shoppingcart");
-            if (x.style.display === "none") {
-                x.style.display = "block";
-            } else {
-                x.style.display = "none";
-            }
-        }
+        let x = Number(localStorage.getItem('totalprice'));
+        document.getElementById('total').innerHTML = x;
     </script>
 </body>
 
