@@ -1059,8 +1059,13 @@ table.paleBlueRows {
     border-collapse: collapse;
 }
 
+td img {
+    max-width: 70px;
+}
+
 select {
-    width: 70%;
+    width: 50%;
+    float: right;
 }
 
 table.paleBlueRows td,
