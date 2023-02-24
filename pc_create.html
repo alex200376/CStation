@@ -20,10 +20,47 @@
     <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
     <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
+
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet">
     <title>PC customization</title>
 </head>
+<script>
+    function setPicture(select) {
+        selectedvalue = select.value;
+        document.getElementById("image").src = selectedvalue;
+    }
+
+    function setPicture2(select) {
+        selectedvalue2 = select.value;
+        document.getElementById("image2").src = selectedvalue2;
+    }
+
+    function setPicture3(select) {
+        selectedvalue3 = select.value;
+        document.getElementById("image3").src = selectedvalue3;
+    }
+
+    function setPicture4(select) {
+        selectedvalue4 = select.value;
+        document.getElementById("image4").src = selectedvalue4;
+    }
+
+    function setPicture5(select) {
+        selectedvalue5 = select.value;
+        document.getElementById("image5").src = selectedvalue5;
+    }
+
+    function setPicture6(select) {
+        selectedvalue6 = select.value;
+        document.getElementById("image6").src = selectedvalue6;
+    }
+
+    function setPicture7(select) {
+        selectedvalue7 = select.value;
+        document.getElementById("image7").src = selectedvalue7;
+    }
+</script>
 
 <body>
     <!-- ======= Header ======= -->
@@ -78,25 +115,37 @@
                 <tr>
                     <td>Case</td>
                     <td>
-                        <img src="">
-                        <select name="cpu" id="cpu">
-                            <option value="none">none</option>
-                        <option value="Intel Core i5-13400">
+                        <img src="" id="image">
+                        <select id="changeImage" onchange="setPicture(this)">
+                            <option value="">none</option>
+                        <option value="/assets/img/i3-12.jpg">
                             <div class="product_name">Intel Core i5-13400</div>
                             <div class="price">$
                                 <div class="xd">7800</div>
                             </div></option>
-                            <option value="Intel Core i5-13400">
+                            <option value="/assets/img/i3-13.jpg">
                                 <div class="product_name">Intel Core i5-13400</div>
                                 <div class="price">$
                                     <div class="xd">2000</div>
                                 </div></option>
-                                <option value="Intel Core i5-13400">
+                                <option value="/assets/img/i5-12.jpg">
                                     <div class="product_name">Intel Core i5-13400</div>
                                     <div class="price">$
                                         <div class="xd">1300</div>
                                     </div></option>
-                                    <option value="Intel Core i5-13400">
+                                    <option value="/assets/img/i5-13.jpg">
+                                        <div class="product_name">Intel Core i5-13400</div>
+                                        <div class="price">$
+                                            <div class="xd">3213</div>
+                                        </div>
+                                    </option>
+                                    <option value="/assets/img/i7-12.jpg">
+                                        <div class="product_name">Intel Core i5-13400</div>
+                                        <div class="price">$
+                                            <div class="xd">3213</div>
+                                        </div>
+                                    </option>
+                                    <option value="/assets/img/i7-13.jpg">
                                         <div class="product_name">Intel Core i5-13400</div>
                                         <div class="price">$
                                             <div class="xd">3213</div>
@@ -108,59 +157,245 @@
                 <tr>
                     <td>Mother board</td>
                     <td>
-                        <img src="">
-                        <select name="mb" id="mb">
-                        <option value="mb1">mb1</option>
-                        <option value="mb2">mb2</option>
-                        <option value="mb3">mb3</option>
-                        <option value="mb4">mb4</option>
+                        <img src="" id="image2">
+                        <select id="changeImage" onchange="setPicture2(this)">
+                            <option value="">none</option>
+                        <option value="/assets/img/i3-12.jpg">
+                            <div class="product_name">Intel Core i5-13400</div>
+                            <div class="price">$
+                                <div class="xd">7800</div>
+                            </div></option>
+                            <option value="/assets/img/i3-13.jpg">
+                                <div class="product_name">Intel Core i5-13400</div>
+                                <div class="price">$
+                                    <div class="xd">2000</div>
+                                </div></option>
+                                <option value="/assets/img/i5-12.jpg">
+                                    <div class="product_name">Intel Core i5-13400</div>
+                                    <div class="price">$
+                                        <div class="xd">1300</div>
+                                    </div></option>
+                                    <option value="/assets/img/i5-13.jpg">
+                                        <div class="product_name">Intel Core i5-13400</div>
+                                        <div class="price">$
+                                            <div class="xd">3213</div>
+                                        </div>
+                                    </option>
+                                    <option value="/assets/img/i7-12.jpg">
+                                        <div class="product_name">Intel Core i5-13400</div>
+                                        <div class="price">$
+                                            <div class="xd">3213</div>
+                                        </div>
+                                    </option>
+                                    <option value="/assets/img/i7-13.jpg">
+                                        <div class="product_name">Intel Core i5-13400</div>
+                                        <div class="price">$
+                                            <div class="xd">3213</div>
+                                        </div>
+                                    </option>
                       </select></td>
                 </tr>
                 <tr>
                     <td>CPU</td>
-                    <td> <select name="cars" id="cars">
-                        <option value="volvo">Volvo</option>
-                        <option value="saab">Saab</option>
-                        <option value="opel">Opel</option>
-                        <option value="audi">Audi</option>
-                      </select></td>
+                    <td> <img src="" id="image3">
+                        <select id="changeImage" onchange="setPicture3(this)">
+                            <option value="">none</option>
+                        <option value="/assets/img/i3-12.jpg">
+                            <div class="product_name">Intel Core i5-13400</div>
+                            <div class="price">$
+                                <div class="xd">7800</div>
+                            </div></option>
+                            <option value="/assets/img/i3-13.jpg">
+                                <div class="product_name">Intel Core i5-13400</div>
+                                <div class="price">$
+                                    <div class="xd">2000</div>
+                                </div></option>
+                                <option value="/assets/img/i5-12.jpg">
+                                    <div class="product_name">Intel Core i5-13400</div>
+                                    <div class="price">$
+                                        <div class="xd">1300</div>
+                                    </div></option>
+                                    <option value="/assets/img/i5-13.jpg">
+                                        <div class="product_name">Intel Core i5-13400</div>
+                                        <div class="price">$
+                                            <div class="xd">3213</div>
+                                        </div>
+                                    </option>
+                                    <option value="/assets/img/i7-12.jpg">
+                                        <div class="product_name">Intel Core i5-13400</div>
+                                        <div class="price">$
+                                            <div class="xd">3213</div>
+                                        </div>
+                                    </option>
+                                    <option value="/assets/img/i7-13.jpg">
+                                        <div class="product_name">Intel Core i5-13400</div>
+                                        <div class="price">$
+                                            <div class="xd">3213</div>
+                                        </div>
+                                    </option>
                 </tr>
                 <tr>
                     <td>GPU</td>
-                    <td> <select name="cars" id="cars">
-                        <option value="volvo">Volvo</option>
-                        <option value="saab">Saab</option>
-                        <option value="opel">Opel</option>
-                        <option value="audi">Audi</option>
-                      </select></td>
+                    <td> <img src="" id="image4">
+                        <select id="changeImage" onchange="setPicture4(this)">
+                            <option value="">none</option>
+                        <option value="/assets/img/i3-12.jpg">
+                            <div class="product_name">Intel Core i5-13400</div>
+                            <div class="price">$
+                                <div class="xd">7800</div>
+                            </div></option>
+                            <option value="/assets/img/i3-13.jpg">
+                                <div class="product_name">Intel Core i5-13400</div>
+                                <div class="price">$
+                                    <div class="xd">2000</div>
+                                </div></option>
+                                <option value="/assets/img/i5-12.jpg">
+                                    <div class="product_name">Intel Core i5-13400</div>
+                                    <div class="price">$
+                                        <div class="xd">1300</div>
+                                    </div></option>
+                                    <option value="/assets/img/i5-13.jpg">
+                                        <div class="product_name">Intel Core i5-13400</div>
+                                        <div class="price">$
+                                            <div class="xd">3213</div>
+                                        </div>
+                                    </option>
+                                    <option value="/assets/img/i7-12.jpg">
+                                        <div class="product_name">Intel Core i5-13400</div>
+                                        <div class="price">$
+                                            <div class="xd">3213</div>
+                                        </div>
+                                    </option>
+                                    <option value="/assets/img/i7-13.jpg">
+                                        <div class="product_name">Intel Core i5-13400</div>
+                                        <div class="price">$
+                                            <div class="xd">3213</div>
+                                        </div>
+                                    </option>>
                 </tr>
                 <tr>
                     <td>RAM</td>
-                    <td> <select name="cars" id="cars">
-                        <option value="volvo">Volvo</option>
-                        <option value="saab">Saab</option>
-                        <option value="opel">Opel</option>
-                        <option value="audi">Audi</option>
-                      </select></td>
+                    <td> <img src="" id="image5">
+                        <select id="changeImage" onchange="setPicture5(this)">
+                            <option value="">none</option>
+                        <option value="/assets/img/i3-12.jpg">
+                            <div class="product_name">Intel Core i5-13400</div>
+                            <div class="price">$
+                                <div class="xd">7800</div>
+                            </div></option>
+                            <option value="/assets/img/i3-13.jpg">
+                                <div class="product_name">Intel Core i5-13400</div>
+                                <div class="price">$
+                                    <div class="xd">2000</div>
+                                </div></option>
+                                <option value="/assets/img/i5-12.jpg">
+                                    <div class="product_name">Intel Core i5-13400</div>
+                                    <div class="price">$
+                                        <div class="xd">1300</div>
+                                    </div></option>
+                                    <option value="/assets/img/i5-13.jpg">
+                                        <div class="product_name">Intel Core i5-13400</div>
+                                        <div class="price">$
+                                            <div class="xd">3213</div>
+                                        </div>
+                                    </option>
+                                    <option value="/assets/img/i7-12.jpg">
+                                        <div class="product_name">Intel Core i5-13400</div>
+                                        <div class="price">$
+                                            <div class="xd">3213</div>
+                                        </div>
+                                    </option>
+                                    <option value="/assets/img/i7-13.jpg">
+                                        <div class="product_name">Intel Core i5-13400</div>
+                                        <div class="price">$
+                                            <div class="xd">3213</div>
+                                        </div>
+                                    </option>
+                                </select>
+                    </td>
                 </tr>
                 <tr>
                     <td>Power Supply</td>
-                    <td> <select name="cars" id="cars">
-                        <option value="volvo">Volvo</option>
-                        <option value="saab">Saab</option>
-                        <option value="opel">Opel</option>
-                        <option value="audi">Audi</option>
-                      </select>
+                    <td> <img src="" id="image6">
+                        <select id="changeImage" onchange="setPicture6(this)">
+                            <option value="">none</option>
+                        <option value="/assets/img/i3-12.jpg">
+                            <div class="product_name">Intel Core i5-13400</div>
+                            <div class="price">$
+                                <div class="xd">7800</div>
+                            </div></option>
+                            <option value="/assets/img/i3-13.jpg">
+                                <div class="product_name">Intel Core i5-13400</div>
+                                <div class="price">$
+                                    <div class="xd">2000</div>
+                                </div></option>
+                                <option value="/assets/img/i5-12.jpg">
+                                    <div class="product_name">Intel Core i5-13400</div>
+                                    <div class="price">$
+                                        <div class="xd">1300</div>
+                                    </div></option>
+                                    <option value="/assets/img/i5-13.jpg">
+                                        <div class="product_name">Intel Core i5-13400</div>
+                                        <div class="price">$
+                                            <div class="xd">3213</div>
+                                        </div>
+                                    </option>
+                                    <option value="/assets/img/i7-12.jpg">
+                                        <div class="product_name">Intel Core i5-13400</div>
+                                        <div class="price">$
+                                            <div class="xd">3213</div>
+                                        </div>
+                                    </option>
+                                    <option value="/assets/img/i7-13.jpg">
+                                        <div class="product_name">Intel Core i5-13400</div>
+                                        <div class="price">$
+                                            <div class="xd">3213</div>
+                                        </div>
+                                    </option>
+                                </select>
                     </td>
                 </tr>
                 <tr>
                     <td>Fans</td>
-                    <td> <select name="cars" id="cars">
-                        <option value="volvo">Volvo</option>
-                        <option value="saab">Saab</option>
-                        <option value="opel">Opel</option>
-                        <option value="audi">Audi</option>
-                      </select></td>
+                    <td> <img src="" id="image7">
+                        <select id="changeImage" onchange="setPicture7(this)">
+                            <option value="">none</option>
+                        <option value="/assets/img/i3-12.jpg">
+                            <div class="product_name">Intel Core i5-13400</div>
+                            <div class="price">$
+                                <div class="xd">7800</div>
+                            </div></option>
+                            <option value="/assets/img/i3-13.jpg">
+                                <div class="product_name">Intel Core i5-13400</div>
+                                <div class="price">$
+                                    <div class="xd">2000</div>
+                                </div></option>
+                                <option value="/assets/img/i5-12.jpg">
+                                    <div class="product_name">Intel Core i5-13400</div>
+                                    <div class="price">$
+                                        <div class="xd">1300</div>
+                                    </div></option>
+                                    <option value="/assets/img/i5-13.jpg">
+                                        <div class="product_name">Intel Core i5-13400</div>
+                                        <div class="price">$
+                                            <div class="xd">3213</div>
+                                        </div>
+                                    </option>
+                                    <option value="/assets/img/i7-12.jpg">
+                                        <div class="product_name">Intel Core i5-13400</div>
+                                        <div class="price">$
+                                            <div class="xd">3213</div>
+                                        </div>
+                                    </option>
+                                    <option value="/assets/img/i7-13.jpg">
+                                        <div class="product_name">Intel Core i5-13400</div>
+                                        <div class="price">$
+                                            <div class="xd">3213</div>
+                                        </div>
+                                    </option>
+                                </select></td>
+                    </select>
+                    </td>
                 </tr>
             </tbody>
         </table>
@@ -242,7 +477,8 @@
     <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
     <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
     <script src="assets/vendor/php-email-form/validate.js"></script>
-
+    <script src="assets/js/jquery-2.1.1.js "></script>
+    <script src="assets/js/jquery.mixitup.min.js "></script>
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
     <script>

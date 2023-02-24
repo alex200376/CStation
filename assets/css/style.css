@@ -1063,9 +1063,25 @@ td img {
     max-width: 70px;
 }
 
+select:hover {
+    background-color: rgb(208, 208, 208);
+    color: black;
+}
+
+option {
+    background-color: #fff;
+}
+
 select {
-    width: 50%;
+    width: 40%;
     float: right;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    border: #209dd8 2px soild;
+    border-radius: 10px;
+    padding: 5px;
 }
 
 table.paleBlueRows td,
