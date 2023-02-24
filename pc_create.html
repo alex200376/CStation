@@ -108,7 +108,7 @@
             <tfoot>
                 <tr>
                     <td>Total</td>
-                    <td class="'total">&nbsp;</td>
+                    <td id="total"></td>
                 </tr>
             </tfoot>
             <tbody>
@@ -496,9 +496,8 @@
         }
 
 
-        let x = Number(localStorage.getItem('totalprice'));
-        document.getElementById('total').innerHTML = x;
-        document.getElementById('cart').innerHTML = localStorage.cart;
+        let z = Number(localStorage.getItem('totalprice'));
+        document.getElementById('total').innerHTML = y;
     </script>
 
 </body>
