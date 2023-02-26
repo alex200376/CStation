@@ -27,6 +27,7 @@
     <link href="assets/css/style1.css" rel="stylesheet">
     <!-- Resource style -->
     <script src="assets/js/modernizr.js"></script>
+
     <title>Products</title>
 
 </head>
@@ -64,28 +65,35 @@
 
     </section>
 
-    <div class="shopping">
 
-        <div class="wrapper" id="shoppingcart" style="color:black;">
-            <div id="checkout">
-                <a href="checkout.html">CHECKOUT</a>
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <div class="shopping">
+
+                <div class="wrapper" id="shoppingcart" style="color:black;">
+                    <div id="checkout">
+                        <a href="checkout.html">CHECKOUT</a>
+                    </div>
+                    <h3 style="float: left;">CART</h3>
+                    <div id="cart" style="margin-top: 12%;margin-right: 20%;">
+                        <span class="empty">No items in cart.</span>
+                    </div>
+
+                    <h4 style="float: left;">Total:$
+                        <div id="total0" style="display: inline;">0</div>
+                        <div id="total" style="display: inline;"></div>
+                    </h4>
+
+                </div>
             </div>
-            <h3>CART</h3>
-            <div id="cart">
-                <span class="empty">No items in cart.</span>
-            </div>
-
-            Total:$
-            <div id="total0" style="display: inline;">0</div>
-            <div id="total" style="display: inline;"></div>
-
         </div>
     </div>
     <div class="background"></div>
     <main class="cd-main-content " style="overflow-y:scroll">
 
         <div class="cd-tab-filter-wrapper">
-            <li><a class="shopbtn" onclick="myFunction()" style="display: inline;"><i class="ri-shopping-bag-2-fill" style="font-size: 20px; "></i>Cart</a></li>
+            <li><a class="shopbtn" onclick="openNav()" style="display: inline;"><i class="ri-shopping-bag-2-fill" style="font-size: 20px; "></i>Cart</a></li>
             <div class="cd-tab-filter">
                 <ul class="cd-filters">
                     <li class="placeholder ">
@@ -399,6 +407,20 @@
             buttons[0].classList.add('btn-clicked');
         });
 
+        function openNav() {
+            if (window.innerWidth < 800) {
+                document.getElementById("myNav").style.width = "100%";
+            } else if (window.innerWidth < 1210) {
+                document.getElementById("myNav").style.width = "45%";
+            } else {
+                document.getElementById("myNav").style.width = "30%";
+            }
+
+        }
+
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
         buttons.forEach((button) => {
             button.addEventListener('click', (e) => {
 
@@ -432,18 +454,6 @@
             });
             e.target.classList.add('btn-clicked');
         }
-
-        function myFunction() {
-            var x = document.getElementById("shoppingcart");
-            if (x.style.display === "none") {
-                x.style.display = "block";
-            } else {
-                x.style.display = "none";
-            }
-        }
-        let x = Number(localStorage.getItem('totalprice'));
-        document.getElementById('total').innerHTML = x;
-        document.getElementById('cart').innerHTML = localStorage.cart;
     </script>
 
 </body>

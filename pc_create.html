@@ -60,7 +60,167 @@
         selectedvalue7 = select.value;
         document.getElementById("image7").src = selectedvalue7;
     }
+
+    function openNav() {
+        if (window.innerWidth < 700) {
+            document.getElementById("myNav").style.width = "100%";
+        } else if (window.innerWidth < 1210) {
+            document.getElementById("myNav").style.width = "45%";
+        } else {
+            document.getElementById("myNav").style.width = "30%";
+        }
+
+    }
+
+    function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+    }
 </script>
+<style>
+    .overlay {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 2;
+        right: 0;
+        background-color: rgb(255, 255, 255);
+        background-color: rgba(228, 228, 228, 0.9);
+        overflow-x: hidden;
+        transition: 0.5s;
+    }
+    
+    .overlay-content {
+        position: relative;
+        left: 10%;
+        text-align: center;
+    }
+    
+    .overlay .closebtn {
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 60px;
+    }
+    
+    @media screen and (max-height: 450px) {
+        .overlay a {
+            font-size: 20px
+        }
+        .overlay .closebtn {
+            font-size: 40px;
+            top: 15px;
+            right: 35px;
+        }
+    }
+    
+    .wrapper {
+        padding: 10px;
+        min-width: 300px;
+        margin-right: 30px;
+        overflow-y: scroll;
+        max-height: 700px;
+        left: 50%;
+        background-color: white;
+    }
+    
+    .wrapper::-webkit-scrollbar {
+        display: none;
+    }
+    
+    .shopping {
+        position: relative;
+        padding-left: 30px;
+        width: 24%;
+        background-color: white;
+        margin-top: 90px;
+        margin-right: 10%;
+    }
+    
+    li {
+        list-style-type: none;
+    }
+    
+    .shopbtn {
+        text-align: center;
+        float: right;
+        margin-right: 20px;
+        margin-left: 40px;
+        padding: 5px 10px;
+        margin-top: 10px;
+        border-radius: 50px;
+        color: #fff;
+        font-size: 10px;
+        border: 2px solid #47b2e4;
+        font-weight: 600;
+    }
+    
+    .cart-item {
+        padding: 0px 0 5px 110px;
+        height: 62px;
+        width: 210px;
+        margin-left: -45px;
+        position: relative;
+        background: #fff;
+        -webkit-transition: all 1000ms ease-out;
+        -moz-transition: all 1000ms ease-out;
+        -ms-transition: all 1000ms ease-out;
+        -o-transition: all 1000ms ease-out;
+        transition: all 1000ms ease-out;
+    }
+    
+    .cart-item.flash {
+        background: #fffeb0;
+    }
+    
+    .cart-item-border {
+        position: absolute;
+        bottom: 0;
+        left: 45px;
+        background: #edeff0;
+        height: 1px;
+        max-width: 230px;
+    }
+    
+    .cart-item .img-wrap {
+        width: 50px;
+        height: 50px;
+        overflow: hidden;
+        border: 1px solid #edeff0;
+        float: left;
+        margin-left: -65px;
+    }
+    
+    .cart-item img {
+        width: 100%;
+        position: relative;
+        top: -10px;
+    }
+    
+    .cart-item strong {
+        color: #5ff7d2;
+        font-size: 16px;
+    }
+    
+    .cart-item span {
+        color: #393c45;
+        display: block;
+        font-size: 14px;
+    }
+    
+    .cart-item .delete-item {
+        background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/delete-item.png") 0 0 no-repeat;
+        width: 15px;
+        height: 15px;
+        float: right;
+        margin-right: 18px;
+        display: none;
+    }
+    
+    .cart-item:hover .delete-item {
+        display: block;
+        cursor: pointer
+    }
+</style>
 
 <body>
     <!-- ======= Header ======= -->
@@ -95,7 +255,31 @@
             </div>
 
         </section>
-        <h1 style="text-align: center;">PC customization</h1>
+
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <div class="shopping">
+                    <div class="wrapper" id="shoppingcart" style="color:black;">
+                        <div id="checkout">
+                            <a href="checkout.html">CHECKOUT</a>
+                        </div>
+                        <h6 style="float: left;">CART</h6>
+                        <div id="cart" style="margin-top: 12%;margin-right: 20%;">
+                            <span class="empty">No items in cart.</span>
+                        </div>
+
+                        <h6 style="float: left;">Total:$
+                            <div id="total0" style="display: inline;">0</div>
+                            <div id="total" style="display: inline;"></div>
+                        </h6>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h1 style="text-align: center;background-color: #37517ece;color: white;padding-bottom: 5px;">PC customization <a class="shopbtn" onclick="openNav()"><i class="ri-shopping-bag-2-fill" style="font-size: 20px;"></i>Cart</a></h1>
+
 
         <table class="paleBlueRows">
             <thead>

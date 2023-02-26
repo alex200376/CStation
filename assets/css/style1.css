@@ -40,12 +40,50 @@ Main Components
 
 -------------------------------- */
 
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 2;
+    right: 0;
+    background-color: rgb(255, 255, 255);
+    background-color: rgba(228, 228, 228, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    left: 10%;
+    text-align: center;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+    .overlay a {
+        font-size: 20px
+    }
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
 .wrapper {
     padding: 10px;
     min-width: 300px;
     margin-right: 30px;
     overflow-y: scroll;
     max-height: 700px;
+    left: 50%;
+    background-color: white;
 }
 
 .wrapper::-webkit-scrollbar {
@@ -53,9 +91,12 @@ Main Components
 }
 
 .shopping {
+    position: relative;
     padding-left: 30px;
-    float: right;
     width: 24%;
+    background-color: white;
+    margin-top: 70px;
+    margin-right: 10%;
 }
 
 li {
@@ -116,6 +157,7 @@ li {
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 1;
 }
 
 .cd-main-content.is-fixed .cd-gallery {
@@ -126,6 +168,7 @@ li {
     position: fixed;
     height: 100vh;
     overflow: hidden;
+    z-index: 1;
 }
 
 .cd-main-content.is-fixed .cd-filter form {
@@ -501,7 +544,7 @@ xfilter
     color: transparent;
     white-space: nowrap;
     background: transparent url("../img/cd-icon-filter.svg") no-repeat center center;
-    z-index: 3;
+    z-index: 1;
 }
 
 .cd-filter-trigger.filter-is-visible {

@@ -37,20 +37,19 @@ $(document).ready(function() {
                         $(productCard).find('.cs').innerHTML = '0';
                         if ($("#cart .cart-item").size() == 0) {
                             sum = 0;
+
                             $("#cart .empty").fadeIn(500);
                             $("#checkout").fadeOut(500);
                             $('#total').fadeOut(500);
                             $('#total0').show();
                             $('#total').hide();
-
-
                         }
                     })
                 });
 
             setTimeout(function() {
                 $("#cart .cart-item").last().removeClass("flash");
-            }, 10);
+            }, 100);
 
         }, 1000);
     });

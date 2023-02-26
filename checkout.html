@@ -13,11 +13,135 @@
     <link rel="stylesheet" href="assets/css/style2.css">
     <script src="assets/js/script.js"></script>
     <link rel="stylesheet" href="assets/css/reset1.css">
-    <link href="assets/css/style1.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
     <script src="assets/js/main.js"></script>
     <script src="assets/js/script.js"></script>
     <script src="assets/js/modernizr.js"></script>
 </head>
+<style>
+    .wrapper {
+        padding: 10px;
+        min-width: 300px;
+        margin-right: 30px;
+        overflow-y: scroll;
+        max-height: 700px;
+    }
+    
+    .wrapper::-webkit-scrollbar {
+        display: none;
+    }
+    
+    .cart-item {
+        padding: 0px 0 5px 110px;
+        height: 62px;
+        width: 210px;
+        margin-left: -45px;
+        position: relative;
+        background: #fff;
+        -webkit-transition: all 1000ms ease-out;
+        -moz-transition: all 1000ms ease-out;
+        -ms-transition: all 1000ms ease-out;
+        -o-transition: all 1000ms ease-out;
+        transition: all 1000ms ease-out;
+    }
+    
+    .cart-item.flash {
+        background: #fffeb0;
+    }
+    
+    .price {
+        display: inline-flex;
+    }
+    
+    .cart-item-border {
+        position: absolute;
+        bottom: 0;
+        left: 45px;
+        background: #edeff0;
+        height: 1px;
+        max-width: 230px;
+    }
+    
+    .cart-item .img-wrap {
+        width: 50px;
+        height: 50px;
+        overflow: hidden;
+        border: 1px solid #edeff0;
+        float: left;
+        margin-left: -65px;
+    }
+    
+    .cart-item img {
+        width: 100%;
+        position: relative;
+        top: -10px;
+    }
+    
+    .cart-item strong {
+        color: #5ff7d2;
+        font-size: 16px;
+    }
+    
+    .cart-item span {
+        color: #393c45;
+        display: block;
+        font-size: 14px;
+    }
+    
+    .cart-item .delete-item {
+        background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/delete-item.png") 0 0 no-repeat;
+        width: 15px;
+        height: 15px;
+        float: right;
+        margin-right: 18px;
+        display: none;
+    }
+    
+    .cart-item:hover .delete-item {
+        display: block;
+        cursor: pointer
+    }
+    
+    #checkout a {
+        border: 2px solid #331ca3;
+        font-size: 13px;
+        font-weight: 700;
+        padding: 3px;
+        position: relative;
+        margin-left: 200px;
+        top: 20px;
+        color: #1b31b1;
+    }
+    
+    .shopping {
+        padding-left: 30px;
+        float: right;
+        width: 24%;
+    }
+    
+    #checkout a:hover {
+        border: 2px soild skyblue;
+        color: skyblue;
+    }
+    
+    .cart-item .img-wrap img {
+        min-height: 50px;
+        float: left;
+    }
+    
+    .cart {
+        font-size: 15px;
+        border: 2px solid #fff;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: 700;
+        opacity: 0;
+        -webkit-transition: all 200ms ease-out;
+        -moz-transition: all 200ms ease-out;
+        -o-transition: all 200ms ease-out;
+        transition: all 200ms ease-out;
+    }
+</style>
 
 <body>
 
