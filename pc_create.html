@@ -77,7 +77,6 @@
                     <li><a class="nav-link scrollto" href="pc_create.html">PC Customize</a></li>
                     <li><a class="nav-link scrollto" href="about_us.html">About us</a></li>
                     <li><a class="nav-link scrollto" href="index.html#services">Services</a></li>
-                    <li><a class="nav-link scrollto" href="TAC.html">Terms and conditions</a></li>
                     <li><a class="nav-link scrollto" href="FAQ.html">FAQ</a></li>
                     <li><a class="getstarted scrollto" href="login.html"><i class="ri-login-box-line" style="font-size: 20px;"></i>Login/Sign up</a></li>
                 </ul>
@@ -116,7 +115,7 @@
                     <td>Case</td>
                     <td>
                         <img src="" id="image">
-                        <select id="changeImage" onchange="setPicture(this)">
+                        <select id="changeImage" onchange="setPicture(this);count(this)">
                             <option value="">none</option>
                         <option value="assets/img/i3-12.jpg">
                             <div class="product_name">Intel Core i5-13400</div>
@@ -483,18 +482,6 @@
     <script src="assets/js/main.js"></script>
     <script src="assets/js/hi.js"></script>
     <script>
-        let x = Number(localStorage.getItem('totalprice'));
-
-        document.getElementById('total').innerHTML = x;
-
-        function myFunction() {
-            var x = document.getElementById("shoppingcart");
-            if (x.style.display === "none") {
-                x.style.display = "block";
-            } else {
-                x.style.display = "none";
-            }
-        }
     </script>
 
 </body>
