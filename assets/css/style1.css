@@ -46,8 +46,9 @@ Main Components
     position: fixed;
     z-index: 2;
     right: 0;
+    border-radius: 10px 0 10px 10px;
     background-color: rgb(255, 255, 255);
-    background-color: rgba(228, 228, 228, 0.9);
+    background-color: rgba(242, 242, 242, 0.9);
     overflow-x: hidden;
     transition: 0.5s;
 }
@@ -84,6 +85,8 @@ Main Components
     max-height: 700px;
     left: 50%;
     background-color: white;
+    border-radius: 10px;
+    box-shadow: #000;
 }
 
 .wrapper::-webkit-scrollbar {
@@ -97,6 +100,8 @@ Main Components
     background-color: white;
     margin-top: 70px;
     margin-right: 10%;
+    border-radius: 10px;
+    box-shadow: #000;
 }
 
 li {
