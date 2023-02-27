@@ -71,7 +71,24 @@
         </div>
 
     </section>
+    <div class="chatbot-toggle">
+        <button class="chatbot-btn" onclick="toggleChatbot()"><i class="bi-chat-left-fill"></i></button>
+        <div id="chatbot-container">
+            <div class="instrution">Please input number according to the list given</div>
+            <div class="option">
+                <p class="next">1.How can i buy product?</p>
+                <p class="next">2.How can i buy product?</p>
+                <p class="next">3.How can i buy product?</p>
+                <p class="next">4.How can i buy product?</p>
+            </div>
 
+            <p id="chatLog">Hi!Please enter Question number!</p>
+            <div class="input">
+                <input type="text" id="userBox" onkeydown="if(event.keyCode == 13){ talk()}" placeholder="Type your Question" />
+            </div>
+            <input type="button" id="send" onclick="talk()" value="Send>" />
+        </div>
+    </div>
     <!-- ======= About Us Section ======= -->
     <section id="about" class="about">
 
@@ -1290,7 +1307,7 @@
     <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
     <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
     <script src="assets/vendor/php-email-form/validate.js"></script>
-
+    <script src="assets/js/chatbot.js"></script>
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
 

@@ -52,8 +52,9 @@ Main Components
     bottom: 70px;
     left: 20px;
     z-index: 3;
-    background-color: rgba(47, 14, 193, 0.749);
+    background-color: rgb(14, 29, 193);
     border-radius: 10px;
+    color: white;
 }
 
 .option {
