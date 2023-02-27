@@ -64,6 +64,28 @@
 
 
     </section>
+    <div class="chatbot-toggle">
+        <button class="chatbot-btn" onclick="toggleChatbot()"><i class="bi-chat-left-fill"></i></button>
+        <div id="chatbot-container">
+            <div class="instrution">Please input number according to the list given</div>
+            <div class="option">
+                <p class="next">1.How can i buy product?</p>
+                <p class="next">2.How can i buy product?</p>
+                <p class="next">3.How can i buy product?</p>
+                <p class="next">4.How can i buy product?</p>
+            </div>
+
+            <p id="chatLog">Hi!Please enter Question number!</p>
+            <div class="input">
+                <input type="text" id="userBox" onkeydown="if(event.keyCode == 13){ talk()}" placeholder="Type your Question" />
+            </div>
+            <input type="button" id="send" onclick="talk()" value="Send>" />
+        </div>
+    </div>
+
+
+
+
 
 
     <div id="myNav" class="overlay">
@@ -381,6 +403,8 @@
     <script src="assets/js/script.js "></script>
 
 
+    <script src="https://unpkg.com/rivescript@latest/dist/rivescript.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/idewcomputing/code-chatbot/src/chatbot.js"></script>
     <!-- Template Main JS File -->
     <script src="assets/js/main1.js "></script>
     <script>
@@ -446,6 +470,38 @@
 
             });
         });
+
+
+        function toggleChatbot() {
+            var chatbotContainer = document.getElementById("chatbot-container");
+            if (chatbotContainer.style.display === "block") {
+                chatbotContainer.style.display = "none";
+            } else {
+                chatbotContainer.style.display = "block";
+            }
+        }
+
+        function talk() {
+            var know = {
+                "How are you": "Good :)",
+                "What can i do for you": "Please Give us A Follow & Like.",
+                "Your followers": "I have my family of 5000 members, i don't have follower ,have supportive Famiy ",
+                "ok": "Thank You So Much ",
+                "Bye": "Okay! Will meet soon..",
+                "1": "yo",
+                "2": "asg",
+                "3": "asd",
+                "4": "Hasdh!",
+
+            };
+            var user = document.getElementById('userBox').value;
+            document.getElementById('chatLog').innerHTML = user + "<br>";
+            if (user in know) {
+                document.getElementById('chatLog').innerHTML = know[user] + "<br>";
+            } else {
+                document.getElementById('chatLog').innerHTML = "Sorry,I didn't understand <br>";
+            }
+        }
 
 
         function setActiveBtn(e) {
