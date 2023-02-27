@@ -46,7 +46,7 @@ Main Components
     box-sizing: border-box;
     margin: auto;
     padding: 0;
-    display: flex;
+    display: none;
     flex-direction: column;
     position: absolute;
     bottom: 70px;
