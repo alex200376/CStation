@@ -77,6 +77,118 @@
     }
 </script>
 <style>
+    #chatbot-container {
+        width: 400px;
+        height: 300px;
+        box-sizing: border-box;
+        margin: auto;
+        padding: 0;
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        bottom: 70px;
+        left: 20px;
+        z-index: 3;
+        background-color: rgba(47, 14, 193, 0.749);
+        border-radius: 10px;
+    }
+    
+    .option {
+        font-size: 15px;
+        font-weight: bolder;
+        margin: 10px;
+        margin-top: 10px;
+    }
+    
+    .next {
+        margin: 15px;
+    }
+    
+    .instrution {
+        font-size: 10px;
+        margin: 10px;
+    }
+    
+    .input {
+        width: 100%;
+        height: 70px;
+        overflow: hidden;
+        margin-top: 40px;
+    }
+    
+    #send {
+        width: 70px;
+        height: 50px;
+        border: none;
+        padding-right: 20px;
+        outline: none;
+        border-radius: 20px;
+        position: absolute;
+        bottom: 10px;
+        right: 3px;
+        background-color: #104b8a;
+        text-align: center;
+        color: white;
+        font-weight: bolder;
+        font-size: 19px;
+    }
+    
+    #send:hover {
+        background-color: #007bff;
+    }
+    
+    .input input {
+        width: 75%;
+        height: 50px;
+        border: none;
+        padding-left: 30px;
+        padding-top: 0;
+        outline: none;
+        font-size: 1.5rem;
+        border-radius: 20px;
+        position: absolute;
+        bottom: 10px;
+        margin-left: 10px;
+    }
+    
+    #chatLog {
+        border: none;
+        border-radius: 10px;
+        padding: 10px;
+        background-color: rgba(255, 255, 255, 0.799);
+        margin: 10px;
+        margin-bottom: 20px;
+        color: #000;
+    }
+    
+    .glass p {
+        font-size: 1.6rem;
+        margin-top: 30px;
+    }
+    
+    .chatbot-toggle {
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+        z-index: 9999;
+    }
+    
+    .chatbot-btn {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 50%;
+        font-size: 24px;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        transition: background-color 0.2s ease-in-out;
+    }
+    
+    .chatbot-btn:hover {
+        background-color: #0062cc;
+    }
+    
     .overlay {
         height: 100%;
         width: 0;
@@ -258,7 +370,24 @@
             </div>
 
         </section>
+        <div class="chatbot-toggle">
+            <button class="chatbot-btn" onclick="toggleChatbot()"><i class="bi-chat-left-fill"></i></button>
+            <div id="chatbot-container">
+                <div class="instrution">Please input number according to the list given</div>
+                <div class="option">
+                    <p class="next">1.How can i buy product?</p>
+                    <p class="next">2.How can i buy product?</p>
+                    <p class="next">3.How can i buy product?</p>
+                    <p class="next">4.How can i buy product?</p>
+                </div>
 
+                <p id="chatLog">Hi!Please enter Question number!</p>
+                <div class="input">
+                    <input type="text" id="userBox" onkeydown="if(event.keyCode == 13){ talk()}" placeholder="Type your Question" />
+                </div>
+                <input type="button" id="send" onclick="talk()" value="Send>" />
+            </div>
+        </div>
         <div id="myNav" class="overlay">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <div class="overlay-content">
@@ -667,7 +796,8 @@
     <script src="assets/js/jquery.mixitup.min.js "></script>
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
-    <script src="assets/js/hi.js"></script>
+
+    <script src="assets/js/chatbot.js"></script>
     <script>
     </script>
 
