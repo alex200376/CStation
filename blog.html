@@ -35,6 +35,96 @@
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
 </head>
+<style>
+    * {
+        box-sizing: border-box
+    }
+    /* Style the tab */
+    
+    .tab {
+        float: left;
+        border: 1px solid #ccc;
+        background-color: #f1f1f1;
+        width: 20%;
+        height: 70%;
+    }
+    /* Style the buttons that are used to open the tab content */
+    
+    .tab button {
+        display: block;
+        background-color: inherit;
+        color: black;
+        padding: 22px 16px;
+        width: 100%;
+        border: none;
+        outline: none;
+        text-align: left;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    /* Change background color of buttons on hover */
+    
+    .tab button:hover {
+        background-color: #ddd;
+    }
+    /* Create an active/current "tab button" class */
+    
+    .tab button.active {
+        background-color: #ccc;
+    }
+    /* Style the tab content */
+    
+    .tabcontent {
+        float: left;
+        padding: 0px 12px;
+        border: 1px solid #ccc;
+        width: 80%;
+        border-left: none;
+        -webkit-animation: fadeEffect 1s;
+        margin-bottom: 20px;
+    }
+    
+    .bimg {
+        border: black 3px dotted;
+        margin-bottom: 50px;
+        max-width: 90%;
+    }
+    
+    .blog {
+        margin-bottom: 1080px;
+        min-height: 70%;
+    }
+    /* Fade in tabs */
+    
+    @-webkit-keyframes fadeEffect {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    
+    @keyframes fadeEffect {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    
+    .para {
+        text-align: left;
+        margin-left: 30px;
+        padding: 10px;
+        font-size: 20px;
+    }
+    
+    .head {
+        margin-top: 30px;
+    }
+</style>
 
 <body>
 
@@ -50,7 +140,7 @@
                     <li><a class="nav-link scrollto " href="product.html">Products</a></li>
                     <li><a class="nav-link scrollto" href="pre_built.html">Pre built PC</a></li>
                     <li><a class="nav-link scrollto" href="pc_create.html">PC Customize</a></li>
-                    <li><a class="nav-link scrollto" href="blog.html">Blog</a></li>
+                    <li><a class="nav-link scrollto active" href="blog.html">Blog</a></li>
                     <li><a class="nav-link scrollto" href="about_us.html">About us</a></li>
                     <li><a class="nav-link scrollto" href="index.html#services">Services</a></li>
                     <li><a class="nav-link scrollto" href="FAQ.html">FAQ</a></li>
@@ -72,8 +162,49 @@
         </div>
 
     </section>
+    <div class="blog">
 
+        <div class="tab">
+            <div class="btns">
+                <button class="tablinks" onclick="openblog(event, 'blog1')" id="defaultOpen">What is computer?</button>
+                <button class="tablinks" onclick="openblog(event, 'blog2')">blog2</button>
+                <button class="tablinks" onclick="openblog(event, 'blog3')">blog3</button>
+                <button class="tablinks" onclick="openblog(event, 'blog4')">blog4</button>
+                <button class="tablinks" onclick="openblog(event, 'blog5')">blog5</button>
+            </div>
+        </div>
 
+        <div id="blog1" class="tabcontent">
+            <h3 class="head">1) Introduction-What is Computer?</h3>
+            <p class="para">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A computer is an electronic device capable of exchanging and processing data and performing calculations and tasks. It consists of hardware components such as the CPU, monitor, keyboard, mouse, and other input/output
+                devices. The following will introduce more about the hardware. Computers can be used to store, analyze, and transfer information. They are often used for business applications like accounting and word processing, playing video games or
+                music, and communicating with others over a network.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hardware are including input, process and output. First of all, the input components mean what the user input, such as the
+                mouse, keyboard can help you control the computer and typing; the webcam can capture your face; the scanner can scan the documents to the computer; the microphone records your voice.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Second,
+                the process components are inside the cases and these components help the user run the computer such as calculations and storage. This is an example of these components, CPU (Central Processing Unit), RAM(Random Access Memory), motherboard,
+                storage device and power supply.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Third, output components show anything after the computer finished processing, the type of output includes text, photo, sound, video. Here is some example of output
+                components, monitor, speaker, and printer.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; This is the basic introduction to the computer, we will introduce it deeper in the following chapter.</p>
+            <img src="assets/img/Blog1.jpg" class="bimg">
+        </div>
+
+        <div id="blog2" class="tabcontent">
+            <h3>blog2</h3>
+            <p>blog2 is the capital of France.</p>
+        </div>
+
+        <div id="blog3" class="tabcontent">
+            <h3>blog3</h3>
+            <p>blog3 is the capital of Japan.</p>
+        </div>
+        <div id="blog4" class="tabcontent">
+            <h3>blog4</h3>
+            <p>blog4 is the capital of Japan.</p>
+        </div>
+        <div id="blog5" class="tabcontent">
+            <h3>blog5</h3>
+            <p>blog5 is the capital of Japan.</p>
+        </div>
+    </div>
     </main>
     <!-- End #main -->
 
@@ -153,3 +284,37 @@
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
     <script src="assets/js/jquery-2.1.4.js"></script>
+    <script>
+        function openblog(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+        document.getElementById("defaultOpen").click();
+
+        function openNav() {
+            if (window.innerWidth < 800) {
+                document.getElementById("myNav").style.width = "100%";
+            } else if (window.innerWidth < 1210) {
+                document.getElementById("myNav").style.width = "45%";
+            } else {
+                document.getElementById("myNav").style.width = "30%";
+            }
+
+        }
+
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
+    </script>
+</body>
+
+</html>
