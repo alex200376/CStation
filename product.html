@@ -102,25 +102,16 @@
     <main class="cd-main-content " style="overflow-y:scroll">
         <div class="cd-tab-filter-wrapper">
             <li><a class="shopbtn" onclick="openNav()"><i class="ri-shopping-bag-2-fill" style="font-size: 20px;"></i>Cart</a></li>
-            <div class="cd-tab-filter">
-                <ul class="cd-filters">
-                    <li class="placeholder ">
-                        <a data-type="all" href="#0">All</a>
-                        <!-- selected option on mobile -->
-                    </li>
-                    <li class="filter"><a class="selected" href="#0" data-type="all">All</a></li>
-                    <li class="filter" data-filter=".cpu"><a href="#0" data-type="cpu">CPU</a></li>
-                    <li class="filter" data-filter=".gpu"><a href="#0" data-type="gpu">GPU</a></li>
-                    <li class="filter" data-filter=".ram"><a href="#0" data-type="ram">RAM</a></li>
-                    <li class="filter" data-filter=".mtb"><a href="#0" data-type="mtb">Mother Board</a></li>
-                    <li class="filter" data-filter=".fan"><a href="#0" data-type="fan">Fan</a></li>
-                    <li class="filter" data-filter=".cooler"><a href="#0" data-type="cooler">Cooler</a></li>
-                    <li class="filter" data-filter=".cases"><a href="#0" data-type="cases">Cases</a></li>
-                    <li class="filter" data-filter=".acc"><a href="#0" data-type="acc">Accessary</a></li>
-                </ul>
-                <!-- cd-filters -->
 
-            </div>
+            <ul class="cd-filters">
+
+                <div class="cd-filter-content" style="display: inline-flexbox;text-align: center;margin-left:60px">
+
+                    <i class="bi-search"></i> <input type="search" placeholder="Try intel... " style="border: gray 2px;height: 50px;background-color: azure;margin: 2px;min-width: 100px">
+                </div>
+            </ul>
+            <!-- cd-filters -->
+
             <!-- cd-tab-filter -->
 
         </div>
@@ -206,15 +197,20 @@
         <div class="cd-filter ">
             <form>
                 <div class="cd-filter-block">
-                    <h4>Search</h4>
 
-                    <div class="cd-filter-content">
-                        <input type="search" placeholder="Try intel... ">
-                    </div>
                     <!-- cd-filter-content -->
                 </div>
                 <!-- cd-filter-block -->
-
+                <div class="cd-filter-block">
+                    <h4>Catagory</h4>
+                    <select class="filter" name="selectThis" id="selectThis">
+                    <option value>Choose an option</option>
+                    <option value=".option1">Option 1</option>
+                    <option value=".option2">Option 2</option>
+                    <option value=".option3">Option 3</option>
+                    <option value=".option4">Option 4</option>
+                    </select>
+                </div>
                 <div class="cd-filter-block">
                     <h4>CPU brand</h4>
 
