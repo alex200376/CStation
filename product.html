@@ -27,24 +27,33 @@
     <link href="assets/css/style1.css" rel="stylesheet">
     <!-- Resource style -->
     <script src="assets/js/modernizr.js"></script>
-
     <title>Products</title>
-
+    <style>
+        #cart_item {
+            margin-left: 30px;
+        }
+        
+        .gap {
+            margin-left: 30px;
+        }
+    </style>
 </head>
+
 
 
 <body>
     <!-- ======= Header ======= -->
-    <header id="header" class="fixed-top ">
+    <header id="header" class="fixed-top">
         <div class="container d-flex align-items-center">
+
             <!-- Uncomment below if you prefer to use an image logo -->
             <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="logo"></a>
 
             <nav id="navbar" class="navbar">
                 <ul>
                     <li><a class="nav-link scrollto" href="index.html">Home</a></li>
-                    <li><a class="nav-link scrollto active" href="product.html">Products</a></li>
-                    <li><a class="nav-link scrollto" href="pre_built.html">Pre built PC</a></li>
+                    <li><a class="nav-link scrollto" href="product.html">Products</a></li>
+                    <li><a class="nav-link scrollto  active" href="pre_built.html">Pre built PC</a></li>
                     <li><a class="nav-link scrollto" href="pc_create.html">PC Customize</a></li>
                     <li><a class="nav-link scrollto" href="blog.html">Guide</a></li>
                     <li><a class="nav-link scrollto" href="about_us.html">About us</a></li>
@@ -65,11 +74,7 @@
 
 
     </section>
-
-
-
-
-
+    
     <div id="myNav" class="overlay">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <div class="overlay-content">
@@ -83,7 +88,6 @@
                     <div id="cart" style="margin-top: 12%;margin-right: 20%;">
                         <span class="empty">No items in cart.</span>
                     </div>
-
                     <h4 style="float: left;">Total:$
                         <div id="total0" style="display: inline;">0</div>
                         <div id="total" style="display: inline;"></div>
@@ -93,37 +97,33 @@
             </div>
         </div>
     </div>
+
     <div class="background"></div>
     <main class="cd-main-content " style="overflow-y:scroll">
         <div class="cd-tab-filter-wrapper">
-            <li><a class="shopbtn" onclick="openNav()" style="display: inline;"><i class="ri-shopping-bag-2-fill" style="font-size: 20px;"></i>Cart</a></li>
+            <li><a class="shopbtn" onclick="openNav()"><i class="ri-shopping-bag-2-fill" style="font-size: 20px;"></i>Cart</a></li>
             <div class="cd-tab-filter">
                 <ul class="cd-filters">
-                    <li class="placeholder">
+                    <li class="placeholder ">
                         <a data-type="all" href="#0">All</a>
                         <!-- selected option on mobile -->
                     </li>
                     <li class="filter"><a class="selected" href="#0" data-type="all">All</a></li>
-                    <li class="filter" data-filter=".cpu"><a href="#0" data-type="cpu">CPU</a></li>
-                    <li class="filter" data-filter=".gpu"><a href="#0" data-type="gpu">GPU</a></li>
-                    <li class="filter" data-filter=".ram"><a href="#0" data-type="ram">RAM</a></li>
-                    <li class="filter" data-filter=".mdb"><a href="#0" data-type="mdb">Mother board</a></li>
-                    <li class="filter" data-filter=".fans"><a href="#0" data-type="fans">Fans</a></li>
-                    <li class="filter" data-filter=".ps"><a href="#0" data-type="ps">Power Supply</a></li>
-                    <li class="filter" data-filter=".cases"><a href="#0" data-type="cases">Cases</a></li>
-                    <li class="filter" data-filter=".store"><a href="#0" data-type="store">Storage</a></li>
-                    <li class="filter" data-filter=".cooler"><a href="#0" data-type="cooler">Cooler</a></li>
-                    <li class="filter" data-filter=".acc"><a href="#0" data-type="acc">Accessories</a></li>
-                    <li class="filter" data-filter=".soft"><a href="#0" data-type="soft">Software</a></li>
+                    <li class="filter" data-filter=".gaming"><a href="#0" data-type="gaming">gaming</a></li>
+                    <li class="filter" data-filter=".business"><a href="#0" data-type="business">business</a></li>
+                    <li class="filter" data-filter=".workstation"><a href="#0" data-type="workstation">workstation</a></li>
+
 
                 </ul>
                 <!-- cd-filters -->
+
             </div>
             <!-- cd-tab-filter -->
 
         </div>
         <!-- cd-tab-filter-wrapper -->
 
+        <a href="product_com.html" class="compare" style="float: right;margin-top: 10px;">Compare them</a>
         <section class="cd-gallery products">
 
             <ul>
@@ -198,11 +198,11 @@
                 <li class="gap"></li>
                 <li class="gap"></li>
             </ul>
-            <div class="cd-fail-message" style="color: black;">No results found</div>
+            <div class="cd-fail-message">No results found</div>
         </section>
         <!-- cd-gallery -->
 
-        <div class="cd-filter">
+        <div class="cd-filter ">
             <form>
                 <div class="cd-filter-block">
                     <h4>Search</h4>
@@ -213,8 +213,9 @@
                     <!-- cd-filter-content -->
                 </div>
                 <!-- cd-filter-block -->
+
                 <div class="cd-filter-block">
-                    <h4>brand</h4>
+                    <h4>CPU brand</h4>
 
                     <ul class="cd-filter-content cd-filters list">
                         <li>
@@ -226,64 +227,21 @@
                             <input class="filter" data-filter=".amd" type="checkbox" id="checkbox2">
                             <label class="checkbox-label" for="checkbox2">AMD</label>
                         </li>
-                        <li>
-                            <input class="filter" data-filter=".nvidia" type="checkbox" id="checkbox2">
-                            <label class="checkbox-label" for="checkbox2">nvidia</label>
-                        </li>
 
 
                     </ul>
                     <!-- cd-filter-content -->
                 </div>
                 <!-- cd-filter-block -->
-                <div class="cd-filter-block">
-                    <h4>Radio buttons</h4>
 
-                    <ul class="cd-filter-content cd-filters list">
-                        <li>
-                            <input class="filter" data-filter="all" type="radio" name="radioButton" id="radio1" checked>
-                            <label class="radio-label" for="radio1">All</label>
-                        </li>
-
-                        <li>
-                            <input class="filter" data-filter=".Core_I3" type="radio" name="radioButton" id="Core_I3">
-                            <label class="radio-label" for="Core_I3">Core I3</label>
-                        </li>
-
-                        <li>
-                            <input class="filter" data-filter=".Core_I5" type="radio" name="radioButton" id="Core_I5">
-                            <label class="radio-label" for="Core_I5">Core I5</label>
-                        </li>
-
-                        <li>
-                            <input class="filter" data-filter=".Core_I7" type="radio" name="radioButton" id="Core_I7">
-                            <label class="radio-label" for="Core_I7">Core I7</label>
-                        </li>
-
-                        <li>
-                            <input class="filter" data-filter=".Ryzen3" type="radio" name="radioButton" id="Ryzen3">
-                            <label class="radio-label" for="Ryzen3">Ryzen 3</label>
-                        </li>
-
-                        <li>
-                            <input class="filter" data-filter=".Ryzen5" type="radio" name="radioButton" id="Ryzen5">
-                            <label class="radio-label" for="Ryzen5">Ryzen 5</label>
-                        </li>
-                        <li>
-                            <input class="filter" data-filter=".Ryzen9" type="radio" name="radioButton" id="Ryzen9">
-                            <label class="radio-label" for="Ryzen9">Ryzen 9</label>
-                        </li>
-                    </ul>
-                    <!-- cd-filter-content -->
-                </div>
                 <!-- cd-filter-block -->
             </form>
 
-            <a href="#0" class="cd-close">Close</a>
+            <a href="#0" class="cd-close ">Close</a>
         </div>
         <!-- cd-filter -->
 
-        <a href="#0" class="cd-filter-trigger">Filters</a>
+        <a href="#0" class="cd-filter-trigger ">Filters</a>
     </main>
     <!-- ======= Footer ======= -->
     <footer id="footer">
@@ -365,7 +323,7 @@
     <script>
         const buttons = document.querySelectorAll('.dropdown-item');
         const boxes = document.querySelectorAll('.box');
-        const searchBox = document.querySelector("#search");
+        const searchBox = document.querySelector("#search ");
 
         /* Search Product by Textbox */
         searchBox.addEventListener('keyup', (e) => {
@@ -386,20 +344,6 @@
             buttons[0].classList.add('btn-clicked');
         });
 
-        function openNav() {
-            if (window.innerWidth < 800) {
-                document.getElementById("myNav").style.width = "100%";
-            } else if (window.innerWidth < 1210) {
-                document.getElementById("myNav").style.width = "45%";
-            } else {
-                document.getElementById("myNav").style.width = "30%";
-            }
-
-        }
-
-        function closeNav() {
-            document.getElementById("myNav").style.width = "0%";
-        }
         buttons.forEach((button) => {
             button.addEventListener('click', (e) => {
 
@@ -427,14 +371,28 @@
         });
 
 
-
-
-
         function setActiveBtn(e) {
             buttons.forEach((button) => {
                 button.classList.remove('btn-clicked');
             });
             e.target.classList.add('btn-clicked');
+        }
+
+
+
+        function openNav() {
+            if (window.innerWidth < 800) {
+                document.getElementById("myNav").style.width = "100%";
+            } else if (window.innerWidth < 1210) {
+                document.getElementById("myNav").style.width = "45%";
+            } else {
+                document.getElementById("myNav").style.width = "30%";
+            }
+
+        }
+
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
         }
     </script>
  <script>!function(e,t,a){var c=e.head||e.getElementsByTagName("head")[0],n=e.createElement("script");n.async=!0,n.defer=!0, n.type="text/javascript",n.src=t+"/static/js/widget.js?config="+JSON.stringify(a),c.appendChild(n)}(document,"https://app.engati.com",{bot_key:"5bfba005c8f2476b",welcome_msg:true,branding_key:"default",server:"https://app.engati.com",e:"p" });</script>
