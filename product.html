@@ -95,7 +95,6 @@
     </div>
     <div class="background"></div>
     <main class="cd-main-content " style="overflow-y:scroll">
-
         <div class="cd-tab-filter-wrapper">
             <li><a class="shopbtn" onclick="openNav()" style="display: inline;"><i class="ri-shopping-bag-2-fill" style="font-size: 20px;"></i>Cart</a></li>
             <div class="cd-tab-filter">
@@ -186,7 +185,7 @@
                 <li class="mix cpu amd Ryzen5 AM4"><img src="assets/img/R5.jpg" alt="Image 12"> AMD Ryzen 5 5600G</li>
                 <li class="mix cpu amd Ryzen5 AM4"><img src="assets/img/R5.jpg" alt="Image 12"> AMD Ryzen 5 5500</li>
                 <li class="mix cpu amd Ryzen9 AM5"><img src="assets/img/R9.jpg" alt="Image 12"> AMD Ryzen 9 7900</li>
-                <li class="mix gpu GTX"><img src="assets/img/gtx1080.png" alt="Image 5">
+                <li class="mix gpu nvidia"><img src="assets/img/gtx1080.png" alt="Image 5">
                     <div class="product_name">GeForce GTX 1080</div>
                     <div class="price">$
                         <div class="xd">2200</div>
@@ -214,7 +213,29 @@
                     <!-- cd-filter-content -->
                 </div>
                 <!-- cd-filter-block -->
-              
+                <div class="cd-filter-block">
+                    <h4>brand</h4>
+
+                    <ul class="cd-filter-content cd-filters list">
+                        <li>
+                            <input class="filter" data-filter=".intel" type="checkbox" id="checkbox1">
+                            <label class="checkbox-label" for="checkbox1">intel</label>
+                        </li>
+
+                        <li>
+                            <input class="filter" data-filter=".amd" type="checkbox" id="checkbox2">
+                            <label class="checkbox-label" for="checkbox2">AMD</label>
+                        </li>
+                        <li>
+                            <input class="filter" data-filter=".nvidia" type="checkbox" id="checkbox2">
+                            <label class="checkbox-label" for="checkbox2">nvidia</label>
+                        </li>
+
+
+                    </ul>
+                    <!-- cd-filter-content -->
+                </div>
+                <!-- cd-filter-block -->
                 <div class="cd-filter-block">
                     <h4>Radio buttons</h4>
 
