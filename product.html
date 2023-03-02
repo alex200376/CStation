@@ -52,8 +52,8 @@
             <nav id="navbar" class="navbar">
                 <ul>
                     <li><a class="nav-link scrollto" href="index.html">Home</a></li>
-                    <li><a class="nav-link scrollto" href="product.html">Products</a></li>
-                    <li><a class="nav-link scrollto  active" href="pre_built.html">Pre built PC</a></li>
+                    <li><a class="nav-link scrollto active" href="product.html">Products</a></li>
+                    <li><a class="nav-link scrollto" href="pre_built.html">Pre built PC</a></li>
                     <li><a class="nav-link scrollto" href="pc_create.html">PC Customize</a></li>
                     <li><a class="nav-link scrollto" href="blog.html">Guide</a></li>
                     <li><a class="nav-link scrollto" href="about_us.html">About us</a></li>
@@ -109,11 +109,14 @@
                         <!-- selected option on mobile -->
                     </li>
                     <li class="filter"><a class="selected" href="#0" data-type="all">All</a></li>
-                    <li class="filter" data-filter=".gaming"><a href="#0" data-type="gaming">gaming</a></li>
-                    <li class="filter" data-filter=".business"><a href="#0" data-type="business">business</a></li>
-                    <li class="filter" data-filter=".workstation"><a href="#0" data-type="workstation">workstation</a></li>
-
-
+                    <li class="filter" data-filter=".cpu"><a href="#0" data-type="cpu">CPU</a></li>
+                    <li class="filter" data-filter=".gpu"><a href="#0" data-type="gpu">GPU</a></li>
+                    <li class="filter" data-filter=".ram"><a href="#0" data-type="ram">RAM</a></li>
+                    <li class="filter" data-filter=".mtb"><a href="#0" data-type="mtb">Mother Board</a></li>
+                    <li class="filter" data-filter=".fan"><a href="#0" data-type="fan">Fan</a></li>
+                    <li class="filter" data-filter=".cooler"><a href="#0" data-type="cooler">Cooler</a></li>
+                    <li class="filter" data-filter=".cases"><a href="#0" data-type="cases">Cases</a></li>
+                    <li class="filter" data-filter=".acc"><a href="#0" data-type="acc">Accessary</a></li>
                 </ul>
                 <!-- cd-filters -->
 
@@ -220,13 +223,19 @@
                     <ul class="cd-filter-content cd-filters list">
                         <li>
                             <input class="filter" data-filter=".intel" type="checkbox" id="checkbox1">
-                            <label class="checkbox-label" for="checkbox1">intel</label>
+                            <label class="checkbox-label" for="checkbox1">Intel</label>
                         </li>
 
                         <li>
                             <input class="filter" data-filter=".amd" type="checkbox" id="checkbox2">
                             <label class="checkbox-label" for="checkbox2">AMD</label>
                         </li>
+
+                        <li>
+                            <input class="filter" data-filter=".nvidia" type="checkbox" id="checkbox2">
+                            <label class="checkbox-label" for="checkbox2">Nvidia</label>
+                        </li>
+
 
 
                     </ul>
