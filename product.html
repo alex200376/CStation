@@ -91,7 +91,6 @@
                         <div id="total0" style="display: inline;">0</div>
                         <div id="total" style="display: inline;"></div>
                     </h4>
-
                 </div>
             </div>
         </div>
@@ -372,7 +371,8 @@
         const buttons = document.querySelectorAll('.dropdown-item');
         const boxes = document.querySelectorAll('.box');
         const searchBox = document.querySelector("#search ");
-
+        document.getElementById('total').innerHTML = Number(localStorage.getItem("totalprice"));
+        document.getElementById('cart').innerHTML = localStorage.getItem("cart");
         /* Search Product by Textbox */
         searchBox.addEventListener('keyup', (e) => {
             searchText = e.target.value.toLowerCase().trim();
@@ -417,6 +417,7 @@
 
             });
         });
+
 
 
         function setActiveBtn(e) {
