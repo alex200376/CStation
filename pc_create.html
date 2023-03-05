@@ -19,319 +19,15 @@
     <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
     <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
     <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="assets/css/pc1.css">
+    <!-- CSS reset -->
+    <link rel="stylesheet" href="assets/css/pc.css">
 
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet">
     <title>PC customization</title>
 </head>
-<script>
-    function setPicture(select) {
-        selectedvalue = select.value;
-        document.getElementById("image").src = selectedvalue;
-    }
 
-    function setPicture2(select) {
-        selectedvalue2 = select.value;
-        document.getElementById("image2").src = selectedvalue2;
-    }
-
-    function setPicture3(select) {
-        selectedvalue3 = select.value;
-        document.getElementById("image3").src = selectedvalue3;
-    }
-
-    function setPicture4(select) {
-        selectedvalue4 = select.value;
-        document.getElementById("image4").src = selectedvalue4;
-    }
-
-    function setPicture5(select) {
-        selectedvalue5 = select.value;
-        document.getElementById("image5").src = selectedvalue5;
-    }
-
-    function setPicture6(select) {
-        selectedvalue6 = select.value;
-        document.getElementById("image6").src = selectedvalue6;
-    }
-
-    function setPicture7(select) {
-        selectedvalue7 = select.value;
-        document.getElementById("image7").src = selectedvalue7;
-    }
-
-    function openNav() {
-        if (window.innerWidth < 700) {
-            document.getElementById("myNav").style.width = "100%";
-        } else if (window.innerWidth < 1210) {
-            document.getElementById("myNav").style.width = "45%";
-        } else {
-            document.getElementById("myNav").style.width = "30%";
-        }
-
-    }
-
-    function closeNav() {
-        document.getElementById("myNav").style.width = "0%";
-    }
-</script>
-<style>
-    #chatbot-container {
-        width: 400px;
-        height: 300px;
-        box-sizing: border-box;
-        margin: auto;
-        padding: 0;
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        bottom: 70px;
-        left: 20px;
-        z-index: 3;
-        background-color: rgb(14, 29, 193);
-        border-radius: 10px;
-        color: white;
-    }
-    
-    .option {
-        font-size: 15px;
-        font-weight: bolder;
-        margin: 10px;
-        margin-top: 10px;
-    }
-    
-    .next {
-        margin: 15px;
-    }
-    
-    .instrution {
-        font-size: 10px;
-        margin: 10px;
-    }
-    
-    .input {
-        width: 100%;
-        height: 70px;
-        overflow: hidden;
-        margin-top: 40px;
-    }
-    
-    #send {
-        width: 70px;
-        height: 50px;
-        border: none;
-        padding-right: 20px;
-        outline: none;
-        border-radius: 20px;
-        position: absolute;
-        bottom: 10px;
-        right: 3px;
-        background-color: #104b8a;
-        text-align: center;
-        color: white;
-        font-weight: bolder;
-        font-size: 19px;
-    }
-    
-    #send:hover {
-        background-color: #007bff;
-    }
-    
-    .input input {
-        width: 75%;
-        height: 50px;
-        border: none;
-        padding-left: 30px;
-        padding-top: 0;
-        outline: none;
-        font-size: 1.5rem;
-        border-radius: 20px;
-        position: absolute;
-        bottom: 10px;
-        margin-left: 10px;
-    }
-    
-    #chatLog {
-        border: none;
-        border-radius: 10px;
-        padding: 10px;
-        background-color: rgba(255, 255, 255, 0.799);
-        margin: 10px;
-        margin-bottom: 20px;
-        color: white;
-    }
-    
-    .chatbot-toggle {
-        position: fixed;
-        bottom: 20px;
-        left: 20px;
-        z-index: 9999;
-    }
-    
-    .chatbot-btn {
-        background-color: #007bff;
-        color: #fff;
-        border: none;
-        border-radius: 50%;
-        font-size: 24px;
-        width: 50px;
-        height: 50px;
-        cursor: pointer;
-        transition: background-color 0.2s ease-in-out;
-    }
-    
-    .chatbot-btn:hover {
-        background-color: #0062cc;
-    }
-    
-    .overlay {
-        height: 100%;
-        width: 0;
-        position: fixed;
-        z-index: 2;
-        right: 0;
-        background-color: rgb(255, 255, 255);
-        background-color: rgba(228, 228, 228, 0.9);
-        overflow-x: hidden;
-        transition: 0.5s;
-        border-radius: 10px 0;
-    }
-    
-    .overlay-content {
-        position: relative;
-        left: 10%;
-        text-align: center;
-    }
-    
-    .overlay .closebtn {
-        position: absolute;
-        top: 20px;
-        right: 45px;
-        font-size: 60px;
-    }
-    
-    @media screen and (max-height: 450px) {
-        .overlay a {
-            font-size: 20px
-        }
-        .overlay .closebtn {
-            font-size: 40px;
-            top: 15px;
-            right: 35px;
-        }
-    }
-    
-    .wrapper {
-        border-radius: 10px;
-        padding: 10px;
-        min-width: 300px;
-        margin-right: 30px;
-        overflow-y: scroll;
-        max-height: 700px;
-        left: 50%;
-        background-color: white;
-    }
-    
-    .wrapper::-webkit-scrollbar {
-        display: none;
-    }
-    
-    .shopping {
-        position: relative;
-        padding-left: 30px;
-        width: 24%;
-        background-color: white;
-        margin-top: 90px;
-        margin-right: 10%;
-        border-radius: 10px;
-    }
-    
-    li {
-        list-style-type: none;
-    }
-    
-    .shopbtn {
-        text-align: center;
-        float: right;
-        margin-right: 20px;
-        margin-left: 40px;
-        padding: 5px 10px;
-        margin-top: 10px;
-        border-radius: 50px;
-        color: #fff;
-        font-size: 10px;
-        border: 2px solid #47b2e4;
-        font-weight: 600;
-    }
-    
-    .cart-item {
-        padding: 0px 0 5px 110px;
-        height: 62px;
-        width: 210px;
-        margin-left: -45px;
-        position: relative;
-        background: #fff;
-        -webkit-transition: all 1000ms ease-out;
-        -moz-transition: all 1000ms ease-out;
-        -ms-transition: all 1000ms ease-out;
-        -o-transition: all 1000ms ease-out;
-        transition: all 1000ms ease-out;
-    }
-    
-    .cart-item.flash {
-        background: #fffeb0;
-    }
-    
-    .cart-item-border {
-        position: absolute;
-        bottom: 0;
-        left: 45px;
-        background: #edeff0;
-        height: 1px;
-        max-width: 230px;
-    }
-    
-    .cart-item .img-wrap {
-        width: 50px;
-        height: 50px;
-        overflow: hidden;
-        border: 1px solid #edeff0;
-        float: left;
-        margin-left: -65px;
-    }
-    
-    .cart-item img {
-        width: 100%;
-        position: relative;
-        top: -10px;
-    }
-    
-    .cart-item strong {
-        color: #5ff7d2;
-        font-size: 16px;
-    }
-    
-    .cart-item span {
-        color: #393c45;
-        display: block;
-        font-size: 14px;
-    }
-    
-    .cart-item .delete-item {
-        background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/delete-item.png") 0 0 no-repeat;
-        width: 15px;
-        height: 15px;
-        float: right;
-        margin-right: 18px;
-        display: none;
-    }
-    
-    .cart-item:hover .delete-item {
-        display: block;
-        cursor: pointer
-    }
-</style>
 
 <body>
     <!-- ======= Header ======= -->
@@ -358,8 +54,8 @@
         </div>
     </header>
     <!-- End Header -->
-    <main id="main">
-        <section id="hero" class="d-flex align-items-center" style="height:80px">
+    <main id="main" style="margin-bottom: 50px;">
+        <section id="hero" class="d-flex align-items-center" style="height:100px">
 
             <div class="container">
 
@@ -367,332 +63,91 @@
 
         </section>
 
-        <div id="myNav" class="overlay">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <div class="overlay-content">
-                <div class="shopping">
-                    <div class="wrapper" id="shoppingcart" style="color:black;">
-                        <div id="checkout">
-                            <a href="checkout.html">CHECKOUT</a>
-                        </div>
-                        <h6 style="float: left;">CART</h6>
-                        <div id="cart" style="margin-top: 12%;margin-right: 20%;">
-                            <span class="empty">No items in cart.</span>
-                        </div>
 
-                        <h6 style="float: left;">Total:$
-                            <div id="total0" style="display: inline;">0</div>
-                            <div id="total" style="display: inline;"></div>
-                        </h6>
 
+
+        <div class="cd-product-builder">
+            <header class="main-header">
+                <h1>Product Builder</h1>
+
+                <nav class="cd-builder-main-nav disabled">
+                    <ul>
+                        <li class="active"><a href="#models">Models</a></li>
+                        <li><a href="#colors">Colors</a></li>
+                        <li><a href="#accessories">Accessories</a></li>
+                        <li><a href="#summary">Summary</a></li>
+                    </ul>
+                </nav>
+
+                <a href="https://codyhouse.co/?p=16220" class="cd-nugget-info hide-on-mobile">Back</a>
+            </header>
+
+            <div class="cd-builder-steps">
+                <ul>
+                    <li data-selection="models" class="active builder-step">
+                        <section class="cd-step-content">
+                            <header>
+                                <h1>Select case</h1>
+                                <span class="steps-indicator">Step <b>1</b> of 4</span>
+                            </header>
+
+                            <a href="pc_create.html" class="cd-nugget-info hide-on-desktop">Back</a>
+
+                            <ul class="models-list options-list cd-col-2">
+                                <li class="js-option js-radio" data-price="42400" data-model="product-01">
+                                    <span class="name">BMW i3</span>
+                                    <img src="img/product01_col01.jpg" alt="BMW i3">
+                                    <span class="price">from $42.400</span>
+                                    <div class="radio"></div>
+                                </li>
+
+                                <li class="js-option js-radio" data-price="140700" data-model="product-02">
+                                    <span class="name">BMW i8</span>
+                                    <img src="img/product02_col01.jpg" alt="BMW i8">
+                                    <span class="price">from $140.700</span>
+                                    <div class="radio"></div>
+                                </li>
+                            </ul>
+                        </section>
+                    </li>
+                    <!-- additional content will be inserted using ajax -->
+                </ul>
+            </div>
+
+            <footer class="cd-builder-footer disabled step-1">
+                <div class="selected-product">
+                    <img src="img/product01_col01.jpg" alt="Product preview">
+
+                    <div class="tot-price">
+                        <span>Total</span>
+                        <span class="total">$<b>0</b></span>
                     </div>
                 </div>
-            </div>
+
+                <nav class="cd-builder-secondary-nav">
+                    <ul>
+                        <li class="next nav-item">
+                            <ul>
+                                <li class="visible"><a href="#0">Colors</a></li>
+                                <li><a href="#0">Accessories</a></li>
+                                <li><a href="#0">Summary</a></li>
+                                <li class="buy"><a href="#0">Buy Now</a></li>
+                            </ul>
+                        </li>
+                        <li class="prev nav-item">
+                            <ul>
+                                <li class="visible"><a href="#0">Models</a></li>
+                                <li><a href="#0">Models</a></li>
+                                <li><a href="#0">Colors</a></li>
+                                <li><a href="#0">Accessories</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+
+                <span class="alert">Please, select a model first!</span>
+            </footer>
         </div>
-        <h1 style="text-align: center;background-color: #37517ece;color: white;padding-bottom: 5px;">PC customization <a class="shopbtn" onclick="openNav()"><i class="ri-shopping-bag-2-fill" style="font-size: 20px;"></i>Cart</a></h1>
-
-
-        <table class="paleBlueRows">
-            <thead>
-                <tr>
-                    <th>Parts</th>
-                    <th>items</th>
-                </tr>
-            </thead>
-            <tfoot>
-                <tr>
-                    <td>Total</td>
-                    <td id="total"></td>
-                </tr>
-            </tfoot>
-            <tbody>
-                <tr>
-                    <td>Case</td>
-                    <td>
-                        <img src="" id="image">
-                        <select class="select1" id="changeImage" onchange="setPicture(this);count(this)">
-                            <option value="">none</option>
-                        <option value="assets/img/i3-12.jpg">
-                            <div class="product_name">Intel Core i5-13400</div>
-                            <div class="price">$
-                                <div class="xd">7800</div>
-                            </div></option>
-                            <option value="assets/img/i3-13.jpg">
-                                <div class="product_name">Intel Core i5-13400</div>
-                                <div class="price">$
-                                    <div class="xd">2000</div>
-                                </div></option>
-                                <option value="assets/img/i5-12.jpg">
-                                    <div class="product_name">Intel Core i5-13400</div>
-                                    <div class="price">$
-                                        <div class="xd">1300</div>
-                                    </div></option>
-                                    <option value="assets/img/i5-13.jpg">
-                                        <div class="product_name">Intel Core i5-13400</div>
-                                        <div class="price">$
-                                            <div class="xd">3213</div>
-                                        </div>
-                                    </option>
-                                    <option value="assets/img/i7-12.jpg">
-                                        <div class="product_name">Intel Core i5-13400</div>
-                                        <div class="price">$
-                                            <div class="xd">3213</div>
-                                        </div>
-                                    </option>
-                                    <option value="assets/img/i7-13.jpg">
-                                        <div class="product_name">Intel Core i5-13400</div>
-                                        <div class="price">$
-                                            <div class="xd">3213</div>
-                                        </div>
-                                    </option>
-                      </select>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Mother board</td>
-                    <td>
-                        <img src="" id="image2">
-                        <select class="select1" id="changeImage" onchange="setPicture2(this)">
-                            <option value="">none</option>
-                        <option value="assets/img/i3-12.jpg">
-                            <div class="product_name">Intel Core i5-13400</div>
-                            <div class="price">$
-                                <div class="xd">7800</div>
-                            </div></option>
-                            <option value="assets/img/i3-13.jpg">
-                                <div class="product_name">Intel Core i5-13400</div>
-                                <div class="price">$
-                                    <div class="xd">2000</div>
-                                </div></option>
-                                <option value="assets/img/i5-12.jpg">
-                                    <div class="product_name">Intel Core i5-13400</div>
-                                    <div class="price">$
-                                        <div class="xd">1300</div>
-                                    </div></option>
-                                    <option value="assets/img/i5-13.jpg">
-                                        <div class="product_name">Intel Core i5-13400</div>
-                                        <div class="price">$
-                                            <div class="xd">3213</div>
-                                        </div>
-                                    </option>
-                                    <option value="assets/img/i7-12.jpg">
-                                        <div class="product_name">Intel Core i5-13400</div>
-                                        <div class="price">$
-                                            <div class="xd">3213</div>
-                                        </div>
-                                    </option>
-                                    <option value="assets/img/i7-13.jpg">
-                                        <div class="product_name">Intel Core i5-13400</div>
-                                        <div class="price">$
-                                            <div class="xd">3213</div>
-                                        </div>
-                                    </option>
-                      </select></td>
-                </tr>
-                <tr>
-                    <td>CPU</td>
-                    <td> <img src="" id="image3">
-                        <select class="select1" id="changeImage" onchange="setPicture3(this)">
-                            <option value="">none</option>
-                        <option value="assets/img/i3-12.jpg">
-                            <div class="product_name">Intel Core i5-13400</div>
-                            <div class="price">$
-                                <div class="xd">7800</div>
-                            </div></option>
-                            <option value="assets/img/i3-13.jpg">
-                                <div class="product_name">Intel Core i5-13400</div>
-                                <div class="price">$
-                                    <div class="xd">2000</div>
-                                </div></option>
-                                <option value="assets/img/i5-12.jpg">
-                                    <div class="product_name">Intel Core i5-13400</div>
-                                    <div class="price">$
-                                        <div class="xd">1300</div>
-                                    </div></option>
-                                    <option value="assets/img/i5-13.jpg">
-                                        <div class="product_name">Intel Core i5-13400</div>
-                                        <div class="price">$
-                                            <div class="xd">3213</div>
-                                        </div>
-                                    </option>
-                                    <option value="assets/img/i7-12.jpg">
-                                        <div class="product_name">Intel Core i5-13400</div>
-                                        <div class="price">$
-                                            <div class="xd">3213</div>
-                                        </div>
-                                    </option>
-                                    <option value="assets/img/i7-13.jpg">
-                                        <div class="product_name">Intel Core i5-13400</div>
-                                        <div class="price">$
-                                            <div class="xd">3213</div>
-                                        </div>
-                                    </option>
-                </tr>
-                <tr>
-                    <td>GPU</td>
-                    <td> <img src="" id="image4">
-                        <select class="select1" id="changeImage" onchange="setPicture4(this)">
-                            <option value="">none</option>
-                        <option value="assets/img/i3-12.jpg">
-                            <div class="product_name">Intel Core i5-13400</div>
-                            <div class="price">$
-                                <div class="xd">7800</div>
-                            </div></option>
-                            <option value="assets/img/i3-13.jpg">
-                                <div class="product_name">Intel Core i5-13400</div>
-                                <div class="price">$
-                                    <div class="xd">2000</div>
-                                </div></option>
-                                <option value="assets/img/i5-12.jpg">
-                                    <div class="product_name">Intel Core i5-13400</div>
-                                    <div class="price">$
-                                        <div class="xd">1300</div>
-                                    </div></option>
-                                    <option value="assets/img/i5-13.jpg">
-                                        <div class="product_name">Intel Core i5-13400</div>
-                                        <div class="price">$
-                                            <div class="xd">3213</div>
-                                        </div>
-                                    </option>
-                                    <option value="assets/img/i7-12.jpg">
-                                        <div class="product_name">Intel Core i5-13400</div>
-                                        <div class="price">$
-                                            <div class="xd">3213</div>
-                                        </div>
-                                    </option>
-                                    <option value="assets/img/i7-13.jpg">
-                                        <div class="product_name">Intel Core i5-13400</div>
-                                        <div class="price">$
-                                            <div class="xd">3213</div>
-                                        </div>
-                                    </option>>
-                </tr>
-                <tr>
-                    <td>RAM</td>
-                    <td> <img src="" id="image5">
-                        <select  class="select1" id="changeImage" onchange="setPicture5(this)">
-                            <option value="">none</option>
-                        <option value="assets/img/i3-12.jpg">
-                            <div class="product_name">Intel Core i5-13400</div>
-                            <div class="price">$
-                                <div class="xd">7800</div>
-                            </div></option>
-                            <option value="assets/img/i3-13.jpg">
-                                <div class="product_name">Intel Core i5-13400</div>
-                                <div class="price">$
-                                    <div class="xd">2000</div>
-                                </div></option>
-                                <option value="assets/img/i5-12.jpg">
-                                    <div class="product_name">Intel Core i5-13400</div>
-                                    <div class="price">$
-                                        <div class="xd">1300</div>
-                                    </div></option>
-                                    <option value="assets/img/i5-13.jpg">
-                                        <div class="product_name">Intel Core i5-13400</div>
-                                        <div class="price">$
-                                            <div class="xd">3213</div>
-                                        </div>
-                                    </option>
-                                    <option value="assets/img/i7-12.jpg">
-                                        <div class="product_name">Intel Core i5-13400</div>
-                                        <div class="price">$
-                                            <div class="xd">3213</div>
-                                        </div>
-                                    </option>
-                                    <option value="assets/img/i7-13.jpg">
-                                        <div class="product_name">Intel Core i5-13400</div>
-                                        <div class="price">$
-                                            <div class="xd">3213</div>
-                                        </div>
-                                    </option>
-                            </select>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Power Supply</td>
-                    <td> <img src="" id="image6">
-                        <select class="select1" id="changeImage" onchange="setPicture6(this)">
-                            <option value="">none</option>
-                        <option value="assets/img/i3-12.jpg">
-                            <div class="product_name">Intel Core i5-13400</div>
-                            <div class="price">$
-                                <div class="xd">7800</div>
-                            </div></option>
-                            <option value="assets/img/i3-13.jpg">
-                                <div class="product_name">Intel Core i5-13400</div>
-                                <div class="price">$
-                                    <div class="xd">2000</div>
-                                </div></option>
-                                <option value="assets/img/i5-12.jpg">
-                                    <div class="product_name">Intel Core i5-13400</div>
-                                    <div class="price">$
-                                        <div class="xd">1300</div>
-                                    </div></option>
-                                    <option value="assets/img/i5-13.jpg">
-                                        <div class="product_name">Intel Core i5-13400</div>
-                                        <div class="price">$
-                                            <div class="xd">3213</div>
-                                        </div>
-                                    </option>
-                                    <option value="assets/img/i7-12.jpg">
-                                        <div class="product_name">Intel Core i5-13400</div>
-                                        <div class="price">$
-                                            <div class="xd">3213</div>
-                                        </div>
-                                    </option>
-                                    <option value="assets/img/i7-13.jpg">
-                                        <div class="product_name">Intel Core i5-13400</div>
-                                        <div class="price">$
-                                            <div class="xd">3213</div>
-                                        </div>
-                                    </option>
-                                </select>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Fans</td>
-                    <td> <img src="" id="image7">
-                        <select class="select1" id="changeImage" onchange="setPicture7(this)">
-                            <option value="">none</option>
-                        <option value="assets/img/i3-12.jpg">
-                            <div class="product_name">Intel Core i5-13400</div>
-                            <div class="price">$
-                                <div class="xd">7800</div>
-                            </div></option>
-                            <option value="assets/img/i3-13.jpg">
-                                <div class="product_name">Intel Core i5-13400</div>
-                                <div class="price">$
-                                    <div class="xd">2000</div>
-                                </div></option>
-                                <option value="assets/img/i5-12.jpg">
-                                    <div class="product_name">Intel Core i5-13400</div>
-                                    <div class="price">$
-                                        <div class="xd">1300</div>
-                                    </div></option>
-                                    <option value="assets/img/i5-13.jpg">
-                                        <div class="product_name">Intel Core i5-13400</div>
-                                        <div class="price">$
-                                            <div class="xd">3213</div>
-                                        </div>
-                                    </option>
-                                    <option value="assets/img/i7-12.jpg">
-                                        <div class="product_name">Intel Core i5-13400</div>
-                                        <div class="price">$
-                                            <div class="xd">3213</div>
-                                        </div>
-                                    </option>
-                                    <option value="assets/img/i7-13.jpg">
-                                        <div class="product_name">Intel Core i5-13400</div>
-                                        <div class="price">$
-                                            <div class="xd">3213</div>
-                                        </div>
-                                    </option>
-                                </select></td>
-                    </select>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
 
         <!-- ======= Frequently Asked Questions Section ======= -->
 
@@ -790,7 +245,11 @@
             e: "p"
         });
     </script>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script>
+        if (!window.jQuery) document.write('<script src="js/jquery-3.0.0.min.js"><\/script>');
+    </script>
+    <script src="assets/js/pc.js"></script>
 </body>
 
 </html>

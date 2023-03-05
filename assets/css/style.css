@@ -252,6 +252,7 @@
         transition: all 0.5s;
         z-index: 5;
         padding: 10px 0;
+        min-height: 100px;
     }
     
     #header.header-scrolled,
