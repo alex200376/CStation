@@ -27,7 +27,36 @@
     <link href="assets/css/style.css" rel="stylesheet">
     <title>PC customization</title>
 </head>
-
+<style>
+    .main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 20px;
+    }
+    
+    section {
+        flex-basis: 30%;
+        margin-bottom: 20px;
+    }
+    
+    select {
+        display: block;
+        margin-bottom: 10px;
+        padding: 5px;
+        width: 100%;
+    }
+    
+    input[type="checkbox"] {
+        margin-right: 5px;
+    }
+    
+    #total-cost {
+        font-size: 24px;
+        font-weight: bold;
+        margin-top: 10px;
+    }
+</style>
 
 <body>
     <!-- ======= Header ======= -->
@@ -62,194 +91,283 @@
             </div>
 
         </section>
+        <header>
+            <h1>PC Builder</h1>
+        </header>
+        <div class="main">
+            <section>
+                <h2>CPU</h2>
+                <select id="cpu">
+                    <option value="none">Select CPU</option>
+                    <option value="i3">Intel Core i3</option>
+                    <option value="i5">Intel Core i5</option>
+                    <option value="i7">Intel Core i7</option>
+                    <option value="ryzen3">AMD Ryzen 3</option>
+                    <option value="ryzen5">AMD Ryzen 5</option>
+                    <option value="ryzen7">AMD Ryzen 7</option>
+                </select>
+            </section>
+            <section>
+                <h2>Motherboard</h2>
+                <select id="motherboard">
+                    <option value="none">Select motherboard</option>
+                    <option value="asus">ASUS</option>
+                    <option value="gigabyte">Gigabyte</option>
+                    <option value="msi">MSI</option>
+                </select>
+            </section>
+            <section>
+                <h2>Graphics Card</h2>
+                <select id="graphics-card">
+                    <option value="none">Select GPU</option>
+                    <option value="nvidia">NVIDIA</option>
+                    <option value="amd">AMD</option>
+                </select>
+            </section>
+            <section>
+                <h2>RAM</h2>
+                <select id="ram-brand">
+                    <option value="none">Select Ram brand</option>
+                    <option value="corsair">Corsair</option>
+                    <option value="kingston">Kingston</option>
+                        <option value="crucial">Crucial</option>
+                </select>
+                <select id="ram">
+                    <option value="none">Select ram size</option>
+                    <option value="4gb">4GB</option>
+                    <option value="8gb">8GB</option>
+                    <option value="16gb">16GB</option>
+                    <option value="32gb">32GB</option>
+                </select>
+            </section>
+            <section>
+                <h2>Storage Devices</h2>
+                <input type="checkbox" id="ssd" name="ssd">
+                <label for="ssd">SSD</label>
+                <select id="ssdsize">
+                    <option value="none">Select SSD size</option>
+                    <option value="4gb">4GB</option>
+                    <option value="8gb">8GB</option>
+                    <option value="16gb">16GB</option>
+                    <option value="32gb">32GB</option>
+                </select>
+                <input type="checkbox" id="hdd" name="hdd">
+                <label for="hdd">HDD</label>
+                <select id="hddsize">
+                    <option value="none">Select HDD size</option>
+                    <option value="4gb">4GB</option>
+                    <option value="8gb">8GB</option>
+                    <option value="16gb">16GB</option>
+                    <option value="32gb">32GB</option>
+                </select>
+            </section>
+            <section>
+                <h2>Power Supply</h2>
+                <select id="power-supply">
+                    <option value="500w">500W</option>
+                    <option value="750w">750W</option>
+                    <option value="1000w">1000W</option>
+                </select>
+            </section>
+            <section>
+                <h2>Case</h2>
+                <select id="case">
+                    <option value="corsair">Corsair</option>
+                    <option value="nzxt">NZXT</option>
+                    <option value="phanteks">Phanteks</option>
+                </select>
+            </section>
+            <section>
+                <h2>Total Cost</h2>
+                <p id="total-cost">$0</p>
+            </section>
+        </div>
 
 
+        <!-- ======= Footer ======= -->
+        <footer id="footer">
+            <div class="footer-top">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-3 col-md-6 footer-contact">
+                            <h3>CStation</h3>
+                            <h5>Contact us</h5>
+                            <p>
+                                <strong>Phone:</strong> +852 3762 6262<br>
+                                <strong>Email:</strong> ccdfs@hkuspace.hku.hk<br>
+                                <strong><a href="https://docs.google.com/forms/d/e/1FAIpQLScUtwUw1Wk0iIMSkA1GfuUbYXO1dZWQcWLemcd-z3ya3x5U6g/viewform?embedded=true">Feedback</a></strong>
+                            </p>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 footer-links">
+                            <h4>Our Company</h4>
+                            <ul>
+                                <li><i class="bx bx-chevron-right"></i> <a href="about_us.html">About us</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="index.html#client">Partnered Company</a></li>
 
 
-        <div class="cd-product-builder">
-            <header class="main-header">
-                <h1>Product Builder</h1>
-
-                <nav class="cd-builder-main-nav disabled">
-                    <ul>
-                        <li class="active"><a href="#models">Models</a></li>
-                        <li><a href="#colors">Colors</a></li>
-                        <li><a href="#accessories">Accessories</a></li>
-                        <li><a href="#summary">Summary</a></li>
-                    </ul>
-                </nav>
-
-                <a href="https://codyhouse.co/?p=16220" class="cd-nugget-info hide-on-mobile">Back</a>
-            </header>
-
-            <div class="cd-builder-steps">
-                <ul>
-                    <li data-selection="models" class="active builder-step">
-                        <section class="cd-step-content">
-                            <header>
-                                <h1>Select case</h1>
-                                <span class="steps-indicator">Step <b>1</b> of 4</span>
-                            </header>
-
-                            <a href="pc_create.html" class="cd-nugget-info hide-on-desktop">Back</a>
-
-                            <ul class="models-list options-list cd-col-2">
-                                <li class="js-option js-radio" data-price="42400" data-model="product-01">
-                                    <span class="name">BMW i3</span>
-                                    <img src="img/product01_col01.jpg" alt="BMW i3">
-                                    <span class="price">from $42.400</span>
-                                    <div class="radio"></div>
-                                </li>
-
-                                <li class="js-option js-radio" data-price="140700" data-model="product-02">
-                                    <span class="name">BMW i8</span>
-                                    <img src="img/product02_col01.jpg" alt="BMW i8">
-                                    <span class="price">from $140.700</span>
-                                    <div class="radio"></div>
-                                </li>
                             </ul>
-                        </section>
-                    </li>
-                    <!-- additional content will be inserted using ajax -->
-                </ul>
-            </div>
+                        </div>
 
-            <footer class="cd-builder-footer disabled step-1">
-                <div class="selected-product">
-                    <img src="img/product01_col01.jpg" alt="Product preview">
+                        <div class="col-lg-3 col-md-6 footer-links">
+                            <h4>Our Customer Services</h4>
+                            <ul>
+                                <li><i class="bx bx-chevron-right"></i> <a href="FAQ.html#deliver">Delivery service</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="TAC.html#term">Terms of service</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="TAC.html#privacypolicy2">Privacy policy</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="pc_create.html">PC customization</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="FAQ.html">FAQ</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="#">Repair service</a></li>
+                            </ul>
+                        </div>
 
-                    <div class="tot-price">
-                        <span>Total</span>
-                        <span class="total">$<b>0</b></span>
+                        <div class="col-lg-3 col-md-6 footer-links">
+                            <h4>My Account</h4>
+                            <p>manage your CStation account</p>
+                            <ul>
+                                <li><i class="bx bx-chevron-right"></i><a href="login.html">Login</a></li>
+                                <li><i class="bx bx-chevron-right"></i>
+                                    <a href="sign_up.html">Register</a>
+                                </li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="checkout.html">Checkout</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
+            </div>
 
-                <nav class="cd-builder-secondary-nav">
-                    <ul>
-                        <li class="next nav-item">
-                            <ul>
-                                <li class="visible"><a href="#0">Colors</a></li>
-                                <li><a href="#0">Accessories</a></li>
-                                <li><a href="#0">Summary</a></li>
-                                <li class="buy"><a href="#0">Buy Now</a></li>
-                            </ul>
-                        </li>
-                        <li class="prev nav-item">
-                            <ul>
-                                <li class="visible"><a href="#0">Models</a></li>
-                                <li><a href="#0">Models</a></li>
-                                <li><a href="#0">Colors</a></li>
-                                <li><a href="#0">Accessories</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </nav>
-
-                <span class="alert">Please, select a model first!</span>
-            </footer>
-        </div>
-
-        <!-- ======= Frequently Asked Questions Section ======= -->
-
-
-        <!-- End Frequently Asked Questions Section -->
-    </main>
-    <!-- ======= Footer ======= -->
-    <footer id="footer">
-        <div class="footer-top">
-            <div class="container">
-                <div class="row">
-
-                    <div class="col-lg-3 col-md-6 footer-contact">
-                        <h3>CStation</h3>
-                        <h5>Contact us</h5>
-                        <p>
-                            <strong>Phone:</strong> +852 3762 6262<br>
-                            <strong>Email:</strong> ccdfs@hkuspace.hku.hk<br>
-                            <strong><a href="https://docs.google.com/forms/d/e/1FAIpQLScUtwUw1Wk0iIMSkA1GfuUbYXO1dZWQcWLemcd-z3ya3x5U6g/viewform?embedded=true">Feedback</a></strong>
-                        </p>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 footer-links">
-                        <h4>Our Company</h4>
-                        <ul>
-                            <li><i class="bx bx-chevron-right"></i> <a href="about_us.html">About us</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="index.html#client">Partnered Company</a></li>
-
-
-                        </ul>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 footer-links">
-                        <h4>Our Customer Services</h4>
-                        <ul>
-                            <li><i class="bx bx-chevron-right"></i> <a href="FAQ.html#deliver">Delivery service</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="TAC.html#term">Terms of service</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="TAC.html#privacypolicy2">Privacy policy</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="pc_create.html">PC customization</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="FAQ.html">FAQ</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Repair service</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 footer-links">
-                        <h4>My Account</h4>
-                        <p>manage your CStation account</p>
-                        <ul>
-                            <li><i class="bx bx-chevron-right"></i><a href="login.html">Login</a></li>
-                            <li><i class="bx bx-chevron-right"></i>
-                                <a href="sign_up.html">Register</a>
-                            </li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="checkout.html">Checkout</a></li>
-                        </ul>
-                    </div>
+            <div class="container footer-bottom clearfix">
+                <div class="copyright">
+                    &copy; Copyright <strong><span>CStation</span></strong>. All Rights Reserved
+                </div>
+                <div class="credits">
+                    Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
                 </div>
             </div>
-        </div>
+        </footer>
 
-        <div class="container footer-bottom clearfix">
-            <div class="copyright">
-                &copy; Copyright <strong><span>CStation</span></strong>. All Rights Reserved
-            </div>
-            <div class="credits">
-                Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-            </div>
-        </div>
-    </footer>
+        <div id="preloader"></div>
+        <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-    <div id="preloader"></div>
-    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+        <!-- Vendor JS Files -->
+        <script src="assets/vendor/aos/aos.js"></script>
+        <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+        <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+        <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+        <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+        <script src="assets/vendor/php-email-form/validate.js"></script>
+        <script src="assets/js/jquery-2.1.1.js "></script>
+        <script src="assets/js/jquery.mixitup.min.js "></script>
+        <!-- Template Main JS File -->
+        <script src="assets/js/main.js"></script>
+        <script>
+            ! function(e, t, a) {
+                var c = e.head || e.getElementsByTagName("head")[0],
+                    n = e.createElement("script");
+                n.async = !0, n.defer = !0, n.type = "text/javascript", n.src = t + "/static/js/widget.js?config=" + JSON.stringify(a), c.appendChild(n)
+            }(document, "https://app.engati.com", {
+                bot_key: "5bfba005c8f2476b",
+                welcome_msg: true,
+                branding_key: "default",
+                server: "https://app.engati.com",
+                e: "p"
+            });
+        </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+        <script>
+            if (!window.jQuery) document.write('<script src="js/jquery-3.0.0.min.js"><\/script>');
+            const cpuSelect = document.getElementById('cpu');
+            const motherboardSelect = document.getElementById('motherboard');
+            const graphicsCardSelect = document.getElementById('graphics-card');
+            const ramSelect = document.getElementById('ram');
+            const ssdCheckbox = document.getElementById('ssd');
+            const hddCheckbox = document.getElementById('hdd');
+            const powerSupplySelect = document.getElementById('power-supply');
+            const caseSelect = document.getElementById('case');
+            const totalCost = document.getElementById('total-cost');
+            const ramBrandSelect = document.getElementById('ram-brand');
 
-    <!-- Vendor JS Files -->
-    <script src="assets/vendor/aos/aos.js"></script>
-    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-    <script src="assets/vendor/php-email-form/validate.js"></script>
-    <script src="assets/js/jquery-2.1.1.js "></script>
-    <script src="assets/js/jquery.mixitup.min.js "></script>
-    <!-- Template Main JS File -->
-    <script src="assets/js/main.js"></script>
-    <script>
-        ! function(e, t, a) {
-            var c = e.head || e.getElementsByTagName("head")[0],
-                n = e.createElement("script");
-            n.async = !0, n.defer = !0, n.type = "text/javascript", n.src = t + "/static/js/widget.js?config=" + JSON.stringify(a), c.appendChild(n)
-        }(document, "https://app.engati.com", {
-            bot_key: "5bfba005c8f2476b",
-            welcome_msg: true,
-            branding_key: "default",
-            server: "https://app.engati.com",
-            e: "p"
-        });
-    </script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
-    <script>
-        if (!window.jQuery) document.write('<script src="js/jquery-3.0.0.min.js"><\/script>');
-    </script>
-    <script src="assets/js/pc.js"></script>
+            function calculateTotalCost() {
+                let cost = 0;
+                if (cpuSelect.value === 'i3') {
+                    cost += 100;
+                } else if (cpuSelect.value === 'i5') {
+                    cost += 200;
+                } else if (cpuSelect.value === 'i7') {
+                    cost += 300;
+                } else if (cpuSelect.value === 'ryzen3') {
+                    cost += 150;
+                } else if (cpuSelect.value === 'ryzen5') {
+                    cost += 250;
+                } else if (cpuSelect.value === 'ryzen7') {
+                    cost += 350;
+                } else if (cpuSelect.value === 'none') {
+                    cost += 0;
+                }
+
+                if (motherboardSelect.value === 'asus') {
+                    cost += 100;
+                } else if (motherboardSelect.value === 'gigabyte') {
+                    cost += 120;
+                } else if (motherboardSelect.value === 'msi') {
+                    cost += 130;
+                }
+
+                if (graphicsCardSelect.value === 'nvidia') {
+                    cost += 250;
+                } else if (graphicsCardSelect.value === 'amd') {
+                    cost += 200;
+                }
+
+                if (ramSelect.value === '4gb' && ramBrandSelect.value === 'Corsair') {
+                    cost += 50;
+                } else if (ramSelect.value === '8gb' && ramBrandSelect.value === 'Corsair') {
+                    cost += 100;
+                } else if (ramSelect.value === '16gb' && ramBrandSelect.value === 'Corsair') {
+                    cost += 150;
+                } else if (ramSelect.value === '32gb' && ramBrandSelect.value === 'Corsair') {
+                    cost += 250;
+                }
+
+                if (ssdCheckbox.checked) {
+                    cost += 100;
+                }
+
+                if (hddCheckbox.checked) {
+                    cost += 50;
+                }
+
+                if (powerSupplySelect.value === '500w') {
+                    cost += 50;
+                } else if (powerSupplySelect.value === '750w') {
+                    cost += 75;
+                } else if (powerSupplySelect.value === '1000w') {
+                    cost += 100;
+                }
+
+                if (caseSelect.value === 'corsair') {
+                    cost += 80;
+                } else if (caseSelect.value === 'nzxt') {
+                    cost += 90;
+                } else if (caseSelect.value === 'phanteks') {
+                    cost += 100;
+                }
+
+                totalCost.innerText = '$' + cost;
+            }
+
+            cpuSelect.addEventListener('change', calculateTotalCost);
+            motherboardSelect.addEventListener('change', calculateTotalCost);
+            graphicsCardSelect.addEventListener('change', calculateTotalCost);
+            ramSelect.addEventListener('change', calculateTotalCost);
+            ssdCheckbox.addEventListener('change', calculateTotalCost);
+            hddCheckbox.addEventListener('change', calculateTotalCost);
+            powerSupplySelect.addEventListener('change', calculateTotalCost);
+            caseSelect.addEventListener('change', calculateTotalCost);
+        </script>
+        <script src="assets/js/pc.js"></script>
 </body>
 
 </html>
