@@ -19,20 +19,28 @@
     <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
     <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
     <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/pc1.css">
+    <link rel="preconnect" href="https://app.snipcart.com" />
+    <link rel="preconnect" href="https://cdn.snipcart.com" />
     <!-- CSS reset -->
-    <link rel="stylesheet" href="assets/css/pc.css">
 
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet">
     <title>PC customization</title>
 </head>
 <style>
+    main {
+        background-color: #383FA5;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 800 800'%3E%3Cg %3E%3Ccircle fill='%23383FA5' cx='400' cy='400' r='600'/%3E%3Ccircle fill='%2333399d' cx='400' cy='400' r='500'/%3E%3Ccircle fill='%232c3194' cx='400' cy='400' r='400'/%3E%3Ccircle fill='%2325298b' cx='400' cy='400' r='300'/%3E%3Ccircle fill='%231c1e82' cx='400' cy='400' r='200'/%3E%3Ccircle fill='%230F0C77' cx='400' cy='400' r='100'/%3E%3C/g%3E%3C/svg%3E");
+        background-attachment: fixed;
+        background-size: cover;
+    }
+    
     .main {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         padding: 20px;
+        color: white;
     }
     
     section {
@@ -55,6 +63,100 @@
         font-size: 24px;
         font-weight: bold;
         margin-top: 10px;
+        margin-bottom: 0;
+        padding: 0;
+    }
+    
+    .total {
+        border: 3px skyblue dotted;
+        padding: 0;
+        font-size: 30px;
+        background-color: aliceblue;
+        color: black;
+        font-weight: 700;
+    }
+    
+    .head {
+        font-size: 30px;
+        text-align: center;
+        font-weight: 900;
+        color: white;
+    }
+    
+    img {
+        max-height: 150px;
+    }
+    
+    .snipcart-item-line__image {
+        min-height: 50px;
+    }
+    
+    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Koulen&family=Lato&family=Nunito&family=Playfair+Display:ital@1&family=Prata&family=Raleway:ital,wght@1,100&family=Roboto&family=Roboto+Condensed&family=Teko&display=swap');
+    .snipcart-checkout {
+        font-family: Roboto, sans-serif;
+        font-weight: 0;
+        font-size: 14px;
+        color: #fff;
+        background-color: #0066CC;
+        padding: 5px 20px;
+        border: 2px solid #0066cc;
+        box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+        border-radius: 20px;
+        transition: 1000ms;
+        transform: translateY(0);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        cursor: pointer;
+        float: right;
+        margin: 5px;
+    }
+    
+    .snipcart-checkout:hover {
+        transition: 1000ms;
+        padding: 5px 30px;
+        transform: translateY(-0px);
+        background-color: #fff;
+        color: #0066cc;
+        border: solid 2px #0066cc;
+    }
+    
+    .snipcart-add-item {
+        background: linear-gradient(to right, #196BCA, #6433E0);
+        background-color: #196BCA;
+        color: #fff;
+        font-family: Tahoma;
+        font-size: 13px;
+        font-weight: 800;
+        font-style: normal;
+        text-decoration: none;
+        padding: 5px 12px;
+        border: 0px solid #000;
+        border-radius: 21px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        margin: 5px;
+    }
+    
+    .snipcart-add-item span {
+        margin-right: 12px;
+        display: block;
+        width: 27px;
+        height: 27px;
+        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAMAAADDpiTIAAAAA3NCSVQICAjb4U/gAAAACXBIWXMAABgIAAAYCAGI6z6gAAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAwBQTFRF////AAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACfCZLHQAAAP90Uk5TAAECAwQF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);
+        background-repeat: no-repeat;
+        background-size: contain;
+        transform: rotate(0deg);
+    }
+    
+    .snipcart-add-item:hover {
+        background: linear-gradient(to right, #5482d0, #7d5ee3);
+        background-color: #5482d0;
+    }
+    
+    .snipcart-add-item:active {
+        transform: scale(0.95);
     }
 </style>
 
@@ -92,8 +194,12 @@
 
         </section>
         <header>
-            <h1>PC Builder</h1>
+            <div class="head">PC Builder</div>
+            <button class="snipcart-checkout"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16"> <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" fill="white"></path> </svg>
+                <span class="snipcart-total-price" class="snipcart-checkout">$0.00</span>
+            </button>
         </header>
+
         <div class="main">
             <section>
                 <h2>CPU</h2>
@@ -106,6 +212,7 @@
                     <option value="ryzen5">AMD Ryzen 5</option>
                     <option value="ryzen7">AMD Ryzen 7</option>
                 </select>
+                <img id="cpu-img" src="" alt="">
             </section>
             <section>
                 <h2>Motherboard</h2>
@@ -123,6 +230,7 @@
                     <option value="nvidia">NVIDIA</option>
                     <option value="amd">AMD</option>
                 </select>
+                <img id="graphics-card-img" src="" alt="">
             </section>
             <section>
                 <h2>RAM</h2>
@@ -139,6 +247,8 @@
                     <option value="16gb">16GB</option>
                     <option value="32gb">32GB</option>
                 </select>
+                <img id="ram-img" src="" alt="">
+
             </section>
             <section>
                 <h2>Storage Devices</h2>
@@ -146,8 +256,8 @@
                 <label for="ssd">SSD</label>
                 <select id="ssdsize">
                     <option value="none">Select SSD size</option>
-                    <option value="4gb">4GB</option>
-                    <option value="8gb">8GB</option>
+                    <option value="256gb">256GB</option>
+                    <option value="512gb">512GB</option>
                     <option value="16gb">16GB</option>
                     <option value="32gb">32GB</option>
                 </select>
@@ -160,26 +270,37 @@
                     <option value="16gb">16GB</option>
                     <option value="32gb">32GB</option>
                 </select>
+                <img id="ssdstorage-img" src="" alt="">
+                <img id="hddstorage-img" src="" alt="">
             </section>
             <section>
                 <h2>Power Supply</h2>
                 <select id="power-supply">
+                    <option value="none">Select power-supply</option>
                     <option value="500w">500W</option>
                     <option value="750w">750W</option>
                     <option value="1000w">1000W</option>
                 </select>
+                <img id="power-supply-img" src="" alt="">
             </section>
             <section>
                 <h2>Case</h2>
                 <select id="case">
+                    <option value="none">Select Case</option>
                     <option value="corsair">Corsair</option>
                     <option value="nzxt">NZXT</option>
                     <option value="phanteks">Phanteks</option>
                 </select>
+                <img id="case-img" src="" alt="">
             </section>
             <section>
-                <h2>Total Cost</h2>
-                <p id="total-cost">$0</p>
+                <div class="total">
+                    <h2>Total Cost</h2>
+                    <p id="total-cost">$0</p>
+                    <button class="snipcart-add-item" id="btn" data-item-image="" data-item-name="Customized PC" data-item-id="Customized PC" data-item-price="" data-item-description="Customized pc" style="display: inline-flex;margin-left:1%;"><span></span>
+                        Add to cart
+                       </button>
+                </div>
             </section>
         </div>
 
@@ -288,6 +409,34 @@
             const caseSelect = document.getElementById('case');
             const totalCost = document.getElementById('total-cost');
             const ramBrandSelect = document.getElementById('ram-brand');
+            const ssdsize1 = document.getElementById('ssdsize');
+            const hddsize1 = document.getElementById('hddsize');
+            const cpuImg = document.getElementById('cpu-img');
+            const motherboardImg = document.getElementById('motherboard-img');
+            const graphicsCardImg = document.getElementById('graphics-card-img');
+            const ramImg = document.getElementById('ram-img');
+            const ssdstorageImg = document.getElementById('ssdstorage-img');
+            const hddstorageImg = document.getElementById('hddstorage-img');
+            const powerSupplyImg = document.getElementById('power-supply-img');
+            const caseImg = document.getElementById('case-img');
+            const snipcart = document.getElementById("btn");
+            const ImgUrl = 'assets/img';
+            document.getElementById('cpu').addEventListener('change', () => {
+                // Set the CPU image based on the selected value
+                if (document.getElementById('cpu').value === 'i3') {
+                    cpuImg.setAttribute('src', ImgUrl + '/i3-12.jpg');
+                } else if (document.getElementById('cpu').value === 'i5') {
+                    cpuImg.setAttribute('src', ImgUrl + '/i5-12.jpg');
+                } else if (document.getElementById('cpu').value === 'i7') {
+                    cpuImg.setAttribute('src', ImgUrl + 'i7-12.jpg');
+                } else if (document.getElementById('cpu').value === 'ryzen3') {
+                    cpuImg.setAttribute('src', ImgUrl + '/R3.jpg');
+                } else if (document.getElementById('cpu').value === 'ryzen5') {
+                    cpuImg.setAttribute('src', ImgUrl + '/R5.jpg');
+                } else if (document.getElementById('cpu').value === 'ryzen7') {
+                    cpuImg.setAttribute('src', ImgUrl + '/R9.jpg');
+                }
+            });
 
             function calculateTotalCost() {
                 let cost = 0;
@@ -321,18 +470,20 @@
                     cost += 200;
                 }
 
-                if (ramSelect.value === '4gb' && ramBrandSelect.value === 'Corsair') {
+                if (ramSelect.value === '4gb' && ramBrandSelect.value === 'corsair') {
                     cost += 50;
-                } else if (ramSelect.value === '8gb' && ramBrandSelect.value === 'Corsair') {
+                } else if (ramSelect.value === '8gb' && ramBrandSelect.value === 'corsair') {
                     cost += 100;
-                } else if (ramSelect.value === '16gb' && ramBrandSelect.value === 'Corsair') {
+                } else if (ramSelect.value === '16gb' && ramBrandSelect.value === 'corsair') {
                     cost += 150;
-                } else if (ramSelect.value === '32gb' && ramBrandSelect.value === 'Corsair') {
+                } else if (ramSelect.value === '32gb' && ramBrandSelect.value === 'corsair') {
                     cost += 250;
                 }
 
-                if (ssdCheckbox.checked) {
+                if (ssdCheckbox.checked && ssdsize1.value == '256gb') {
                     cost += 100;
+                } else if (ssdCheckbox.checked && ssdsize1.value == '512gb') {
+                    cost += 150;
                 }
 
                 if (hddCheckbox.checked) {
@@ -356,18 +507,149 @@
                 }
 
                 totalCost.innerText = '$' + cost;
+                localStorage.totalCost = cost;
+
+                snipcart.setAttribute('data-item-price', localStorage.totalCost);
+
+
             }
+            document.getElementById('motherboard').addEventListener('change', () => {
+                // Set the motherboard image based on the selected value
+                if (document.getElementById('motherboard').value === 'asus') {
+                    motherboardImg.setAttribute('src', motherboardImgUrl + '?brand=asus');
+                } else if (document.getElementById('motherboard').value === 'gigabyte') {
+                    motherboardImg.setAttribute('src', motherboardImgUrl + '?brand=gigabyte');
+                } else if (document.getElementById('motherboard').value === 'msi') {
+                    motherboardImg.setAttribute('src', motherboardImgUrl + '?brand=msi');
+                }
+            });
+
+            document.getElementById('graphics-card').addEventListener('change', () => {
+                // Set the graphics card image based on the selected value
+                if (document.getElementById('graphics-card').value === 'nvidia') {
+                    graphicsCardImg.setAttribute('src', graphicsCardImgUrl + '?brand=nvidia');
+                } else if (document.getElementById('graphics-card').value === 'amd') {
+                    graphicsCardImg.setAttribute('src', graphicsCardImgUrl + '?brand=amd');
+                }
+            });
+
+            document.getElementById('ram').addEventListener('change', () => {
+                // Set the RAM image based on the selected value
+                if (document.getElementById('ram').value === '4gb') {
+                    ramImg.setAttribute('src', ramImgUrl + '?size=4gb');
+                } else if (document.getElementById('ram').value === '8gb') {
+                    ramImg.setAttribute('src', ramImgUrl + '?size=8gb');
+                } else if (document.getElementById('ram').value === '16gb') {
+                    ramImg.setAttribute('src', ramImgUrl + '?size=16gb');
+                } else if (document.getElementById('ram').value === '32gb') {
+                    ramImg.setAttribute('src', ramImgUrl + '?size=32gb');
+                }
+            });
+
+            document.getElementById('ssd').addEventListener('change', () => {
+                // Set the SSD image when the checkbox is checked
+                if (document.getElementById('ssd').checked && ssdsize1.value == '256gb') {
+                    storageImg.setAttribute('src', storageImgUrl + '?type=ssd');
+                } else {
+                    storageImg.setAttribute('src', '');
+                }
+            });
+
+            document.getElementById('hdd').addEventListener('change', () => {
+                // Set the HDD image when the checkbox is checked
+                if (document.getElementById('hdd').checked) {
+                    ssdstorageImg.setAttribute('src', storageImgUrl + '?type=hdd');
+                } else {
+                    hddstorageImg.setAttribute('src', '');
+                }
+            });
+
+            document.getElementById('power-supply').addEventListener('change', () => {
+                // Set the power supply image based on the selected value
+                if (document.getElementById('power-supply').value === '500w') {
+                    powerSupplyImg.setAttribute('src', ImgUrl + '?wattage=500');
+                } else if (document.getElementById('power-supply').value === '750w') {
+                    powerSupplyImg.setAttribute('src', ImgUrl + '?wattage=750');
+                } else if (document.getElementById('power-supply').value === '1000w') {
+                    powerSupplyImg.setAttribute('src', ImgUrl + '?wattage=1000');
+                }
+            });
+
+            document.getElementById('case').addEventListener('change', () => {
+                // Set the case image based on the selected value
+                if (document.getElementById('case').value === 'corsair') {
+                    caseImg.setAttribute('src', ImgUrl + '/pre_built/game1.png');
+                    localStorage.caseimg = ImgUrl + '/pre_built/game1.png';
+                } else if (document.getElementById('case').value === 'nzxt') {
+                    caseImg.setAttribute('src', ImgUrl + '/pre_built/game1.png');
+                    localStorage.caseimg = ImgUrl + '/pre_built/game1.png';
+                } else if (document.getElementById('case').value === 'phanteks') {
+                    caseImg.setAttribute('src', ImgUrl + '/pre_built/game1.png');
+                    localStorage.caseimg = ImgUrl + '/pre_built/game1.png';
+                }
+
+                snipcart.setAttribute('data-item-image', localStorage.caseimg);
+            });
+
 
             cpuSelect.addEventListener('change', calculateTotalCost);
             motherboardSelect.addEventListener('change', calculateTotalCost);
             graphicsCardSelect.addEventListener('change', calculateTotalCost);
             ramSelect.addEventListener('change', calculateTotalCost);
+            caseSelect.addEventListener('change', calculateTotalCost);
             ssdCheckbox.addEventListener('change', calculateTotalCost);
             hddCheckbox.addEventListener('change', calculateTotalCost);
             powerSupplySelect.addEventListener('change', calculateTotalCost);
-            caseSelect.addEventListener('change', calculateTotalCost);
+            ssdsize1.addEventListener('change', calculateTotalCost);
+            hddsize1.addEventListener('change', calculateTotalCost);
+
+
+            window.SnipcartSettings = {
+                publicApiKey: 'NTM3NDYyOTAtYjMxOC00YTU4LThmYTQtZjMwZDhlNGU4OTU1NjM4MTM1Mjk2OTg0MjU2NjY5',
+                loadStrategy: 'on-user-interaction',
+                addProductBehavior: "none",
+                modalStyle: "side",
+            };
+
+            (() => {
+                var c, d;
+                (d = (c = window.SnipcartSettings).version) != null || (c.version = "3.0");
+                var s, S;
+                (S = (s = window.SnipcartSettings).timeoutDuration) != null || (s.timeoutDuration = 2750);
+                var l, p;
+                (p = (l = window.SnipcartSettings).domain) != null || (l.domain = "cdn.snipcart.com");
+                var w, u;
+                (u = (w = window.SnipcartSettings).protocol) != null || (w.protocol = "https");
+                var f = window.SnipcartSettings.version.includes("v3.0.0-ci") || window.SnipcartSettings.version != "3.0" && window.SnipcartSettings.version.localeCompare("3.4.0", void 0, {
+                        numeric: !0,
+                        sensitivity: "base"
+                    }) === -1,
+                    m = ["focus", "mouseover", "touchmove", "scroll", "keydown"];
+                window.LoadSnipcart = o;
+                document.readyState === "loading" ? document.addEventListener("DOMContentLoaded", r) : r();
+
+                function r() {
+                    window.SnipcartSettings.loadStrategy ? window.SnipcartSettings.loadStrategy === "on-user-interaction" && (m.forEach(t => document.addEventListener(t, o)), setTimeout(o, window.SnipcartSettings.timeoutDuration)) : o()
+                }
+                var a = !1;
+
+                function o() {
+                    if (a) return;
+                    a = !0;
+                    let t = document.getElementsByTagName("head")[0],
+                        e = document.querySelector("#snipcart"),
+                        i = document.querySelector(`src[src^="${window.SnipcartSettings.protocol}://${window.SnipcartSettings.domain}"][src$="snipcart.js"]`),
+                        n = document.querySelector(`link[href^="${window.SnipcartSettings.protocol}://${window.SnipcartSettings.domain}"][href$="snipcart.css"]`);
+                    e || (e = document.createElement("div"), e.id = "snipcart", e.setAttribute("hidden", "true"), document.body.appendChild(e)), v(e), i || (i = document.createElement("script"), i.src = `${window.SnipcartSettings.protocol}://${window.SnipcartSettings.domain}/themes/v${window.SnipcartSettings.version}/default/snipcart.js`, i.async = !0, t.appendChild(i)), n || (n = document.createElement("link"), n.rel = "stylesheet", n.type = "text/css", n.href = `${window.SnipcartSettings.protocol}://${window.SnipcartSettings.domain}/themes/v${window.SnipcartSettings.version}/default/snipcart.css`, t.prepend(n)), m.forEach(g => document.removeEventListener(g, o))
+                }
+
+                function v(t) {
+                    !f || (t.dataset.apiKey = window.SnipcartSettings.publicApiKey, window.SnipcartSettings.addProductBehavior && (t.dataset.configAddProductBehavior = window.SnipcartSettings.addProductBehavior), window.SnipcartSettings.modalStyle && (t.dataset.configModalStyle = window.SnipcartSettings.modalStyle), window.SnipcartSettings.currency && (t.dataset.currency = window.SnipcartSettings.currency), window.SnipcartSettings.templatesUrl && (t.dataset.templatesUrl = window.SnipcartSettings.templatesUrl))
+                }
+            })();
         </script>
-        <script src="assets/js/pc.js"></script>
+        <script async src="https://cdn.snipcart.com/themes/v3.3.0/default/snipcart.js"></script>
+
 </body>
 
 </html>
