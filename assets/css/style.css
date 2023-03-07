@@ -467,11 +467,14 @@
             display: none;
         }
         .search{
-            max-width: 100px;
+            max-width: 70px;
         }
     }
     
     @media (max-width: 500px) {
+        .search{
+            max-width: 70px;
+        }
         .inner-container {
             margin-top: 80px;
             margin-right: auto;
