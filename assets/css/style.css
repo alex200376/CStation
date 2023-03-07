@@ -466,6 +466,9 @@
         .swiper-slide.empty {
             display: none;
         }
+        .search{
+            max-width: 100px;
+        }
     }
     
     @media (max-width: 500px) {
