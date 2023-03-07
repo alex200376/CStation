@@ -348,6 +348,16 @@
                     !f || (t.dataset.apiKey = window.SnipcartSettings.publicApiKey, window.SnipcartSettings.addProductBehavior && (t.dataset.configAddProductBehavior = window.SnipcartSettings.addProductBehavior), window.SnipcartSettings.modalStyle && (t.dataset.configModalStyle = window.SnipcartSettings.modalStyle), window.SnipcartSettings.currency && (t.dataset.currency = window.SnipcartSettings.currency), window.SnipcartSettings.templatesUrl && (t.dataset.templatesUrl = window.SnipcartSettings.templatesUrl))
                 }
             })();
+            document.addEventListener('snipcart.ready', function() {
+                Snipcart.api.session.setLanguage('en', {
+                    "payment": {
+                        "form": {
+                            "deferred_payment_title": "Pay at delivery",
+                            "deferred_payment_instructions": "Payment will be made with a credit card at the delivery of your order."
+                        }
+                    }
+                });
+            });
         </script>
         <script async src="https://cdn.snipcart.com/themes/v3.3.0/default/snipcart.js"></script>
 
