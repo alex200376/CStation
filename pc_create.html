@@ -200,11 +200,39 @@
         <div class="main" style="min-height: 700px;">
 
 
-            <br><br>
-            <button type="submit" class="snipcart-add-item" data-item-id="1" data-item-name="Custom PC" data-item-price="0" data-item-url="/custom-pc" data-item-description="Build your own custom PC" data-item-image="" data-item-custom1-name="CPU" data-item-custom1-drop=""
-                data-item-custom2-name="GPU" data-item-custom2-value="" data-item-custom3-name="RAM" data-item-custom3-value="" data-item-custom4-name="Storage" data-item-custom4-value="" data-item-quantity="1">Add to Cart</button>
+            <form action="" method="post">
+                <label for="cpu">CPU:</label>
+                <select name="cpu" id="cpu">
+                  <option value="i5" data-price="250">Intel Core i5</option>
+                  <option value="i7" data-price="400">Intel Core i7 </option>
+                  <option value="ryzen5" data-price="320">AMD Ryzen 5 </option>
+                  <option value="ryzen7" data-price="500">AMD Ryzen 7 </option>
+                </select>
+                <br>
+                <label for="gpu">GPU:</label>
+                <select name="gpu" id="gpu">
+                  <option value="gtx1050" data-price="1700">Nvidia GTX 1050</option>
+                  <option value="gtx1660" data-price="2200">Nvidia GTX 1660 </option>
+                  <option value="rtx2060" data-price="3000">Nvidia RTX 2060 </option>
+                  <option value="rx580" data-price="1200">AMD RX 580 </option>
+                </select>
+                <br>
+                <label for="ram">RAM:</label>
+                <select name="ram" id="ram">
+                  <option value="8" data-price="0">8GB</option>
+                  <option value="16" data-price="100">16GB (+$100)</option>
+                  <option value="32" data-price="200">32GB (+$200)</option>
+                </select>
+                <br>
+                <label for="storage">Storage:</label>
+                <select name="storage" id="storage">
+                  <option value="hdd" data-price="0">1TB HDD</option>
+                  <option value="ssd" data-price="50">256GB SSD (+$50)</option>
+                  <option value="ssd+hdd" data-price="100">256GB SSD + 1TB HDD (+$100)</option>
+                </select>
+                <br>
+                <button type="submit" class="snipcart-add-item" data-item-id="custom-pc" data-item-name="custom-pc" data-item-price="0">Add to cart</button>
             </form>
-            </section>
         </div>
 
 
@@ -347,6 +375,36 @@
                     !f || (t.dataset.apiKey = window.SnipcartSettings.publicApiKey, window.SnipcartSettings.addProductBehavior && (t.dataset.configAddProductBehavior = window.SnipcartSettings.addProductBehavior), window.SnipcartSettings.modalStyle && (t.dataset.configModalStyle = window.SnipcartSettings.modalStyle), window.SnipcartSettings.currency && (t.dataset.currency = window.SnipcartSettings.currency), window.SnipcartSettings.templatesUrl && (t.dataset.templatesUrl = window.SnipcartSettings.templatesUrl))
                 }
             })();
+            // Get the dropdown menus
+            const cpuSelect = document.getElementById('cpu');
+            const gpuSelect = document.getElementById('gpu');
+            const ramSelect = document.getElementById('ram');
+            const storageSelect = document.getElementById('storage');
+
+            // Get the base price from the form
+            const basePrice = parseFloat(document.querySelector('.snipcart-add-item').getAttribute('data-item-price'));
+
+            // Add event listeners to the dropdown menus
+            cpuSelect.addEventListener('change', updatePrice);
+            gpuSelect.addEventListener('change', updatePrice);
+            ramSelect.addEventListener('change', updatePrice);
+            storageSelect.addEventListener('change', updatePrice);
+
+            // Function to update the price based on the selected options
+            function updatePrice() {
+                // Get the selected option values and prices
+                const cpuPrice = parseFloat(cpuSelect.options[cpuSelect.selectedIndex].getAttribute('data-price'));
+                const gpuPrice = parseFloat(gpuSelect.options[gpuSelect.selectedIndex].getAttribute('data-price'));
+                const ramPrice = parseFloat(ramSelect.options[ramSelect.selectedIndex].getAttribute('data-price'));
+                const storagePrice = parseFloat(storageSelect.options[storageSelect.selectedIndex].getAttribute('data-price'));
+
+                // Calculate the new price based on the selected options
+                const newPrice = basePrice + cpuPrice + gpuPrice + ramPrice + storagePrice;
+
+                // Update the data-item-price attribute with the new price
+                document.querySelector('.snipcart-add-item').setAttribute('data-item-price', newPrice.toFixed(2));
+
+            }
         </script>
         <script async src="https://cdn.snipcart.com/themes/v3.3.0/default/snipcart.js"></script>
 
