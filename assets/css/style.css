@@ -473,7 +473,8 @@
     
     @media (max-width: 500px) {
         .search{
-            max-width: 70px;
+            min-width: 70px;
+           
         }
         .inner-container {
             margin-top: 80px;
