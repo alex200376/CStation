@@ -432,7 +432,7 @@
     }
     
     @media (max-width: 768px) {
-        .bi-search{
+        .bi-search {
             display: none;
         }
         .inner-container {
@@ -469,16 +469,16 @@
         .swiper-slide.empty {
             display: none;
         }
-        .search{
+        .search {
             max-width: 70px;
         }
     }
     
     @media (max-width: 500px) {
-        .bi-search{
+        .bi-search {
             display: none;
         }
-        .search{
+        .search {
             min-width: 70px;
         }
         .inner-container {
@@ -566,6 +566,10 @@
         font-size: 12px;
         line-height: 0;
         margin-left: 10px;
+    }
+    
+    i.bi.mobile-nav-toggle.bi-x {
+        z-index: 9999;
     }
     
     .back,
@@ -686,6 +690,7 @@
     /**
 * Mobile Navigation 
 */
+    
     .mobile-nav-toggle {
         color: #fff;
         font-size: 28px;
