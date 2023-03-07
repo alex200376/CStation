@@ -432,6 +432,9 @@
     }
     
     @media (max-width: 768px) {
+        .bi-search{
+            display: none;
+        }
         .inner-container {
             margin-top: 80px;
             margin-right: 0px;
@@ -472,9 +475,11 @@
     }
     
     @media (max-width: 500px) {
+        .bi-search{
+            display: none;
+        }
         .search{
             min-width: 70px;
-           
         }
         .inner-container {
             margin-top: 80px;
