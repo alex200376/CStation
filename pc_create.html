@@ -155,6 +155,21 @@
     .snipcart-add-item:active {
         transform: scale(0.95);
     }
+    
+    .patterns {
+        width: 100vw;
+        height: 100vw;
+    }
+    
+    .pt1 {
+        background-size: 50px 50px;
+        background-color: #0ae;
+        background-image: -webkit-linear-gradient(rgba(255, 255, 255, .2) 50%, transparent 50%, transparent);
+        background-image: -moz-linear-gradient(rgba(255, 255, 255, .2) 50%, transparent 50%, transparent);
+        background-image: -ms-linear-gradient(rgba(255, 255, 255, .2) 50%, transparent 50%, transparent);
+        background-image: -o-linear-gradient(rgba(255, 255, 255, .2) 50%, transparent 50%, transparent);
+        background-image: linear-gradient(rgba(255, 255, 255, .2) 50%, transparent 50%, transparent);
+    }
 </style>
 
 <body>
@@ -182,7 +197,7 @@
         </div>
     </header>
     <!-- End Header -->
-    <main id="main" style="margin-bottom: 50px;">
+    <main id="main" style="margin-bottom: 50px;" class="patterns pt1">
         <section id="hero" class="d-flex align-items-center" style="height:100px">
 
             <div class="container">
@@ -199,7 +214,7 @@
 
         <div class="main" style="min-height: 700px;">
             <p style="position: absolute;top: 35%;left: 7%;font-size: 40px;background-color: black;">Built your own PC using our webpage!!</p>
-            <img src="assets/img/pc_built.png" style="min-width: 1080px;min-height: 720px;margin-bottom: 20px;" />
+
             <br><br>
             <button type="submit" class="snipcart-add-item" data-item-id="1" data-item-name="Custom PC" data-item-price="0.0" data-item-description="Build your own custom PC" data-item-image="" data-item-custom1-name="Case" data-item-custom1-options="case1[+190]|case2[+250]|case3[+299]|case4[+399]"
                 data-item-custom2-name="mother board" data-item-custom2-options="m1[+249]|m2[+359]|m3[+499]|m4[+676]|m5[+999]" data-item-custom3-name="CPU" data-item-custom3-options="CPU1[+199]|CPU2[+259]|CPU3[+399]|CPU4[+499]" data-item-custom4-name="GPU"
