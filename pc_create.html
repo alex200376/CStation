@@ -30,7 +30,7 @@
         flex-wrap: wrap;
         justify-content: space-between;
         padding: 20px;
-        color: rgb(55, 85, 255);
+        color: rgb(255, 255, 255);
     }
     
     select {
@@ -130,85 +130,9 @@
         transform: scale(0.95);
     }
     
-    .patterns {
-        width: 100vw;
-        height: 100%;
-    }
-    
-    .pt1 {
-        background-size: 50px 50px;
-        background-color: #0ae;
-        background-image: -webkit-linear-gradient(rgba(255, 255, 255, .2) 50%, transparent 50%, transparent);
-        background-image: -moz-linear-gradient(rgba(255, 255, 255, .2) 50%, transparent 50%, transparent);
-        background-image: -ms-linear-gradient(rgba(255, 255, 255, .2) 50%, transparent 50%, transparent);
-        background-image: -o-linear-gradient(rgba(255, 255, 255, .2) 50%, transparent 50%, transparent);
-        background-image: linear-gradient(rgba(255, 255, 255, .2) 50%, transparent 50%, transparent);
-    }
-    /* Basic Styling */
-    
-    Certainly,
-    here is an example of a CSS code that you can use for the product page HTML code that I previously provided: ```
-    /* Global styles */
-    
-    .product-image {
-        flex: 1 1 40%;
-        margin: 0 1rem;
-        max-width: 600px;
-        margin-left: 50px;
-    }
-    
-    .product-image img {
-        display: block;
-        max-width: 60%;
-        margin-left: 50px;
-    }
-    
-    .description {
-        padding: 10px;
-        margin-top: 30px;
-    }
-    
-    .product-details {
-        background-color: #fff;
-        border-radius: 20px;
-        flex: 1 1 50%;
-        margin: 0 1rem;
-        max-width: 600px;
-        max-height: 700px;
-        box-shadow: 1px 11px 40px 16px rgba(189, 187, 187, 0.59);
-        -webkit-box-shadow: 1px 11px 40px 16px rgba(189, 187, 187, 0.59);
-        -moz-box-shadow: 1px 11px 40px 16px rgba(189, 187, 187, 0.59);
-    }
-    
-    .product-details h1 {
-        font-size: 2rem;
-        margin-bottom: 1rem;
-    }
-    
-    .product-details p {
-        margin-bottom: 1rem;
-    }
-    
-    .product-details .price {
-        font-size: 1.5rem;
-        font-weight: bold;
-    }
-    
-    form label {
-        display: block;
-        font-weight: bold;
-        margin-bottom: 0.5rem;
-    }
-    
-    @media screen and (max-width: 768px) {
-        main {
-            display: block;
-        }
-        .product-image,
-        .product-details {
-            flex: 1 1 100%;
-            max-width: none;
-        }
+    .layout {
+        display: flex;
+        gap: 16px;
     }
 </style>
 
@@ -230,9 +154,9 @@
                     </li>
                     <li>
                         <a class="nav-link scrollto" href="pre_built.html">
-                                Pre
-                                built PC
-                            </a>
+                            Pre
+                            built PC
+                        </a>
                     </li>
                     <li>
                         <a class="nav-link scrollto active" href="pc_create.html">PC builder</a>
@@ -242,9 +166,9 @@
                     </li>
                     <li>
                         <a class="nav-link scrollto" href="about_us.html">
-                                About
-                                us
-                            </a>
+                            About
+                            us
+                        </a>
                     </li>
                     <li>
                         <a class="nav-link scrollto" href="index.html#services">Services</a>
@@ -252,10 +176,10 @@
                     <button class="snipcart-customer-signin getstarted
                             scrollto" style="background-color: rgba(240, 255,
                             255, 0);">
-                            <i class="ri-login-box-line" style="font-size:
+                        <i class="ri-login-box-line" style="font-size:
                                 20px;"></i>
-                            My account
-                        </button>
+                        My account
+                    </button>
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
             </nav>
@@ -263,115 +187,57 @@
         </div>
     </header>
     <!-- End Header -->
-    <main id="main" style="margin-bottom: 50px;" class="patterns pt1">
+    <main id="main" style="margin-bottom: 50px;background-image: url(assets/img/cool-background.png);background-size: cover;">
         <section id="hero" class="d-flex align-items-center" style="height:100px">
             <div class="container"></div>
         </section>
         <header>
-            <div class="head" style="font-size: 45px;display:inline-block;">PC Builder</div>
+            <div class="head" style="font-size: 45px;display:inline-block;color: #ffffff;">PC Builder</div>
             <button class="snipcart-checkout">
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="25"
-                        height="25"
-                        fill="currentColor"
-                        class="bi bi-cart"
-                        viewBox="0 0 16 16"
-                    >
-                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart"
+                    viewBox="0 0 16 16">
+                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1
                             .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5
                             0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61
                             2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313
                             7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0
                             0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1
                             0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" fill="white"></path>
-                    </svg>
-                    <span class="snipcart-total-price" class="snipcart-checkout">$0.00</span>
-                </button>
+                </svg>
+                <span class="snipcart-total-price" class="snipcart-checkout">$0.00</span>
+            </button>
         </header>
-        <div class="main" style="min-height: 720px;">
-            <section class="product">
-                <div class="margin-bottom-sm">
-                    <nav class="breadcrumbs text-sm" aria-label="Breadcrumbs">
-                        <ol class="flex flex-wrap gap-2xs">
-                            <li class="breadcrumbs__item">
-                                <a href="#0" class="color-inherit">Shop</a>
-                                <span class="color-contrast-low margin-left-2xs" aria-hidden="true">/</span>
-                            </li>
-
-                            <li class="breadcrumbs__item">
-                                <a href="#0" class="color-inherit">Tees</a>
-                                <span class="color-contrast-low margin-left-2xs" aria-hidden="true">/</span>
-                            </li>
-
-                            <li class="breadcrumbs__item" aria-current="page">Tee Name</li>
-                        </ol>
-                    </nav>
+        <section class="layout">
+            <div> <img src="assets/img/pre_built/game1.png" alt="Preview image description" style="max-height: 500px;display: inline;margin-left: 50px;padding: 30px;"></div>
+            <div style="margin-left: 50px;padding: 30px;">
+                <div>
+                    <h1 style="text-align: left;color: #f5f5f5;">Customize PC</h1>
                 </div>
 
-                <div class="grid gap-md">
-                    <div class="col-6@md col-7@lg">
-                        <figure class="image-zoom js-image-zoom ">
-                            <img class="image-zoom__preview js-image-zoom__preview" src="../../../app/assets/img/product-img-1.jpg" alt="Preview image description">
-                            <figcaption class="sr-only">Image Caption</figcaption>
-                        </figure>
+                <div style="float: right;color: #ffffff;">
+                    <div style="float: right;padding: 30px;">
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;Looking for a computer that perfectly suits your needs and preferences? Look no further than our customizable PC options!
+                            <br>&nbsp;&nbsp;&nbsp;&nbsp; Our customizable PC allows you to choose everything from the processor to the graphics card, ensuring that every aspect of your computer is tailored to your specific requirements. Whether you're
+                            a gamer, a designer, or simply someone who wants a computer that can handle all of their daily tasks with ease, our customizable PC is the perfect solution.
+                            <br>&nbsp;&nbsp;&nbsp;&nbsp; With a range of options for processors, RAM, storage, graphics cards, and more, you can create a computer that is perfectly optimized for your needs. Whether you want lightning-fast processing speeds,
+                            stunning graphics capabilities, or simply a computer that can handle all of your daily tasks with ease, our customizable PC options have got you covered.<br>&nbsp;&nbsp;&nbsp;&nbsp; So why wait? Start customizing your perfect
+                            computer today and experience the ultimate in personalized computing power!</p>
+                        <span class="snipcart-total-price" style="font-size: 20px;font-weight: 600;background-color: whitesmoke;border-radius: 20px;padding: 10px 20px;color: #196BCA;">$0.00</span>
                     </div>
 
-                    <div class="col-6@md col-5@lg">
-                        <div class="margin-bottom-xs">
-                            <h1>Product Name</h1>
-                        </div>
-
-                        <div class="flex">
-                            <div class="rating rating--read-only js-rating js-rating--read-only text-xs">
-                                <p class="sr-only">The rating of this product is <span class="rating__value js-rating__value">4.5</span> out of 5</p>
-
-                                <div class="rating__control rating__control--hide js-rating__control">
-                                    <svg width="24" height="24" viewBox="0 0 24 24"><polygon points="12 1.489 15.09 7.751 22 8.755 17 13.629 18.18 20.511 12 17.261 5.82 20.511 7 13.629 2 8.755 8.91 7.751 12 1.489" fill="currentColor"/></svg>
-                                </div>
-                            </div>
-
-                            <p class="margin-left-2xs">
-                                <a href="#0" class="text-sm color-inherit">65 reviews</a>
-                            </p>
-                        </div>
-
-                        <div class="text-component margin-y-md">
-                            <p>&nbsp;&nbsp;&nbsp;&nbsp;Looking for a computer that perfectly suits your needs and preferences? Look no further than our customizable PC options!<br>&nbsp;&nbsp;&nbsp;&nbsp; Our customizable PC allows you to choose everything
-                                from the processor to the graphics card, ensuring that every aspect of your computer is tailored to your specific requirements. Whether you're a gamer, a designer, or simply someone who wants a computer that can handle
-                                all of their daily tasks with ease, our customizable PC is the perfect solution.<br>&nbsp;&nbsp;&nbsp;&nbsp; With a range of options for processors, RAM, storage, graphics cards, and more, you can create a computer that
-                                is perfectly optimized for your needs. Whether you want lightning-fast processing speeds, stunning graphics capabilities, or simply a computer that can handle all of your daily tasks with ease, our customizable PC options
-                                have got you covered.<br>&nbsp;&nbsp;&nbsp;&nbsp; So why wait? Start customizing your perfect computer today and experience the ultimate in personalized computing power!</p>
-                            <p class="text-md"><del class="text-line-through color-contrast-medium margin-right-2xs">$49</del><ins class="text-decoration-none">$29</ins></p>
-                        </div>
-
-                        <div class="margin-bottom-md">
-
-
-                        </div>
-
-                        <div class="flex gap-xs">
-
-
-
-
-                            <button type="submit" class="snipcart-add-item" data-item-id="1" data-item-name="Custom PC" data-item-price="0.0" data-item-description="Build your own custom PC" data-item-image="assets/img/pc_built.png" data-item-custom1-name="Case" data-item-custom1-options="case1[+190]|case2[+250]|case3[+299]|case4[+399]"
-                                data-item-custom2-name="mother board" data-item-custom2-options="m1[+249]|m2[+359]|m3[+499]|m4[+676]|m5[+999]" data-item-custom3-name="CPU" data-item-custom3-options="CPU1[+199]|CPU2[+259]|CPU3[+399]|CPU4[+499]" data-item-custom4-name="GPU"
-                                data-item-custom4-options="None|GPU1[+799]|GPU2[+990]|GPU3[+1299]|GPU4[+1799]|GPU5[+1999]|GPU6[+9799]|GPU7[+10999]" data-item-custom5-name="SSD" data-item-custom5-options="None|128GB[+299]|256GB[+499]">
-                          Build
-                          now!
-                      </button>
-                        </div>
+                    <div class="flex gap-xs">
+                        <button type="submit" class="snipcart-add-item" data-item-id="1" data-item-name="Custom PC" data-item-price="0.0" data-item-description="Build your own custom PC" data-item-image="assets/img/pc_built.png" data-item-custom1-name="Case" data-item-custom1-options="case1[+190]|case2[+250]|case3[+299]|case4[+399]"
+                            data-item-custom2-name="mother board" data-item-custom2-options="m1[+249]|m2[+359]|m3[+499]|m4[+676]|m5[+999]" data-item-custom3-name="CPU" data-item-custom3-options="CPU1[+199]|CPU2[+259]|CPU3[+399]|CPU4[+499]" data-item-custom4-name="GPU"
+                            data-item-custom4-options="None|GPU1[+799]|GPU2[+990]|GPU3[+1299]|GPU4[+1799]|GPU5[+1999]|GPU6[+9799]|GPU7[+10999]" data-item-custom5-name="SSD" data-item-custom5-options="None|128GB[+299]|256GB[+499]">
+                            Build
+                            now!
+                        </button>
                     </div>
                 </div>
-            </section>
+            </div>
+            </div>
+        </section>
 
-
-
-
-
-
-        </div>
 
         <!-- ======= Footer ======= -->
         <footer id="footer">
@@ -387,7 +253,8 @@
                                 <strong>Email:</strong> ccdfs@hkuspace.hku.hk
                                 <br>
                                 <strong>
-                                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScUtwUw1Wk0iIMSkA1GfuUbYXO1dZWQcWLemcd-z3ya3x5U6g/viewform?embedded=true">Feedback</a>
+                                    <a
+                                        href="https://docs.google.com/forms/d/e/1FAIpQLScUtwUw1Wk0iIMSkA1GfuUbYXO1dZWQcWLemcd-z3ya3x5U6g/viewform?embedded=true">Feedback</a>
                                 </strong>
                             </p>
                         </div>
