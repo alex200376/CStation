@@ -157,83 +157,141 @@
     }
     /* Basic Styling */
 
- 
-.container {
-  margin: 0 auto;
-  padding: 15px;
-  display: flex;
-}
-/* Columns */
-.left-column {
-  width: 65%;
-  position: relative;
-}
- 
-.right-column {
-  width: 35%;
-  margin-top: 60px;
-}
-.left-column img {
-  width: 40%;
-  position: absolute;
-  left: 0;
-  top: 0;
-  transition: all 0.3s ease;
-}
- 
+    Certainly, here is an example of a CSS code that you can use for the product page HTML code that I previously provided:
 
-/* Product Description */
-.product-description {
-  border-bottom: 1px solid #E1E8EE;
-  margin-bottom: 20px;
-  background-color: white;
-  border-radius: 20px;
-  padding: 10px;
+```
+/* Global styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-.product-description span {
-  font-size: 12px;
-  color: #358ED7;
-  letter-spacing: 1px;
-  text-transform: uppercase;
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin: 0 1rem;
+}
+
+nav a {
+  color: #fff;
   text-decoration: none;
 }
-.product-description h1 {
-  font-weight: 300;
-  font-size: 52px;
-  color: #43484D;
-  letter-spacing: -2px;
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 2rem 0;
 }
-.product-description p {
-  font-size: 16px;
-  font-weight: 300;
-  color: #0088ff;
-  line-height: 24px;
+
+.product-image {
+  flex: 1 1 40%;
+  margin: 0 1rem;
+  max-width: 600px;
 }
-@media (max-width: 940px) {
-  .container {
-    flex-direction: column;
-    margin-top: 60px;
+
+.product-image img {
+  display: block;
+  max-width: 100%;
+}
+
+.product-details {
+  flex: 1 1 50%;
+  margin: 0 1rem;
+  max-width: 600px;
+}
+
+.product-details h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.product-details p {
+  margin-bottom: 1rem;
+}
+
+.product-details .price {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+form select,
+form input[type="number"] {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  width: 100%;
+}
+
+form button[type="submit"] {
+  background-color: #f90;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.3s ease;
+}
+
+form button[type="submit"]:hover {
+  background-color: #e87;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
+footer p {
+  margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    display: block;
   }
- 
-  .left-column,
-  .right-column {
-    width: 100%;
-  }
- 
-  .left-column img {
-    width: 300px;
-    right: 0;
-    top: -65px;
-    left: initial;
+
+  .product-image,
+  .product-details {
+    flex: 1 1 100%;
+    max-width: none;
   }
 }
- 
-@media (max-width: 535px) {
-  .left-column img {
-    width: 220px;
-    top: -85px;
-  }
-}
+```
+
+This CSS code includes styles for the navigation bar, product image, product details, form, and footer. It also includes media queries for responsive design on smaller screens.
     </style>
     <body>
         <!-- ======= Header ======= -->
@@ -314,7 +372,7 @@
             </header>
             <div class="main" style="min-height: 1000px;">
                 <section class="product-image">
-                    <img src="product-image.jpg" alt="Product Image">
+                    <img src="assets/img/pre_built/game1.png" alt="Product Image">
                   </section>
                   <section class="product-details">
                     <h1>Product Name</h1>
