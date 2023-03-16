@@ -28,6 +28,7 @@
     <link href="assets/css/style1.css" rel="stylesheet">
     <!-- Resource style -->
     <script src="assets/js/modernizr.js"></script>
+    <script src="assets/js/main.js"></script>
     <title>Products</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Koulen&family=Lato&family=Nunito&family=Playfair+Display:ital@1&family=Prata&family=Raleway:ital,wght@1,100&family=Roboto&family=Roboto+Condensed&family=Teko&display=swap');
@@ -129,7 +130,7 @@
         </div>
     </header>
     <!-- End Header -->
-    <section id="hero" class="d-flex align-items-center" style="height:80px">
+    <section id="hero" class="d-flex align-items-center" style="height:100px">
 
         <div class="container">
 
@@ -137,181 +138,211 @@
     </section>
 
 
+    <main>
 
-    <div class="background"></div>
-    <main class="cd-main-content " style="overflow-y:scroll">
-        <div class="cd-tab-filter-wrapper" style="height: 50px;">
-            <button class="snipcart-checkout"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16"> <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" fill="white"></path> </svg>
-                <span class="snipcart-total-price" class="snipcart-checkout">$0.00</span>
-            </button>
-            <div class="cd-filter-content" style="display: inline-flexbox;text-align: center;margin-left:60px">
-
-                <i class="bi-search"></i> <input type="search" placeholder="Try intel... " style="border: gray 2px;height: 40px;background-color: azure;margin: 5px;min-width: 200px;border-radius: 10px;">
-            </div>
-            </ul>
+        <button class="snipcart-checkout"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16"> <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" fill="white"></path> </svg>
+            <span class="snipcart-total-price" class="snipcart-checkout">$0.00</span>
+        </button>
+        <a href="product_com.html" class="compare" style="margin-top: 10px;">Compare them</a>
 
 
-
-            <!-- cd-filters -->
-
-        </div>
-        <!-- cd-tab-filter -->
-
-        </div>
-        <!-- cd-tab-filter-wrapper -->
-
-        <a href="product_com.html" class="compare" style="float: right;margin-top: 10px;">Compare them</a>
-        <section class="cd-gallery products">
-
-            <ul>
-                <li class="mix CPU intel Core_I3 LGA1700 gaming" id="cart_item"><img src="assets/img/pre_built/game1.png" alt="Image 1 ">
-                    <div class="product_name">Low gaming PC</div>
-                    <div class="price">$
-                        <div class="xd">3990</div>
-                    </div><br>
-                    <button class="snipcart-add-item" data-item-id="Low gaming PC" data-item-price="3990.0" data-item-description="Low gaming PC" data-item-image="assets/img/pre_built/game1.png" data-item-name="Low gaming PC" data-item-custom1-name="Ram size" data-item-custom1-options="8GB|16GB[+250]|32GB[+349]"
-                        data-item-custom2-name="SSD size" data-item-custom2-options="128GB|256GB[+329]|512GB[+499]|1TB[+799]" data-item-custom3-name="HDD size" data-item-custom3-options="512GB|1TB[+299]|2TB[+399]"><span></span>
-                        Add to cart
-                       </button>
-                </li>
-                <li class="mix CPU intel Core_I3 LGA1700 gaming" id="cart_item"><img src="assets/img/pre_built/game2.png" alt="Image 2">
-                    <div class="product_name">Basic gaming pc</div>
-                    <div class="price">$
-                        <div class="xd">5599</div>
-                    </div><br>
-                    <button class="snipcart-add-item" data-item-id="Basic gaming pc" data-item-price="5599.0" data-item-description="Basic gaming pc" data-item-image="assets/img/pre_built/game2.png" data-item-name="Basic gaming pc" data-item-custom1-name="Ram size" data-item-custom1-options="8GB|16GB[+250]|32GB[+349]"
-                        data-item-custom2-name="SSD size" data-item-custom2-options="128GB|256GB[+329]|512GB[+499]|1TB[+799]" data-item-custom3-name="HDD size" data-item-custom3-options="512GB|1TB[+299]|2TB[+399]"><span></span>
-                        Add to cart
-                       </button>
-                </li>
-                <li class="mix CPU intel Core_I3 LGA1700 gaming" id="cart_item"><img src="assets/img/pre_built/game3.png " alt="Image 3 ">
-                    <div class="product_name ">Advance gaming pc</div>
-                    <div class="price ">$
-                        <div class="xd ">12999</div>
-                    </div><br>
-                    <button class="snipcart-add-item" data-item-id="Advance gaming pc" data-item-price="12999.0 " data-item-description="Advance gaming pc" data-item-image="assets/img/pre_built/game3.png" data-item-name="Advance gaming pc" data-item-custom1-name="Ram size"
-                        data-item-custom1-options="8GB|16GB[+250]|32GB[+349]" data-item-custom2-name="SSD size" data-item-custom2-options="128GB|256GB[+329]|512GB[+499]|1TB[+799]" data-item-custom3-name="HDD size" data-item-custom3-options="512GB|1TB[+299]|2TB[+399]"><span></span>
-                        Add to cart
-                       </button>
-                </li>
-                <li class="mix CPU intel Core_I3 LGA1700 business" id="cart_item "><img src="assets/img/pre_built/bus1.png " alt="Image 4 ">
-                    <div class="product_name ">Basic business pc</div>
-                    <div class="price ">$
-                        <div class="xd ">2999</div>
-                    </div><br>
-                    <button class="snipcart-add-item" data-item-id="Basic business pc" data-item-price="2999.0 " data-item-description="Basic business pc" data-item-image="assets/img/pre_built/bus1.png" data-item-name="Basic business pc" data-item-custom1-name="Ram size"
-                        data-item-custom1-options="4GB|8GB[+129]|16GB[+249]" data-item-custom2-name="SSD size" data-item-custom2-options="128GB|256GB[+329]|512GB[+499]|1TB[+799]" data-item-custom3-name="HDD size" data-item-custom3-options="512GB|1TB[+299]|2TB[+399]"><span></span>
-                        Add to cart
-                       </button>
-                </li>
-                <li class="mix CPU intel Core_I5 LGA1700 business " id="cart_item"><img src="assets/img/pre_built/game1.png " alt="Image 5 ">
-                    <div class="product_name">i5-13400</div>
-                    <div class="price ">$
-                        <div class="xd ">6320</div>
-                    </div><br>
-                    <button class="snipcart-add-item" data-item-id="" data-item-price="1250.0 " data-item-description="" data-item-image="assets/img/i3-13.jpg " data-item-name="Basic gaming pc" data-item-custom1-name="Ram size" data-item-custom1-options="8GB|16GB[+250]|32GB[+349]"
-                        data-item-custom2-name="SSD size" data-item-custom2-options="128GB|256GB[+329]|512GB[+499]|1TB[+799]" data-item-custom3-name="HDD size" data-item-custom3-options="512GB|1TB[+299]|2TB[+399]"><span></span>
-                        Add to cart
-                       </button>
-                </li>
-                <li class="mix CPU amd Ryzen5 LGA1700 business " id="cart_item "><img src="assets/img/pre_built/game1.png " alt="Image 5 ">
-                    <div class="product_name ">i5-13400</div>
-                    <div class="price ">$
-                        <div class="xd ">12345</div>
-                    </div><br>
-                    <button class="snipcart-add-item " data-item-id="" data-item-price="1250.0 " data-item-description="" data-item-image="assets/img/i3-13.jpg " data-item-name="Basic gaming pc" data-item-custom1-name="Ram size" data-item-custom1-options="8GB|16GB[+250]|32GB[+349]"
-                        data-item-custom2-name="SSD size" data-item-custom2-options="128GB|256GB[+329]|512GB[+499]|1TB[+799]" data-item-custom3-name="HDD size" data-item-custom3-options="512GB|1TB[+299]|2TB[+399]"><span></span>
-                        Add to cart
-                       </button>
-                </li>
-                <li class="mix CPU intel Core_I5 LGA1700 ws " id="cart_item "><img src="assets/img/pre_built/game1.png " alt="Image 5 ">
-                    <div class="product_name ">i5-13400</div>
-                    <div class="price ">$
-                        <div class="xd ">26700</div>
-                    </div><br>
-                    <button class="snipcart-add-item " data-item-id="" data-item-price="1250.0 " data-item-description="" data-item-image="assets/img/i3-13.jpg " data-item-name="Basic gaming pc" data-item-custom1-name="Ram size" data-item-custom1-options="8GB|16GB[+250]|32GB[+349]"
-                        data-item-custom2-name="SSD size" data-item-custom2-options="128GB|256GB[+329]|512GB[+499]|1TB[+799]" data-item-custom3-name="HDD size" data-item-custom3-options="512GB|1TB[+299]|2TB[+399]"><span></span>
-                        Add to cart
-                       </button>
-                </li>
-                <li class="mix CPU intel Core_I5 LGA1700 ws " id="cart_item "><img src="assets/img/pre_built/game1.png " alt="Image 5 ">
-                    <div class="product_name ">i5-13400</div>
-                    <div class="price ">$
-                        <div class="xd ">48000</div>
-                    </div><br>
-                    <button class="snipcart-add-item " data-item-id="" data-item-price="1250.0 " data-item-description="" data-item-image="assets/img/i3-13.jpg " data-item-name="Basic gaming pc" data-item-custom1-name="Ram size" data-item-custom1-options="8GB|16GB[+250]|32GB[+349]"
-                        data-item-custom2-name="SSD size" data-item-custom2-options="128GB|256GB[+329]|512GB[+499]|1TB[+799]" data-item-custom3-name="HDD size" data-item-custom3-options="512GB|1TB[+299]|2TB[+399]"><span></span>
-                        Add to cart
-                       </button>
-                </li>
-                <li class="mix CPU intel Core_I5 LGA1700 ws " id="cart_item "><img src="assets/img/pre_built/game1.png " alt="Image 5 ">
-                    <div class="product_name ">i5-13400</div>
-                    <div class="price ">$
-                        <div class="xd ">48000</div>
-                    </div><br>
-                    <button class="snipcart-add-item " data-item-id="" data-item-price="1250.0 " data-item-description="" data-item-image="assets/img/i3-13.jpg " data-item-name="Basic gaming pc" data-item-custom1-name="Ram size" data-item-custom1-options="8GB|16GB[+250]|32GB[+349]"
-                        data-item-custom2-name="SSD size" data-item-custom2-options="128GB|256GB[+329]|512GB[+499]|1TB[+799]" data-item-custom3-name="HDD size" data-item-custom3-options="512GB|1TB[+299]|2TB[+399]"><span></span>
-                        Add to cart
-                       </button>
-                </li>
-                <li class="gap "></li>
-                <li class="gap "></li>
-                <li class="gap "></li>
-                <li class="gap "></li>
-                <li class="gap "></li>
-
-
-
-
-            </ul>
-            <div class="cd-fail-message ">No results found</div>
-        </section>
-        <!-- cd-gallery -->
-
-        <div class="cd-filter">
-            <form>
-                <div class="cd-filter-block">
-                    <h4>Catagory</h4>
-
-                    <div class="cd-filter-content">
-                        <div class="cd-select cd-filters">
-
-                            <select class="filter " name="selectThis " id="selectThis">
-                    <option value>Choose an option</option>
-                    <option value=".gaming">Gaming</option>
-                    <option value=".business">Business</option>
-                    <option value=".ws">Workstation</option>
-                    </select>
+        <section class="curved" style="color: #000;">
+            <div class="container-fluid" data-aos="fade-up">
+                <div class="heartbeat" style="text-align: center;color: #000;font-size: 34px;">GAMING</div>
+                <div class="responsive-container-block outer-container">
+                    <div class="responsive-container-block card-container">
+                        <div class="btn">
+                            <div class="swiper-button-nexts">
+                                <img class="arrow-right" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Path.svg">
+                            </div>
+                            <div class="swiper-button-prevs">
+                                <img class="arrow-left" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Path.svg">
+                            </div>
                         </div>
+                        <div class="swiper-container team-swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="card1">
+                                        <img src="assets/img/pre_built/game1.png" alt="Image 5">
+                                        <div class="product_name">Low gaming PC</div>
+                                        <div class="price">
+                                            <div class="discount" style="color: white;">$3990</div>
+                                        </div><br>
+                                        <button class="snipcart-add-item" data-item-id="Low gaming PC" data-item-price="3990.0" data-item-description="Low gaming PC" data-item-image="assets/img/pre_built/game1.png" data-item-name="Low gaming PC" data-item-custom1-name="Ram size" data-item-custom1-options="8GB|16GB[+250]|32GB[+349]"
+                                            data-item-custom2-name="SSD size" data-item-custom2-options="128GB|256GB[+329]|512GB[+499]|1TB[+799]" data-item-custom3-name="HDD size" data-item-custom3-options="512GB|1TB[+299]|2TB[+399]"><span></span>
+                                            Add to cart
+                                           </button>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="card1">
+                                        <img src="assets/img/pre_built/game2.png" alt="Image 5">
+                                        <div class="product_name">Basic gameing PC</div>
+                                        <div class="price">
+                                            <div class="discount" style="color: white;">$5599</div>
+                                        </div><br>
+                                        <button class="snipcart-add-item" data-item-id="Basic gaming pc" data-item-price="5599.0" data-item-description="Basic gaming pc" data-item-image="assets/img/pre_built/game2.png" data-item-name="Basic gaming pc" data-item-custom1-name="Ram size" data-item-custom1-options="8GB|16GB[+250]|32GB[+349]"
+                                            data-item-custom2-name="SSD size" data-item-custom2-options="128GB|256GB[+329]|512GB[+499]|1TB[+799]" data-item-custom3-name="HDD size" data-item-custom3-options="512GB|1TB[+299]|2TB[+399]"><span></span>
+                                               Add to cart
+                                          </button>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="card1">
+                                        <img src="assets/img/pre_built/game3.png" alt="Image 5">
+                                        <div class="product_name">Advance gaming PC</div>
+                                        <div class="price">
+                                            <div class="discount" style="color: white;">$12999</div>
+                                        </div><br>
+                                        <button class="snipcart-add-item" data-item-id="Advance gaming pc" data-item-price="12999.0 " data-item-description="Advance gaming pc" data-item-image="assets/img/pre_built/game3.png" data-item-name="Advance gaming pc" data-item-custom1-name="Ram size"
+                                            data-item-custom1-options="8GB|16GB[+250]|32GB[+349]" data-item-custom2-name="SSD size" data-item-custom2-options="128GB|256GB[+329]|512GB[+499]|1TB[+799]" data-item-custom3-name="HDD size" data-item-custom3-options="512GB|1TB[+299]|2TB[+399]"><span></span>
+                                             Add to cart
+                                         </button>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="swiper-pagination">
+                            </div>
+                        </div>
+
                     </div>
                 </div>
-                <!-- cd-filter-block -->
-                <div class="cd-filter-block">
-                    <h4>CPU brand</h4>
-                    <ul class="cd-filter-content cd-filters list">
-                        <li>
-                            <input class="filter" data-filter=".intel" type="checkbox" id="checkbox1">
-                            <label class="checkbox-label" for="checkbox1">intel</label>
-                        </li>
+        </section>
+        <section class="bestdeal" style="color: #000;margin-top: 30px;">
+            <div class="container-fluid" data-aos="fade-up">
+                <div class="heartbeat" style="text-align: center;color: #000;font-size: 34px;">BUSINESS</div>
+                <div class="responsive-container-block outer-container">
+                    <div class="responsive-container-block card-container">
+                        <div class="btn">
+                            <div class="swiper-button-nexts1">
+                                <img class="arrow-right" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Path.svg">
+                            </div>
+                            <div class="swiper-button-prevs1">
+                                <img class="arrow-left" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Path.svg">
+                            </div>
+                        </div>
+                        <div class="swiper-container team-swiper1">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="card1">
+                                        <img src="assets/img/pre_built/bus1.png" alt="Image 5">
+                                        <div class="product_name">Low business PC</div>
+                                        <div class="price">
+                                            <div class="discount">$2999</div>
+                                        </div><br>
+                                        <button class="snipcart-add-item" data-item-id="Basic business pc" data-item-price="2999.0 " data-item-description="Basic business pc" data-item-image="assets/img/pre_built/bus1.png" data-item-name="Basic business pc" data-item-custom1-name="Ram size"
+                                            data-item-custom1-options="4GB|8GB[+129]|16GB[+249]" data-item-custom2-name="SSD size" data-item-custom2-options="128GB|256GB[+329]|512GB[+499]|1TB[+799]" data-item-custom3-name="HDD size" data-item-custom3-options="512GB|1TB[+299]|2TB[+399]"><span></span>
+                                                Add to cart
+                                               </button>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="card1">
+                                        <img src="assets/img/pre_built/game2.png" alt="Image 5">
+                                        <div class="product_name">Basic gameing PC</div>
+                                        <div class="price">
+                                            <div class="discount">$5599</div>
+                                        </div><br>
+                                        <button class="snipcart-add-item" data-item-id="Basic gaming pc" data-item-price="5599.0" data-item-description="Basic gaming pc" data-item-image="assets/img/pre_built/game2.png" data-item-name="Basic gaming pc" data-item-custom1-name="Ram size" data-item-custom1-options="8GB|16GB[+250]|32GB[+349]"
+                                            data-item-custom2-name="SSD size" data-item-custom2-options="128GB|256GB[+329]|512GB[+499]|1TB[+799]" data-item-custom3-name="HDD size" data-item-custom3-options="512GB|1TB[+299]|2TB[+399]"><span></span>
+                                               Add to cart
+                                          </button>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="card1">
+                                        <img src="assets/img/pre_built/game3.png" alt="Image 5">
+                                        <div class="product_name">Advance gaming PC</div>
+                                        <div class="price">
+                                            <div class="discount">$12999</div>
+                                        </div><br>
+                                        <button class="snipcart-add-item" data-item-id="Advance gaming pc" data-item-price="12999.0 " data-item-description="Advance gaming pc" data-item-image="assets/img/pre_built/game3.png" data-item-name="Advance gaming pc" data-item-custom1-name="Ram size"
+                                            data-item-custom1-options="8GB|16GB[+250]|32GB[+349]" data-item-custom2-name="SSD size" data-item-custom2-options="128GB|256GB[+329]|512GB[+499]|1TB[+799]" data-item-custom3-name="HDD size" data-item-custom3-options="512GB|1TB[+299]|2TB[+399]"><span></span>
+                                             Add to cart
+                                         </button>
+                                    </div>
+                                </div>
 
-                        <li>
-                            <input class="filter" data-filter=".amd" type="checkbox" id="checkbox2">
-                            <label class="checkbox-label" for="checkbox2">AMD</label>
-                        </li>
 
-                    </ul>
-                    <!-- cd-filter-content -->
+                            </div>
+                            <div class="swiper-pagination">
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
-                <!-- cd-filter-block -->
+        </section>
+        <section class="curved" style="color: #000;">
+            <div class="container-fluid" data-aos="fade-up">
+                <div class="heartbeat" style="text-align: center;color: #000;font-size: 34px;">GAMING</div>
+                <div class="responsive-container-block outer-container">
+                    <div class="responsive-container-block card-container">
+                        <div class="btn">
+                            <div class="swiper-button-nexts2">
+                                <img class="arrow-right" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Path.svg">
+                            </div>
+                            <div class="swiper-button-prevs2">
+                                <img class="arrow-left" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Path.svg">
+                            </div>
+                        </div>
+                        <div class="swiper-container team-swiper2">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="card1">
+                                        <img src="assets/img/pre_built/game1.png" alt="Image 5">
+                                        <div class="product_name">Low gaming PC</div>
+                                        <div class="price">
+                                            <div class="discount" style="color: white;">$3990</div>
+                                        </div><br>
+                                        <button class="snipcart-add-item" data-item-id="Low gaming PC" data-item-price="3990.0" data-item-description="Low gaming PC" data-item-image="assets/img/pre_built/game1.png" data-item-name="Low gaming PC" data-item-custom1-name="Ram size" data-item-custom1-options="8GB|16GB[+250]|32GB[+349]"
+                                            data-item-custom2-name="SSD size" data-item-custom2-options="128GB|256GB[+329]|512GB[+499]|1TB[+799]" data-item-custom3-name="HDD size" data-item-custom3-options="512GB|1TB[+299]|2TB[+399]"><span></span>
+                                            Add to cart
+                                           </button>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="card1">
+                                        <img src="assets/img/pre_built/game2.png" alt="Image 5">
+                                        <div class="product_name">Basic gameing PC</div>
+                                        <div class="price">
+                                            <div class="discount" style="color: white;">$5599</div>
+                                        </div><br>
+                                        <button class="snipcart-add-item" data-item-id="Basic gaming pc" data-item-price="5599.0" data-item-description="Basic gaming pc" data-item-image="assets/img/pre_built/game2.png" data-item-name="Basic gaming pc" data-item-custom1-name="Ram size" data-item-custom1-options="8GB|16GB[+250]|32GB[+349]"
+                                            data-item-custom2-name="SSD size" data-item-custom2-options="128GB|256GB[+329]|512GB[+499]|1TB[+799]" data-item-custom3-name="HDD size" data-item-custom3-options="512GB|1TB[+299]|2TB[+399]"><span></span>
+                                               Add to cart
+                                          </button>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="card1">
+                                        <img src="assets/img/pre_built/game3.png" alt="Image 5">
+                                        <div class="product_name">Advance gaming PC</div>
+                                        <div class="price">
+                                            <div class="discount" style="color: white;">$12999</div>
+                                        </div><br>
+                                        <button class="snipcart-add-item" data-item-id="Advance gaming pc" data-item-price="12999.0 " data-item-description="Advance gaming pc" data-item-image="assets/img/pre_built/game3.png" data-item-name="Advance gaming pc" data-item-custom1-name="Ram size"
+                                            data-item-custom1-options="8GB|16GB[+250]|32GB[+349]" data-item-custom2-name="SSD size" data-item-custom2-options="128GB|256GB[+329]|512GB[+499]|1TB[+799]" data-item-custom3-name="HDD size" data-item-custom3-options="512GB|1TB[+299]|2TB[+399]"><span></span>
+                                             Add to cart
+                                         </button>
+                                    </div>
+                                </div>
 
-                <!-- cd-filter-block -->
-            </form>
 
-            <a href="#0 " class="cd-close">Close</a>
-        </div>
-        <!-- cd-filter -->
+                            </div>
+                            <div class="swiper-pagination">
+                            </div>
+                        </div>
 
-        <a href="#0 " class="cd-filter-trigger ">Filters</a>
+                    </div>
+                </div>
+        </section>
+
+
+
+
+
+
     </main>
     <!-- ======= Footer ======= -->
     <footer id="footer">
@@ -372,28 +403,29 @@
                 &copy; Copyright <strong><span>CStation</span></strong>. All Rights Reserved
             </div>
             <div class="credits ">
-                Designed by <a href="https://bootstrapmade.com/ ">BootstrapMade</a>
+                Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
             </div>
         </div>
     </footer>
 
     <div id="preloader "></div>
-    <a href="# " class="back-to-top d-flex align-items-center justify-content-center "><i class="bi bi-arrow-up-short "></i></a>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center "><i class="bi bi-arrow-up-short "></i></a>
 
     <!-- Vendor JS Files -->
-    <script src="assets/vendor/aos/aos.js "></script>
-    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js "></script>
-    <script src="assets/vendor/glightbox/js/glightbox.min.js "></script>
-    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js "></script>
-    <script src="assets/vendor/swiper/swiper-bundle.min.js "></script>
-    <script src="assets/vendor/waypoints/noframework.waypoints.js "></script>
-    <script src="assets/vendor/php-email-form/validate.js "></script>
-    <script src="assets/js/jquery-2.1.1.js "></script>
-    <script src="assets/js/jquery.mixitup.min.js "></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/js/jquery-2.1.1.js"></script>
+    <script src="assets/js/jquery.mixitup.min.js"></script>
     <script src="assets/js/main.js "></script>
+    <script src="assets/js/jquery-2.1.4.js"></script>
     <script src="assets/js/script.js "></script>
     <!-- Template Main JS File -->
-    <script src="assets/js/main1.js "></script>
+    <script src="assets/js/main1.js"></script>
     <script>
         const buttons = document.querySelectorAll('.dropdown-item');
         const boxes = document.querySelectorAll('.box');
@@ -427,12 +459,12 @@
 
                 boxes.forEach((box => {
                     if (btnfilter == 'all') {
-                        box.style.display = "block ";
+                        box.style.display = "block";
                     } else {
 
                         const boxfilter = box.dataset.item;
                         if (btnfilter == boxfilter) {
-                            box.style.display = "block ";
+                            box.style.display = "block";
                         } else {
                             box.style.display = "none ";
                         }
@@ -451,38 +483,21 @@
             });
             e.target.classList.add('btn-clicked');
         }
-
-
-
-        function openNav() {
-            if (window.innerWidth < 800) {
-                document.getElementById("myNav ").style.width = "100% ";
-            } else if (window.innerWidth < 1210) {
-                document.getElementById("myNav ").style.width = "45% ";
-            } else {
-                document.getElementById("myNav ").style.width = "30% ";
-            }
-
-        }
-
-        function closeNav() {
-            document.getElementById("myNav ").style.width = "0% ";
-        }
     </script>
     <script>
         ! function(e, t, a) {
-            var c = e.head || e.getElementsByTagName("head ")[0],
-                n = e.createElement("script ");
-            n.async = !0, n.defer = !0, n.type = "text/javascript ", n.src = t + "/static/js/widget.js?config=" + JSON.stringify(a), c.appendChild(n)
-        }(document, " https://app.engati.com ", {
-            bot_key: "5bfba005c8f2476b ",
+            var c = e.head || e.getElementsByTagName("head")[0],
+                n = e.createElement("script");
+            n.async = !0, n.defer = !0, n.type = "text/javascript", n.src = t + "/static/js/widget.js?config=" + JSON.stringify(a), c.appendChild(n)
+        }(document, " https://app.engati.com", {
+            bot_key: "5bfba005c8f2476b",
             welcome_msg: true,
-            branding_key: "default ",
-            server: "https://app.engati.com ",
+            branding_key: "default",
+            server: "https://app.engati.com",
             e: "p "
         });
     </script>
-    <script async src="https://cdn.snipcart.com/themes/v3.3.0/default/snipcart.js "></script>
+    <script async src="https://cdn.snipcart.com/themes/v3.3.0/default/snipcart.js"></script>
     <script>
         window.SnipcartSettings = {
             publicApiKey: 'NTM3NDYyOTAtYjMxOC00YTU4LThmYTQtZjMwZDhlNGU4OTU1NjM4MTM1Mjk2OTg0MjU2NjY5',
@@ -527,6 +542,137 @@
                 !f || (t.dataset.apiKey = window.SnipcartSettings.publicApiKey, window.SnipcartSettings.addProductBehavior && (t.dataset.configAddProductBehavior = window.SnipcartSettings.addProductBehavior), window.SnipcartSettings.modalStyle && (t.dataset.configModalStyle = window.SnipcartSettings.modalStyle), window.SnipcartSettings.currency && (t.dataset.currency = window.SnipcartSettings.currency), window.SnipcartSettings.templatesUrl && (t.dataset.templatesUrl = window.SnipcartSettings.templatesUrl))
             }
         })();
+    </script>
+    <script>
+        var swiper = new Swiper(".team-swiper", {
+            navigation: {
+                nextEl: ".swiper-button-nexts",
+                prevEl: ".swiper-button-prevs",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            loop: true,
+            slidesPerView: 1,
+            spaceBetween: 10,
+            // Responsive breakpoints
+            breakpoints: {
+                250: {
+                    slidesPerView: 1.2,
+                    spaceBetween: 80
+                },
+                // when window width is &gt;= 320px
+                300: {
+                    slidesPerView: 1.2,
+                    spaceBetween: 0
+                },
+                // when window width is &gt;= 480px
+                400: {
+                    slidesPerView: 1.5,
+                    spaceBetween: 20
+                },
+                // when window width is &gt;= 640px
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 40
+                },
+                840: {
+                    slidesPerView: 3,
+                    spaceBetween: 40
+                },
+                1150: {
+                    slidesPerView: 4,
+                    spaceBetween: 40
+                }
+            }
+        });
+        var swiper1 = new Swiper(".team-swiper1", {
+            navigation: {
+                nextEl: ".swiper-button-nexts1",
+                prevEl: ".swiper-button-prevs1",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            loop: true,
+            slidesPerView: 1,
+            spaceBetween: 10,
+            // Responsive breakpoints
+            breakpoints: {
+                250: {
+                    slidesPerView: 1.2,
+                    spaceBetween: 80
+                },
+                // when window width is &gt;= 320px
+                300: {
+                    slidesPerView: 1.2,
+                    spaceBetween: 0
+                },
+                // when window width is &gt;= 480px
+                400: {
+                    slidesPerView: 1.5,
+                    spaceBetween: 20
+                },
+                // when window width is &gt;= 640px
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 40
+                },
+                840: {
+                    slidesPerView: 3,
+                    spaceBetween: 40
+                },
+                1150: {
+                    slidesPerView: 4,
+                    spaceBetween: 40
+                }
+            }
+        });
+        var swiper1 = new Swiper(".team-swiper2", {
+            navigation: {
+                nextEl: ".swiper-button-nexts2",
+                prevEl: ".swiper-button-prevs2",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            loop: true,
+            slidesPerView: 1,
+            spaceBetween: 10,
+            // Responsive breakpoints
+            breakpoints: {
+                250: {
+                    slidesPerView: 1.2,
+                    spaceBetween: 80
+                },
+                // when window width is &gt;= 320px
+                300: {
+                    slidesPerView: 1.2,
+                    spaceBetween: 0
+                },
+                // when window width is &gt;= 480px
+                400: {
+                    slidesPerView: 1.5,
+                    spaceBetween: 20
+                },
+                // when window width is &gt;= 640px
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 40
+                },
+                840: {
+                    slidesPerView: 3,
+                    spaceBetween: 40
+                },
+                1150: {
+                    slidesPerView: 4,
+                    spaceBetween: 40
+                }
+            }
+        });
     </script>
 </body>
 

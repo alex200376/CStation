@@ -19,6 +19,15 @@
  * ----------------------------------------
  */
     
+    .curved {
+        position: relative;
+        background: #4b64f3;
+        height: 80vh;
+        border-bottom-left-radius: 50% 11%;
+        border-bottom-right-radius: 50% 11%;
+        margin-top: 20px;
+    }
+    
     .heartbeat {
         -webkit-animation: heartbeat 1s cubic-bezier(0.600, -0.280, 0.735, 0.045) infinite;
         animation: heartbeat 1s cubic-bezier(0.600, -0.280, 0.735, 0.045) infinite;
@@ -1845,14 +1854,6 @@
     /*--------------------------------------------------------------
 # bestdeal
 --------------------------------------------------------------*/
-    
-    .discount {
-        margin-left: 20px;
-    }
-    
-    .dis {
-        text-decoration: line-through;
-    }
     
     --------------------------------------------------------------*/
     /*--------------------------------------------------------------
