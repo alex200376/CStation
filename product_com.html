@@ -65,189 +65,335 @@
         <h1 style="padding: 10px;">Pre built PC Comparison Table</h1>
 
         <!-- .cd-intro -->
+        <div class="tab">
+            <button class="tablinks" onclick="opencom(event, 'gaming')" id="defaultopen">Gaming</button>
+            <button class="tablinks" onclick="opencom(event, 'business')">Business</button>
+            <button class="tablinks" onclick="opencom(event, 'workstation')">Workstation</button>
+        </div>
 
-        <section class="cd-products-comparison-table">
-            <header>
-                <h2>Compare Models</h2>
+        <!-- Tab content -->
+        <div class="tabcontent" id="gaming">
+            <section class="cd-products-comparison-table">
+                <header>
+                    <h2>Compare gaming Models</h2>
 
-                <div class="actions">
-                    <a href="#0" class="reset">Reset</a>
-                    <a href="#0" class="filter">Filter</a>
-                    <a href="pre_built.html" class="back">Back</a>
+                    <div class="actions">
+                        <a href="pre_built.html" class="back">Back</a>
+                    </div>
+
+                </header>
+
+                <div class="cd-products-table">
+                    <div class="features">
+                        <div class="top-info">Models</div>
+                        <ul class="cd-features-list">
+                            <li>Price</li>
+                            <li>CPU</li>
+                            <li>GPU</li>
+                            <li>RAM</li>
+                            <li>Storage</li>
+                            <li>Mother board</li>
+                            <li>Fan</li>
+                            <li>I/O</li>
+                            <li>Power</li>
+                        </ul>
+                    </div>
+                    <!-- .features -->
+
+                    <div class="cd-products-wrapper">
+                        <ul class="cd-products-columns">
+                            <li class="product">
+                                <div class="top-info">
+                                    <img src="assets/img/pre_built/game1.png" alt="product image">
+                                    <h3>Low gaming</h3>
+                                </div>
+                                <!-- .top-info -->
+
+                                <ul class="cd-features-list">
+                                    <li>$3550</li>
+                                    <li>AMD Ryzen 5 5600G</li>
+                                    <li>LED</li>
+                                    <li>47.6 inches</li>
+                                    <li>800Hz</li>
+                                    <li>2015</li>
+                                    <li>mpeg4</li>
+                                    <li>1 Side</li>
+                                    <li>3 Port</li>
+
+                                </ul>
+                            </li>
+                            <!-- .product -->
+
+                            <li class="product">
+                                <div class="top-info">
+                                    <img src="assets/img/pre_built/game2.png" alt="product image">
+                                    <h3>Basic gaming</h3>
+                                </div>
+                                <!-- .top-info -->
+
+                                <ul class="cd-features-list">
+                                    <li>$600</li>
+                                    <li>1080p</li>
+                                    <li>LED</li>
+                                    <li>47.6 inches</li>
+                                    <li>800Hz</li>
+                                    <li>2015</li>
+                                    <li>mpeg4</li>
+                                    <li>1 Side</li>
+                                    <li>3 Port</li>
+
+                                </ul>
+                            </li>
+                            <!-- .product -->
+
+                            <li class="product">
+                                <div class="top-info">
+                                    <img src="assets/img/pre_built/game3.png" alt="product image">
+                                    <h3>Advance gaming</h3>
+                                </div>
+                                <!-- .top-info -->
+
+                                <ul class="cd-features-list">
+                                    <li>$600</li>
+                                    <li>1080p</li>
+                                    <li>LED</li>
+                                    <li>47.6 inches</li>
+                                    <li>800Hz</li>
+                                    <li>2015</li>
+                                    <li>mpeg4</li>
+                                    <li>1 Side</li>
+                                    <li>3 Port</li>
+
+                                </ul>
+                            </li>
+                            <!-- .product -->
+
+
+
+                        </ul>
+                        <!-- .cd-products-columns -->
+                    </div>
+                    <!-- .cd-products-wrapper -->
                 </div>
+                <!-- .cd-products-table -->
+            </section>
+        </div>
+        <div class="tabcontent" id="business">
+            <section class="cd-products-comparison-table">
+                <header>
+                    <h2>Compare business Models</h2>
 
-            </header>
+                    <div class="actions">
+                        <a href="pre_built.html" class="back">Back</a>
+                    </div>
 
-            <div class="cd-products-table">
-                <div class="features">
-                    <div class="top-info">Models</div>
-                    <ul class="cd-features-list">
-                        <li>Price</li>
-                        <li>CPU</li>
-                        <li>GPU</li>
-                        <li>RAM</li>
-                        <li>Storage</li>
-                        <li>Mother board</li>
-                        <li>Fan</li>
-                        <li>I/O</li>
-                        <li>Power</li>
-                    </ul>
+                </header>
+
+                <div class="cd-products-table">
+                    <div class="features">
+                        <div class="top-info">Models</div>
+                        <ul class="cd-features-list">
+                            <li>Price</li>
+                            <li>CPU</li>
+                            <li>GPU</li>
+                            <li>RAM</li>
+                            <li>Storage</li>
+                            <li>Mother board</li>
+                            <li>Fan</li>
+                            <li>I/O</li>
+                            <li>Power</li>
+                        </ul>
+                    </div>
+                    <!-- .features -->
+
+                    <div class="cd-products-wrapper">
+                        <ul class="cd-products-columns">
+                            <li class="product">
+                                <div class="top-info">
+                                    <img src="assets/img/pre_built/bus1.png" alt="product image">
+                                    <h3>Basic business</h3>
+                                </div>
+                                <!-- .top-info -->
+
+                                <ul class="cd-features-list">
+                                    <li>$3550</li>
+                                    <li>AMD Ryzen 5 5600G</li>
+                                    <li>LED</li>
+                                    <li>47.6 inches</li>
+                                    <li>800Hz</li>
+                                    <li>2015</li>
+                                    <li>mpeg4</li>
+                                    <li>1 Side</li>
+                                    <li>3 Port</li>
+
+                                </ul>
+                            </li>
+                            <!-- .product -->
+
+                            <li class="product">
+                                <div class="top-info">
+                                    <img src="assets/img/pre_built/game1.png" alt="product image">
+                                    <h3>Sumsung Series 6 J6300</h3>
+                                </div>
+                                <!-- .top-info -->
+
+                                <ul class="cd-features-list">
+                                    <li>$600</li>
+                                    <li>1080p</li>
+                                    <li>LED</li>
+                                    <li>47.6 inches</li>
+                                    <li>800Hz</li>
+                                    <li>2015</li>
+                                    <li>mpeg4</li>
+                                    <li>1 Side</li>
+                                    <li>3 Port</li>
+
+                                </ul>
+                            </li>
+                            <!-- .product -->
+
+                            <li class="product">
+                                <div class="top-info">
+                                    <img src="assets/img/pre_built/game1.png" alt="product image">
+                                    <h3>Sumsung Series 6 J6300</h3>
+                                </div>
+                                <!-- .top-info -->
+
+                                <ul class="cd-features-list">
+                                    <li>$600</li>
+                                    <li>1080p</li>
+                                    <li>LED</li>
+                                    <li>47.6 inches</li>
+                                    <li>800Hz</li>
+                                    <li>2015</li>
+                                    <li>mpeg4</li>
+                                    <li>1 Side</li>
+                                    <li>3 Port</li>
+
+                                </ul>
+                            </li>
+                            <!-- .product -->
+
+
+                            <!-- .product -->
+
+
+                        </ul>
+                        <!-- .cd-products-columns -->
+                    </div>
+                    <!-- .cd-products-wrapper -->
                 </div>
-                <!-- .features -->
+                <!-- .cd-products-table -->
+            </section>
+        </div>
+        <div class="tabcontent" id="workstation">
+            <section class="cd-products-comparison-table">
+                <header>
+                    <h2>Compare workstation Models</h2>
 
-                <div class="cd-products-wrapper">
-                    <ul class="cd-products-columns">
-                        <li class="product">
-                            <div class="top-info">
-                                <div class="check"></div>
-                                <img src="assets/img/pre_built/game1.png" alt="product image">
-                                <h3>Basic gaming</h3>
-                            </div>
-                            <!-- .top-info -->
+                    <div class="actions">
+                        <a href="pre_built.html" class="back">Back</a>
+                    </div>
 
-                            <ul class="cd-features-list">
-                                <li>$3550</li>
-                                <li>AMD Ryzen 5 5600G</li>
-                                <li>LED</li>
-                                <li>47.6 inches</li>
-                                <li>800Hz</li>
-                                <li>2015</li>
-                                <li>mpeg4</li>
-                                <li>1 Side</li>
-                                <li>3 Port</li>
+                </header>
 
-                            </ul>
-                        </li>
-                        <!-- .product -->
+                <div class="cd-products-table">
+                    <div class="features">
+                        <div class="top-info">Models</div>
+                        <ul class="cd-features-list">
+                            <li>Price</li>
+                            <li>CPU</li>
+                            <li>GPU</li>
+                            <li>RAM</li>
+                            <li>Storage</li>
+                            <li>Mother board</li>
+                            <li>Fan</li>
+                            <li>I/O</li>
+                            <li>Power</li>
+                        </ul>
+                    </div>
+                    <!-- .features -->
 
-                        <li class="product">
-                            <div class="top-info">
-                                <div class="check"></div>
-                                <img src="assets/img/pre_built/game1.png" alt="product image">
-                                <h3>Sumsung Series 6 J6300</h3>
-                            </div>
-                            <!-- .top-info -->
+                    <div class="cd-products-wrapper">
+                        <ul class="cd-products-columns">
+                            <li class="product">
+                                <div class="top-info">
+                                    <img src="assets/img/pre_built/game1.png" alt="product image">
+                                    <h3>Basic gaming</h3>
+                                </div>
+                                <!-- .top-info -->
 
-                            <ul class="cd-features-list">
-                                <li>$600</li>
-                                <li>1080p</li>
-                                <li>LED</li>
-                                <li>47.6 inches</li>
-                                <li>800Hz</li>
-                                <li>2015</li>
-                                <li>mpeg4</li>
-                                <li>1 Side</li>
-                                <li>3 Port</li>
+                                <ul class="cd-features-list">
+                                    <li>$3550</li>
+                                    <li>AMD Ryzen 5 5600G</li>
+                                    <li>LED</li>
+                                    <li>47.6 inches</li>
+                                    <li>800Hz</li>
+                                    <li>2015</li>
+                                    <li>mpeg4</li>
+                                    <li>1 Side</li>
+                                    <li>3 Port</li>
 
-                            </ul>
-                        </li>
-                        <!-- .product -->
+                                </ul>
+                            </li>
+                            <!-- .product -->
 
-                        <li class="product">
-                            <div class="top-info">
-                                <div class="check"></div>
-                                <img src="assets/img/pre_built/game1.png" alt="product image">
-                                <h3>Sumsung Series 6 J6300</h3>
-                            </div>
-                            <!-- .top-info -->
+                            <li class="product">
+                                <div class="top-info">
+                                    <img src="assets/img/pre_built/game1.png" alt="product image">
+                                    <h3>Sumsung Series 6 J6300</h3>
+                                </div>
+                                <!-- .top-info -->
 
-                            <ul class="cd-features-list">
-                                <li>$600</li>
-                                <li>1080p</li>
-                                <li>LED</li>
-                                <li>47.6 inches</li>
-                                <li>800Hz</li>
-                                <li>2015</li>
-                                <li>mpeg4</li>
-                                <li>1 Side</li>
-                                <li>3 Port</li>
+                                <ul class="cd-features-list">
+                                    <li>$600</li>
+                                    <li>1080p</li>
+                                    <li>LED</li>
+                                    <li>47.6 inches</li>
+                                    <li>800Hz</li>
+                                    <li>2015</li>
+                                    <li>mpeg4</li>
+                                    <li>1 Side</li>
+                                    <li>3 Port</li>
 
-                            </ul>
-                        </li>
-                        <!-- .product -->
+                                </ul>
+                            </li>
+                            <!-- .product -->
 
-                        <li class="product">
-                            <div class="top-info">
-                                <div class="check"></div>
-                                <img src="assets/img/pre_built/game1.png" alt="product image">
-                                <h3>Sumsung Series 6 J6300</h3>
-                            </div>
-                            <!-- .top-info -->
+                            <li class="product">
+                                <div class="top-info">
+                                    <img src="assets/img/pre_built/game1.png" alt="product image">
+                                    <h3>Sumsung Series 6 J6300</h3>
+                                </div>
+                                <!-- .top-info -->
 
-                            <ul class="cd-features-list">
-                                <li>$600</li>
-                                <li>1080p</li>
-                                <li>LED</li>
-                                <li>47.6 inches</li>
-                                <li>800Hz</li>
-                                <li>2015</li>
-                                <li>mpeg4</li>
-                                <li>1 Side</li>
-                                <li>3 Port</li>
+                                <ul class="cd-features-list">
+                                    <li>$600</li>
+                                    <li>1080p</li>
+                                    <li>LED</li>
+                                    <li>47.6 inches</li>
+                                    <li>800Hz</li>
+                                    <li>2015</li>
+                                    <li>mpeg4</li>
+                                    <li>1 Side</li>
+                                    <li>3 Port</li>
 
-                            </ul>
-                        </li>
-                        <!-- .product -->
-
-                        <li class="product">
-                            <div class="top-info">
-                                <div class="check"></div>
-                                <img src="assets/img/pre_built/game1.png" alt="product image">
-                                <h3>Sumsung Series 6 J6300</h3>
-                            </div>
-                            <!-- .top-info -->
-
-                            <ul class="cd-features-list">
-                                <li>$600</li>
-                                <li>1080p</li>
-                                <li>LED</li>
-                                <li>47.6 inches</li>
-                                <li>800Hz</li>
-                                <li>2015</li>
-                                <li>mpeg4</li>
-                                <li>1 Side</li>
-                                <li>3 Port</li>
-
-                            </ul>
-                        </li>
-                        <!-- .product -->
-
-                        <li class="product">
-                            <div class="top-info">
-                                <div class="check"></div>
-                                <img src="assets/img/pre_built/game1.png" alt="product image">
-                                <h3>Sumsung Series 6 J6300</h3>
-                            </div>
-                            <!-- .top-info -->
-
-                            <ul class="cd-features-list">
-                                <li>$600</li>
-                                <li>1080p</li>
-                                <li>LED</li>
-                                <li>47.6 inches</li>
-                                <li>800Hz</li>
-                                <li>2015</li>
-                                <li>mpeg4</li>
-                                <li>1 Side</li>
-                                <li>3 Port</li>
-
-                            </ul>
-                        </li>
-                        <!-- .product -->
+                                </ul>
+                            </li>
+                            <!-- .product -->
 
 
-                    </ul>
-                    <!-- .cd-products-columns -->
+                            <!-- .product -->
+
+
+                        </ul>
+                        <!-- .cd-products-columns -->
+                    </div>
+                    <!-- .cd-products-wrapper -->
                 </div>
-                <!-- .cd-products-wrapper -->
-
-                <ul class="cd-table-navigation">
-                    <li><a href="#0" class="prev inactive">Prev</a></li>
-                    <li><a href="#0" class="next">Next</a></li>
-                </ul>
-            </div>
-            <!-- .cd-products-table -->
-        </section>
+                <!-- .cd-products-table -->
+            </section>
+        </div>
     </main>
     <!-- .cd-products-comparison-table -->
     <script src="assets/js/jquery-2.1.4.js"></script>
@@ -339,6 +485,28 @@
             server: "https://app.engati.com",
             e: "p"
         });
+
+        function opencom(evt, type) {
+            // Declare all variables
+            var i, tabcontent, tablinks;
+
+            // Get all elements with class="tabcontent" and hide them
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+
+            // Get all elements with class="tablinks" and remove the class "active"
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace("active", "");
+            }
+
+            // Show the current tab, and add an "active" class to the button that opened the tab
+            document.getElementById(type).style.display = "block";
+            evt.currentTarget.className += "active";
+        }
+        document.getElementById("defaultopen").click();
     </script>
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
