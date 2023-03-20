@@ -52,9 +52,63 @@
             margin: 5px;
         }
         
+        .lightbox-blanket,
+        .lightbox-blanket2,
+        .lightbox-blanket3,
+        .lightbox-blanket4,
+        .lightbox-blanket5,
+        .lightbox-blanket6,
+        .lightbox-blanket7 {
+            display: none;
+        }
+        
         .snipcart-checkout:hover {
             border: solid 2px #0066cc;
             background-color: #5482d0;
+        }
+        
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        
+        th,
+        td {
+            text-align: left;
+            padding: 8px;
+        }
+        
+        th {
+            background-color: #333;
+            color: #fff;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        
+        tr:hover {
+            background-color: #ddd;
+        }
+        
+        td:last-child,
+        th:last-child {
+            text-align: right;
+        }
+        
+        td:first-child {
+            font-weight: bold;
+        }
+        
+        td:nth-child(3),
+        th:nth-child(3) {
+            font-weight: bold;
+        }
+        
+        td:nth-child(3),
+        th:nth-child(3) {
+            text-align: right;
         }
         
         .snipcart-add-item {
@@ -139,7 +193,190 @@
 
 
     <main>
+        <div class="lightbox-blanket">
+            <div class="pop-up-container">
+                <div class="pop-up-container-vertical">
+                    <div class="pop-up-wrapper">
+                        <div class="go-back" onclick="GoBack();"><i>x</i>
+                        </div>
+                        <div class="product-details">
+                            <div class="product-left">
+                                <div class="product-info">
+                                    <div class="product-manufacturer">Pre built
+                                    </div>
+                                    <div class="product-title">
+                                        Low gaming pc
+                                    </div>
+                                    <div class="product-price">
+                                        $3300<span class="product-price-cents">00</span>
+                                    </div>
+                                </div>
+                                <div class="product-image">
+                                    <img src="assets/img/pre_built/game1.png" />
+                                </div>
+                            </div>
+                            <div class="product-right">
+                                <div class="product-description">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th>Component</th>
+                                                <th>Model</th>
+                                                <th>Price</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Processor</td>
+                                                <td>AMD Ryzen 3 2200G</td>
+                                                <td>$775</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Motherboard</td>
+                                                <td>Gigabyte GA-A320M-S2H</td>
+                                                <td>$420</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Memory</td>
+                                                <td>Corsair Vengeance LPX 8GB DDR4 2400MHz</td>
+                                                <td>$380</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Storage</td>
+                                                <td>Western Digital Blue 1TB HDD</td>
+                                                <td>$345</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Graphics Card</td>
+                                                <td>AMD Radeon RX 550</td>
+                                                <td>$775</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Power Supply</td>
+                                                <td>EVGA 400W</td>
+                                                <td>$305</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Case</td>
+                                                <td>Thermaltake Versa H15</td>
+                                                <td>$300</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Total</td>
+                                                <td></td>
+                                                <td>$3990</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="product-bottom">
+                                <div class="product-checkout-actions">
+                                    <button class="snipcart-add-item" data-item-id="Low gaming PC" data-item-price="3300.0" data-item-description="Low gaming PC" data-item-image="assets/img/pre_built/game1.png" data-item-name="Low gaming PC" data-item-custom1-name="Ram size" data-item-custom1-options="8GB|16GB[+250]|32GB[+349]"
+                                        data-item-custom2-name="SSD size" data-item-custom2-options="128GB|256GB[+329]|512GB[+499]|1TB[+799]" data-item-custom3-name="HDD size" data-item-custom3-options="512GB|1TB[+299]|2TB[+399]"><span></span>
+                                    Add to cart
+                                   </button>
 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="lightbox-blanket2">
+            <div class="pop-up-container">
+                <div class="pop-up-container-vertical">
+                    <div class="pop-up-wrapper">
+                        <div class="go-back" onclick="GoBack2();"><i>x</i>
+                        </div>
+                        <div class="product-details">
+                            <div class="product-left">
+                                <div class="product-info">
+                                    <div class="product-manufacturer">Pre built
+                                    </div>
+                                    <div class="product-title">
+                                        Basic gaming pc
+                                    </div>
+                                    <div class="product-price">
+                                        $5599<span class="product-price-cents">00</span>
+                                    </div>
+                                </div>
+                                <div class="product-image">
+                                    <img src="assets/img/pre_built/game2.png" />
+                                </div>
+                            </div>
+                            <div class="product-right">
+                                <div class="product-description">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th>Component</th>
+                                                <th>Model</th>
+                                                <th>Price (HKD)</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Processor</td>
+                                                <td>Intel Core i5-10400</td>
+                                                <td>$1599</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Motherboard</td>
+                                                <td>ASRock B460M-HDV</td>
+                                                <td>$699</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Memory</td>
+                                                <td>Crucial Ballistix 8GB DDR4 3200MHz</td>
+                                                <td>$329</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Storage</td>
+                                                <td>Kingston A2000 500GB NVMe SSD</td>
+                                                <td>$489</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Graphics Card</td>
+                                                <td>NVIDIA GeForce GTX 1650 Super</td>
+                                                <td>$1499</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Power Supply</td>
+                                                <td>Cooler Master MWE 450W 80+ Bronze</td>
+                                                <td>$399</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Case</td>
+                                                <td>CR YAMA MONTECH AIR100 ARGB</td>
+                                                <td>$1890</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Total</td>
+                                                <td>
+                                                    <div style="text-decoration: line-through;">$6900</div>
+                                                </td>
+                                                <td>$5599</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="product-bottom">
+                                <div class="product-checkout-actions">
+                                    <button class="snipcart-add-item" data-item-id="Basic gaming pc" data-item-price="5599.0" data-item-description="Basic gaming pc" data-item-image="assets/img/pre_built/game2.png" data-item-name="Basic gaming pc" data-item-custom1-name="Ram size" data-item-custom1-options="8GB|16GB[+250]|32GB[+349]"
+                                        data-item-custom2-name="SSD size" data-item-custom2-options="128GB|256GB[+329]|512GB[+499]|1TB[+799]" data-item-custom3-name="HDD size" data-item-custom3-options="512GB|1TB[+299]|2TB[+399]"><span></span>
+                                               Add to cart
+                                          </button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <button class="snipcart-checkout"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16"> <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" fill="white"></path> </svg>
             <span class="snipcart-total-price" class="snipcart-checkout">$0.00</span>
         </button>
@@ -159,11 +396,12 @@
                                 <img class="arrow-left" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Path.svg">
                             </div>
                         </div>
+
                         <div class="swiper-container team-swiper">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
-                                    <div class="card1">
-                                        <img src="assets/img/pre_built/game1.png" alt="Image 5">
+                                    <div class="card1" onclick="OpenProduct()" item-data="1">
+                                        <img src="assets/img/pre_built/game1.png" alt="Image 5" item-data="1">
                                         <div class="product_name">Low gaming PC</div>
                                         <div class="price">
                                             <div class="discount" style="color: white;">$3990</div>
@@ -175,7 +413,7 @@
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
-                                    <div class="card1">
+                                    <div class="card1" onclick="OpenProduct2()">
                                         <img src="assets/img/pre_built/game2.png" alt="Image 5">
                                         <div class="product_name">Basic gameing PC</div>
                                         <div class="price">
@@ -499,6 +737,21 @@
     </script>
     <script async src="https://cdn.snipcart.com/themes/v3.3.0/default/snipcart.js"></script>
     <script>
+        function OpenProduct() {
+            $(".lightbox-blanket").toggle();
+        }
+
+        function GoBack() {
+            $(".lightbox-blanket").toggle();
+        }
+
+        function OpenProduct2() {
+            $(".lightbox-blanket2").toggle();
+        }
+
+        function GoBack2() {
+            $(".lightbox-blanket2").toggle();
+        }
         window.SnipcartSettings = {
             publicApiKey: 'NTM3NDYyOTAtYjMxOC00YTU4LThmYTQtZjMwZDhlNGU4OTU1NjM4MTM1Mjk2OTg0MjU2NjY5',
             loadStrategy: 'on-user-interaction',
