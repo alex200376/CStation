@@ -230,7 +230,11 @@
     }
     
     .lightbox-blanket,
-    .lightbox-blanket2 {
+    .lightbox-blanket2,
+    .lightbox-blanket3,
+    .lightbox-blanket4,
+    .lightbox-blanket5,
+    .lightbox-blanket6 {
         background-color: rgba(30, 30, 30, 0.9);
         display: block;
         height: 100vh;
@@ -285,7 +289,7 @@
         color: #222;
         width: 0;
         height: 0;
-        border-top: 60px solid #CAE00D;
+        border-top: 60px solid #9495fb;
         border-right: 60px solid transparent;
     }
     
