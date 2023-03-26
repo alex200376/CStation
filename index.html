@@ -27,6 +27,104 @@
 
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet">
+    <style>
+        .lightbox-blanket,
+        .lightbox-blanket2,
+        .lightbox-blanket3,
+        .lightbox-blanket4,
+        .lightbox-blanket5,
+        .lightbox-blanket6,
+        .lightbox-blanket7 {
+            display: none;
+        }
+        
+        .snipcart-checkout:hover {
+            border: solid 2px #0066cc;
+            background-color: #5482d0;
+        }
+        
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        
+        th,
+        td {
+            text-align: left;
+            padding: 8px;
+        }
+        
+        th {
+            background-color: #333;
+            color: #fff;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        
+        tr:hover {
+            background-color: #ddd;
+        }
+        
+        td:last-child,
+        th:last-child {
+            text-align: right;
+        }
+        
+        td:first-child {
+            font-weight: bold;
+        }
+        
+        td:nth-child(3),
+        th:nth-child(3) {
+            font-weight: bold;
+        }
+        
+        td:nth-child(3),
+        th:nth-child(3) {
+            text-align: right;
+        }
+        
+        .snipcart-add-item {
+            background: linear-gradient(to right, #196BCA, #6433E0);
+            background-color: #196BCA;
+            color: #fff;
+            font-family: Tahoma;
+            font-size: 13px;
+            font-weight: 800;
+            font-style: normal;
+            text-decoration: none;
+            padding: 5px 12px;
+            border: 0px solid #000;
+            border-radius: 21px;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            margin: 5px;
+        }
+        
+        .snipcart-add-item span {
+            margin-right: 12px;
+            display: block;
+            width: 27px;
+            height: 27px;
+            background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAMAAADDpiTIAAAAA3NCSVQICAjb4U/gAAAACXBIWXMAABgIAAAYCAGI6z6gAAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAwBQTFRF////AAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACfCZLHQAAAP90Uk5TAAECAwQF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);
+            background-repeat: no-repeat;
+            background-size: contain;
+            transform: rotate(0deg);
+        }
+        
+        .snipcart-add-item:hover {
+            background: linear-gradient(to right, #5482d0, #7d5ee3);
+            background-color: #5482d0;
+        }
+        
+        .snipcart-add-item:active {
+            transform: scale(0.95);
+        }
+    </style>
 
     <!-- =======================================================
   * Template Name: Arsha - v4.10.0
@@ -37,7 +135,99 @@
 </head>
 
 <body>
+    <div class="lightbox-blanket">
+        <div class="pop-up-container">
+            <div class="pop-up-container-vertical">
+                <div class="pop-up-wrapper">
+                    <div class="go-back" onclick="GoBack();"><i>x</i>
+                    </div>
+                    <div class="product-details">
+                        <div class="product-left">
+                            <div class="product-info">
+                                <div class="product-manufacturer">Pre built
+                                </div>
+                                <div class="product-title">
+                                    Basic gaming pc
+                                </div>
+                                <div class="product-price">
+                                    $5599<span class="product-price-cents">00</span>
+                                </div>
+                            </div>
+                            <div class="product-image">
+                                <img src="assets/img/pre_built/game2.png" />
+                            </div>
+                        </div>
+                        <div class="product-right">
+                            <div class="product-description">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Component</th>
+                                            <th>Model</th>
+                                            <th>Price (HKD)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Processor</td>
+                                            <td>Intel Core i5-10400</td>
+                                            <td>$1599</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Motherboard</td>
+                                            <td>ASRock B460M-HDV</td>
+                                            <td>$699</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Memory</td>
+                                            <td>Crucial Ballistix 8GB DDR4 3200MHz</td>
+                                            <td>$329</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Storage</td>
+                                            <td>Kingston A2000 500GB NVMe SSD</td>
+                                            <td>$489</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Graphics Card</td>
+                                            <td>NVIDIA GeForce GTX 1650 Super</td>
+                                            <td>$1499</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Power Supply</td>
+                                            <td>Cooler Master MWE 450W 80+ Bronze</td>
+                                            <td>$399</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Case</td>
+                                            <td>CR YAMA MONTECH AIR100 ARGB</td>
+                                            <td>$1890</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Total</td>
+                                            <td>
+                                                <div style="text-decoration: line-through;">$6900</div>
+                                            </td>
+                                            <td>$5599</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="product-bottom">
+                            <div class="product-checkout-actions">
+                                <button class="snipcart-add-item" data-item-id="Basic gaming pc" data-item-price="5599.0" data-item-description="Basic gaming pc" data-item-image="assets/img/pre_built/game2.png" data-item-name="Basic gaming pc" data-item-custom1-name="Ram size" data-item-custom1-options="8GB|16GB[+250]|32GB[+349]"
+                                    data-item-custom2-name="SSD size" data-item-custom2-options="128GB|256GB[+329]|512GB[+499]|1TB[+799]" data-item-custom3-name="HDD size" data-item-custom3-options="512GB|1TB[+299]|2TB[+399]"><span></span>
+                                           Add to cart
+                                      </button>
 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- ======= Header ======= -->
     <header id="header" class="fixed-top ">
         <div class="container d-flex align-items-center">
@@ -54,7 +244,20 @@
                     <li><a class="nav-link scrollto" href="about_us.html">About us</a></li>
                     <li><a class="nav-link scrollto" href="index.html#services">Services</a></li>
 
-                    <button class="snipcart-customer-signin getstarted scrollto" style="background-color: rgba(240, 255, 255, 0);"><i class="ri-login-box-line" style="font-size: 20px;"></i>My account</button>
+                    <button class="snipcart-customer-signin getstarted scrollto" style="background-color: rgba(240, 255, 255, 0); max-height: 40px;"><i class="ri-login-box-line" style="font-size: 10px;"></i>My account</button>
+                    <button class="snipcart-checkout">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart"
+                            viewBox="0 0 16 16">
+                            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1
+                                    .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5
+                                    0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61
+                                    2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313
+                                    7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0
+                                    0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1
+                                    0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" fill="white"></path>
+                        </svg>
+                        <span class="snipcart-total-price" class="snipcart-checkout">$0.00</span>
+                    </button>
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
             </nav>
@@ -159,12 +362,12 @@
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
                                     <div class="card1">
-                                        <img src="assets/img/pre_built/game1.png" alt="Image 5">
-                                        <div class="product_name">Intel Core i3-13100F</div>
+                                        <img src="assets/img/pre_built/game2.png" alt="Image 5">
+                                        <div class="product_name">Basic gaming PC</div>
                                         <div class="price">$
-                                            <div class="xd">2000</div>
+                                            <div class="xd">5599</div>
                                         </div><br>
-                                        <div class="details">Details</div>
+                                        <div class="details" onclick="OpenProduct()">Details</div>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
@@ -606,6 +809,13 @@
     <script src="assets/js/jquery-2.1.4.js"></script>
 
     <script>
+        function OpenProduct() {
+            $(".lightbox-blanket").toggle();
+        }
+
+        function GoBack() {
+            $(".lightbox-blanket").toggle();
+        }
         var swiper = new Swiper(".team-swiper", {
             navigation: {
                 nextEl: ".swiper-button-nexts",
