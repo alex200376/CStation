@@ -134,6 +134,21 @@
         display: flex;
         gap: 16px;
     }
+    
+    .lightbox-blanketx {
+        z-index: 1;
+        background-color: white;
+        color: white;
+    }
+    
+    .product-left>img {
+        max-width: 90%;
+        margin-left: 10%;
+    }
+    
+    .product-bottom {
+        margin-bottom: 100px;
+    }
 </style>
 
 <body>
@@ -173,12 +188,19 @@
                     <li>
                         <a class="nav-link scrollto" href="index.html#services">Services</a>
                     </li>
-                    <button class="snipcart-customer-signin getstarted
-                            scrollto" style="background-color: rgba(240, 255,
-                            255, 0);">
-                        <i class="ri-login-box-line" style="font-size:
-                                20px;"></i>
-                        My account
+                    <button class="snipcart-customer-signin getstarted scrollto" style="background-color: rgba(240, 255, 255, 0); max-height: 40px;"><i class="ri-login-box-line" style="font-size: 10px;"></i>My account</button>
+                    <button class="snipcart-checkout">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart"
+                            viewBox="0 0 16 16">
+                            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1
+                                    .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5
+                                    0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61
+                                    2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313
+                                    7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0
+                                    0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1
+                                    0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" fill="white"></path>
+                        </svg>
+                        <span class="snipcart-total-price" class="snipcart-checkout">$0.00</span>
                     </button>
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
@@ -193,50 +215,38 @@
         </section>
         <header>
             <div class="head" style="font-size: 45px;display:inline-block;color: #ffffff;">PC Builder</div>
-            <button class="snipcart-checkout">
-                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart"
-                    viewBox="0 0 16 16">
-                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1
-                            .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5
-                            0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61
-                            2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313
-                            7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0
-                            0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1
-                            0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" fill="white"></path>
-                </svg>
-                <span class="snipcart-total-price" class="snipcart-checkout">$0.00</span>
-            </button>
+
         </header>
-        <section class="layout">
-            <div> <img src="assets/img/pre_built/game1.png" alt="Preview image description" style="max-height: 500px;display: inline;margin-left: 50px;padding: 30px;"></div>
-            <div style="margin-left: 50px;padding: 30px;">
-                <div>
-                    <h1 style="text-align: left;color: #f5f5f5;">Customize PC</h1>
-                </div>
-
-                <div style="float: right;color: #ffffff;">
-                    <div style="float: right;padding: 30px;">
-                        <p>&nbsp;&nbsp;&nbsp;&nbsp;Looking for a computer that perfectly suits your needs and preferences? Look no further than our customizable PC options!
-                            <br>&nbsp;&nbsp;&nbsp;&nbsp; Our customizable PC allows you to choose everything from the processor to the graphics card, ensuring that every aspect of your computer is tailored to your specific requirements. Whether you're
-                            a gamer, a designer, or simply someone who wants a computer that can handle all of their daily tasks with ease, our customizable PC is the perfect solution.
-                            <br>&nbsp;&nbsp;&nbsp;&nbsp; With a range of options for processors, RAM, storage, graphics cards, and more, you can create a computer that is perfectly optimized for your needs. Whether you want lightning-fast processing speeds,
-                            stunning graphics capabilities, or simply a computer that can handle all of your daily tasks with ease, our customizable PC options have got you covered.<br>&nbsp;&nbsp;&nbsp;&nbsp; So why wait? Start customizing your perfect
-                            computer today and experience the ultimate in personalized computing power!</p>
-                    </div>
-
-                    <div class="flex gap-xs">
-                        <button type="submit" class="snipcart-add-item" data-item-id="1" data-item-name="Custom PC" data-item-price="0.0" data-item-description="Build your own custom PC" data-item-image="assets/img/pc_built.png" data-item-max-quantity="1" data-item-custom1-name="Case"
-                            data-item-custom1-options="case1[+190]|case2[+250]|case3[+299]|case4[+399]" data-item-custom2-name="mother board" data-item-custom2-options="m1[+249]|m2[+359]|m3[+499]|m4[+676]|m5[+999]" data-item-custom3-name="CPU" data-item-custom3-options="CPU1[+199]|CPU2[+259]|CPU3[+399]|CPU4[+499]"
-                            data-item-custom4-name="GPU" data-item-custom4-options="None|GPU1[+2990]|GPU2[+4799]|GPU3[+6899]|GPU4[+7999]|GPU5[+8569]|GPU6[+9799]|GPU7[+10999]" data-item-custom5-name="SSD" data-item-custom5-options="None|128GB[+299]|256GB[+499]|512GB[+679]|1TB[+990]"
-                            data-item-custom6-name="HDD" data-item-custom6-options="512GB|1TB[+399]|2TB[+579]">
-                            Build
-                            now!
-                        </button>
-                    </div>
-                </div>
+        <div class="product-left">
+            <img src="/assets/img/pre_built/game2.png" />
+        </div>
+        <div class="product-right">
+            <div class="product-description" style="color: white;margin: 10px;">
+                <h1>Customize PC</h1>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;Looking for a computer that perfectly suits your needs and preferences? Look no further than our customizable PC options!
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp; Our customizable PC allows you to choose everything from the processor to the graphics card, ensuring that every aspect of your computer is tailored to your specific requirements. Whether you're a gamer,
+                    a designer, or simply someone who wants a computer that can handle all of their daily tasks with ease, our customizable PC is the perfect solution.
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp; With a range of options for processors, RAM, storage, graphics cards, and more, you can create a computer that is perfectly optimized for your needs. Whether you want lightning-fast processing speeds, stunning
+                    graphics capabilities, or simply a computer that can handle all of your daily tasks with ease, our customizable PC options have got you covered.<br>&nbsp;&nbsp;&nbsp;&nbsp; So why wait? Start customizing your perfect computer today
+                    and experience the ultimate in personalized computing power!</p>
             </div>
+        </div>
+        <div class="product-bottom">
+            <div class="product-checkout-actions">
+                <button type="submit" class="snipcart-add-item" data-item-id="1" data-item-name="Custom PC" data-item-price="0.0" data-item-description="Build your own custom PC" data-item-image="assets/img/pc_built.png" data-item-max-quantity="1" data-item-custom1-name="Case"
+                    data-item-custom1-options="case1[+190]|case2[+250]|case3[+299]|case4[+399]" data-item-custom2-name="mother board" data-item-custom2-options="m1[+249]|m2[+359]|m3[+499]|m4[+676]|m5[+999]" data-item-custom3-name="CPU" data-item-custom3-options="CPU1[+199]|CPU2[+259]|CPU3[+399]|CPU4[+499]"
+                    data-item-custom4-name="GPU" data-item-custom4-options="None|GPU1[+2990]|GPU2[+4799]|GPU3[+6899]|GPU4[+7999]|GPU5[+8569]|GPU6[+9799]|GPU7[+10999]" data-item-custom5-name="SSD" data-item-custom5-options="None|128GB[+299]|256GB[+499]|512GB[+679]|1TB[+990]"
+                    data-item-custom6-name="HDD" data-item-custom6-options="512GB|1TB[+399]|2TB[+579]">
+                                    Build
+                                    now!
+                                </button>
             </div>
-        </section>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
 
 
         <!-- ======= Footer ======= -->
