@@ -1,5 +1,5 @@
-<!doctype html>
-<html lang="en" class="no-js">
+<!DOCTYPE html>
+<html>
 
 <head>
     <meta charset="UTF-8">
@@ -25,10 +25,41 @@
     <!-- Modernizr -->
     <link href="assets/css/style.css" rel="stylesheet">
 
-    <title>Product</title>
+    <title>Pre built PC Comparison Table</title>
 </head>
-
+<style>
+.snipcart-add-item {
+		background: linear-gradient(to right, #196BCA, #6433E0);
+		background-color: #196BCA;
+		color: #fff;
+		font-family: Tahoma;
+		font-size: 13px;
+		font-weight: 800;
+		font-style: normal;
+		text-decoration: none;
+		padding: 5px 12px;
+		border: 0px solid #000;
+		border-radius: 21px;
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;
+		margin: 5px;
+        width:30%;
+	}
+.product-imgs{
+    margin-right: 30px;
+}
+</style>
 <body>
+    <section id="hero" class="d-flex align-items-center" style="height:50px">
+
+        <div class="container">
+
+        </div>
+
+    </section>
+
+
     <header id="header" class="fixed-top ">
         <div class="container d-flex align-items-center">
 
@@ -39,87 +70,84 @@
             <nav id="navbar" class="navbar">
                 <ul>
                     <li><a class="nav-link scrollto active" href="index.html">Home</a></li>
-                    <li><a class="nav-link scrollto " href="product.html">Products</a></li>
+                    <li><a class="nav-link scrollto " href="product.php">Products</a></li>
                     <li><a class="nav-link scrollto" href="pre_built.html">Pre built PC</a></li>
                     <li><a class="nav-link scrollto" href="pc_create.html">PC builder</a></li>
                     <li><a class="nav-link scrollto" href="blog.html">Guide</a></li>
                     <li><a class="nav-link scrollto" href="about_us.html">About us</a></li>
                     <li><a class="nav-link scrollto" href="index.html#services">Services</a></li>
                     <button class="snipcart-customer-signin getstarted scrollto" style="background-color: rgba(240, 255, 255, 0);"><i class="ri-login-box-line" style="font-size: 20px;"></i>My account</button>
-
-                </ul>
-                <i class="bi bi-list mobile-nav-toggle"></i>
-            </nav>
-            <!-- .navbar -->
-
-        </div>
-    </header>
-    <main id="main">
-        <section id="hero" class="d-flex align-items-center" style="height:50px">
-
-            <div class="container">
-
-            </div>
-
-        </section>
-        <button class="snipcart-checkout">
-            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart"
-                viewBox="0 0 16 16">
-                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1
+                    <button class="snipcart-checkout">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1
                         .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5
                         0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61
                         2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313
                         7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0
                         0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1
                         0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" fill="white"></path>
-            </svg>
-            <span class="snipcart-total-price" class="snipcart-checkout">$0.00</span>
-        </button>
-        <div class="card-wrapper">
-            <div class="cardxd">
-                <!-- card left -->
-                <div class="product-imgs">
-                    <div class="img-display">
-                        <div class="img-showcase">
-                            <img src="assets/img/gtx1080.png" alt="shoe image">
-                        </div>
-                    </div>
-                </div>
-                <!-- card right -->
-                <div class="product-content">
-                    <h2 class="product-title">nike shoes</h2>
-
-
-
-                    <div class="product-price">
-                        <p class="last-price">Old Price: <span>$257.00</span></p>
-                        <p class="new-price">New Price: <span>$249.00</span></p>
-                    </div>
-
-                    <div class="product-detail">
-                        <h2>about this item: </h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo eveniet veniam tempora fuga tenetur placeat sapiente architecto illum soluta consequuntur, aspernatur quidem at sequi ipsa!</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, perferendis eius. Dignissimos, labore suscipit. Unde.</p>
-                        <ul>
-                            <li>Color: <span>Black</span></li>
-                            <li>Available: <span>in stock</span></li>
-                            <li>Category: <span>Shoes</span></li>
-                            <li>Shipping Area: <span>All over the world</span></li>
-                            <li>Shipping Fee: <span>Free</span></li>
-                        </ul>
-                    </div>
-
-                    <div class="purchase-info">
-                        <button type="submit" class="snipcart-add-item" data-item-id="1" data-item-name="Custom PC" data-item-price="0.0" data-item-description="Build your own custom PC" data-item-image="assets/img/pc_built.png" data-item-max-quantity="1" data-item-custom1-name="Case"
-                            data-item-custom1-options="case1[+190]|case2[+250]|case3[+299]|case4[+399]" data-item-custom2-name="mother board" data-item-custom2-options="m1[+249]|m2[+359]|m3[+499]|m4[+676]|m5[+999]" data-item-custom3-name="CPU" data-item-custom3-options="CPU1[+199]|CPU2[+259]|CPU3[+399]|CPU4[+499]"
-                            data-item-custom4-name="GPU" data-item-custom4-options="None|GPU1[+2990]|GPU2[+4799]|GPU3[+6899]|GPU4[+7999]|GPU5[+8569]|GPU6[+9799]|GPU7[+10999]" data-item-custom5-name="SSD" data-item-custom5-options="None|128GB[+299]|256GB[+499]|512GB[+679]|1TB[+990]"
-                            data-item-custom6-name="HDD" data-item-custom6-options="512GB|1TB[+399]|2TB[+579]">
-                        Add to cart
+                        </svg>
+                        <span class="snipcart-total-price" class="snipcart-checkout">$0.00</span>
                     </button>
-                    </div>
-                </div>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav>
+            <!-- .navbar -->
+        </div>
+    </header>
+    <main id="main" style="margin-top: 30px;">
+    <a class="back" href="product.php" style="margin-right: 5%;margin-bottom:2%;">Back</a>
+        <div class="card-wrapper" style="box-shadow: 12px 4px 73px -15px rgba(99, 99, 99, 0.75);
+    -webkit-box-shadow: 12px 4px 73px -15px rgba(99, 99, 99, 0.75);
+    -moz-box-shadow: 12px 4px 73px -15px rgba(99, 99, 99, 0.75);">
+      
+            <div class="cardxd">
+           
+                <?php
+                // Connect to the database
+                $conn = mysqli_connect('localhost', 'root', '', 'product');
+
+                // Check if the database connection was successful
+                if (!$conn) {
+                    die("Database connection failed: " . mysqli_connect_error());
+                }
+
+                // Retrieve the product ID from the URL
+                $product_id = $_GET['id'];
+
+                // Retrieve product information from the database
+                $sql = "SELECT * FROM product WHERE product_id = $product_id";
+                $result = mysqli_query($conn, $sql);
+
+                // Display product information
+                if (mysqli_num_rows($result) > 0) {
+                    while ($row = mysqli_fetch_assoc($result)) {
+                        echo " <div class='product-imgs'><div class='img-display'><div class='img-showcase'><img src='" . $row['product_image'] . "' alt='" . $row['product_name'] . "'></div>";
+                        echo "</div>";
+                        echo "</div>";
+                        echo "</div>";
+                        echo "<div class='product-content'>";
+                        echo "<h2 class='product-title'>" . $row['product_name'] . "</h2>";
+                        echo "<p class='product-detail'>" . $row['product_description'] . "</p>";
+                        echo " <div class='product-price'><p class='new-price'>Price: $" . $row['product_price'] . "</p>";
+                        echo "</div>";
+                        echo "<p>Quantity Available: " . $row['product_quantity'] . "</p>";
+                        echo "<div class='purchase-info'>";
+                        echo "<button type='submit' class='snipcart-add-item' data-item-id='" . $row['product_id'] . "' data-item-price='" . $row['product_price'] . "' data-item-description='" . $row['product_name'] . "' data-item-image='" . $row['product_image'] . "' data-item-name='" . $row['product_name'] . "'><span></span>Add to cart</button>";
+                        echo "</div>";
+                        echo "</div>";
+                    }
+                } else {
+                    echo "No products found.";
+                }
+                // Close the database connection
+                mysqli_close($conn);
+                ?>
+
             </div>
         </div>
+
+
     </main>
     <!-- .cd-products-comparison-table -->
     <script src="assets/js/jquery-2.1.4.js"></script>
@@ -146,7 +174,8 @@
                         <h4>Our Company</h4>
                         <ul>
                             <li><i class="bx bx-chevron-right"></i> <a href="about_us.html">About us</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="index.html#client">Partnered Company</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="index.html#client">Partnered Company</a>
+                            </li>
 
 
                         </ul>
@@ -157,7 +186,8 @@
                         <ul>
                             <li><i class="bx bx-chevron-right"></i> <a href="FAQ.html#deliver">Delivery service</a></li>
                             <li><i class="bx bx-chevron-right"></i> <a href="TAC.html#term">Terms of service</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="TAC.html#privacypolicy2">Privacy policy</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="TAC.html#privacypolicy2">Privacy policy</a>
+                            </li>
                             <li><i class="bx bx-chevron-right"></i> <a href="pc_create.html">PC customization</a></li>
                             <li><i class="bx bx-chevron-right"></i> <a href="FAQ.html">FAQ</a></li>
                             <li><i class="bx bx-chevron-right"></i> <a href="#">Repair service</a></li>
@@ -206,7 +236,8 @@
         ! function(e, t, a) {
             var c = e.head || e.getElementsByTagName("head")[0],
                 n = e.createElement("script");
-            n.async = !0, n.defer = !0, n.type = "text/javascript", n.src = t + "/static/js/widget.js?config=" + JSON.stringify(a), c.appendChild(n)
+            n.async = !0, n.defer = !0, n.type = "text/javascript", n.src = t + "/static/js/widget.js?config=" + JSON
+                .stringify(a), c.appendChild(n)
         }(document, "https://app.engati.com", {
             bot_key: "5bfba005c8f2476b",
             welcome_msg: true,
@@ -221,11 +252,9 @@
 
 
         window.SnipcartSettings = {
-            publicApiKey: 'NTM3NDYyOTAtYjMxOC00YTU4LThmYTQtZjMwZDhlNGU4OTU1NjM4MTM1Mjk2OTg0MjU2NjY5',
-            loadStrategy: 'on-user-interaction',
+            publicApiKey: "NTM3NDYyOTAtYjMxOC00YTU4LThmYTQtZjMwZDhlNGU4OTU1NjM4MTM1Mjk2OTg0MjU2NjY5",
+            loadStrategy: "on-user-interaction",
             addProductBehavior: "none",
-
-
         };
 
         (() => {
@@ -237,7 +266,8 @@
             (p = (l = window.SnipcartSettings).domain) != null || (l.domain = "cdn.snipcart.com");
             var w, u;
             (u = (w = window.SnipcartSettings).protocol) != null || (w.protocol = "https");
-            var f = window.SnipcartSettings.version.includes("v3.0.0-ci") || window.SnipcartSettings.version != "3.0" && window.SnipcartSettings.version.localeCompare("3.4.0", void 0, {
+            var f = window.SnipcartSettings.version.includes("v3.0.0-ci") || window.SnipcartSettings.version != "3.0" &&
+                window.SnipcartSettings.version.localeCompare("3.4.0", void 0, {
                     numeric: !0,
                     sensitivity: "base"
                 }) === -1,
@@ -246,7 +276,9 @@
             document.readyState === "loading" ? document.addEventListener("DOMContentLoaded", r) : r();
 
             function r() {
-                window.SnipcartSettings.loadStrategy ? window.SnipcartSettings.loadStrategy === "on-user-interaction" && (m.forEach(t => document.addEventListener(t, o)), setTimeout(o, window.SnipcartSettings.timeoutDuration)) : o()
+                window.SnipcartSettings.loadStrategy ? window.SnipcartSettings.loadStrategy === "on-user-interaction" &&
+                    (m.forEach(t => document.addEventListener(t, o)), setTimeout(o, window.SnipcartSettings
+                        .timeoutDuration)) : o()
             }
             var a = !1;
 
@@ -255,13 +287,28 @@
                 a = !0;
                 let t = document.getElementsByTagName("head")[0],
                     e = document.querySelector("#snipcart"),
-                    i = document.querySelector(`src[src^="${window.SnipcartSettings.protocol}://${window.SnipcartSettings.domain}"][src$="snipcart.js"]`),
-                    n = document.querySelector(`link[href^="${window.SnipcartSettings.protocol}://${window.SnipcartSettings.domain}"][href$="snipcart.css"]`);
-                e || (e = document.createElement("div"), e.id = "snipcart", e.setAttribute("hidden", "true"), document.body.appendChild(e)), v(e), i || (i = document.createElement("script"), i.src = `${window.SnipcartSettings.protocol}://${window.SnipcartSettings.domain}/themes/v${window.SnipcartSettings.version}/default/snipcart.js`, i.async = !0, t.appendChild(i)), n || (n = document.createElement("link"), n.rel = "stylesheet", n.type = "text/css", n.href = `${window.SnipcartSettings.protocol}://${window.SnipcartSettings.domain}/themes/v${window.SnipcartSettings.version}/default/snipcart.css`, t.prepend(n)), m.forEach(g => document.removeEventListener(g, o))
+                    i = document.querySelector(
+                        `src[src^="${window.SnipcartSettings.protocol}://${window.SnipcartSettings.domain}"][src$="snipcart.js"]`
+                    ),
+                    n = document.querySelector(
+                        `link[href^="${window.SnipcartSettings.protocol}://${window.SnipcartSettings.domain}"][href$="snipcart.css"]`
+                    );
+                e || (e = document.createElement("div"), e.id = "snipcart", e.setAttribute("hidden", "true"), document
+                    .body.appendChild(e)), v(e), i || (i = document.createElement("script"), i.src =
+                    `${window.SnipcartSettings.protocol}://${window.SnipcartSettings.domain}/themes/v${window.SnipcartSettings.version}/default/snipcart.js`,
+                    i.async = !0, t.appendChild(i)), n || (n = document.createElement("link"), n.rel = "stylesheet",
+                    n.type = "text/css", n.href =
+                    `${window.SnipcartSettings.protocol}://${window.SnipcartSettings.domain}/themes/v${window.SnipcartSettings.version}/default/snipcart.css`,
+                    t.prepend(n)), m.forEach(g => document.removeEventListener(g, o))
             }
 
             function v(t) {
-                !f || (t.dataset.apiKey = window.SnipcartSettings.publicApiKey, window.SnipcartSettings.addProductBehavior && (t.dataset.configAddProductBehavior = window.SnipcartSettings.addProductBehavior), window.SnipcartSettings.modalStyle && (t.dataset.configModalStyle = window.SnipcartSettings.modalStyle), window.SnipcartSettings.currency && (t.dataset.currency = window.SnipcartSettings.currency), window.SnipcartSettings.templatesUrl && (t.dataset.templatesUrl = window.SnipcartSettings.templatesUrl))
+                !f || (t.dataset.apiKey = window.SnipcartSettings.publicApiKey, window.SnipcartSettings
+                    .addProductBehavior && (t.dataset.configAddProductBehavior = window.SnipcartSettings
+                        .addProductBehavior), window.SnipcartSettings.modalStyle && (t.dataset.configModalStyle =
+                        window.SnipcartSettings.modalStyle), window.SnipcartSettings.currency && (t.dataset
+                        .currency = window.SnipcartSettings.currency), window.SnipcartSettings.templatesUrl && (t
+                        .dataset.templatesUrl = window.SnipcartSettings.templatesUrl))
             }
         })();
         document.addEventListener('snipcart.ready', function() {

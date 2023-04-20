@@ -634,11 +634,8 @@ No JS
 }
 
 .card-wrapper {
-    max-width: 1100px;
+    max-width: 1200px;
     margin: 0 auto;
-    box-shadow: 9px 11px 36px -5px rgba(0,0,0,0.73);
--webkit-box-shadow: 9px 11px 36px -5px rgba(0,0,0,0.73);
--moz-box-shadow: 9px 11px 36px -5px rgba(0,0,0,0.73);
 }
 
 img {
@@ -840,12 +837,11 @@ img {
     color: #fff;
 }
 
+.product-imgs {
+    margin-left: 5%;
+}
+
 @media screen and (min-width: 992px) {
-    .cardxd {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 1.5rem;
-    }
     .card-wrapper {
         height: 100vh;
         display: flex;
@@ -859,5 +855,11 @@ img {
     }
     .product-content {
         padding-top: 0;
+    }
+    .back {
+        float: left;
+        position: relative;
+        top: auto;
+        left: auto;
     }
 }

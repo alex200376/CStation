@@ -124,6 +124,10 @@
     .head {
         margin-top: 30px;
     }
+    
+    p>img {
+        max-width: 300px;
+    }
 </style>
 
 <body>
@@ -137,13 +141,26 @@
             <nav id="navbar" class="navbar">
                 <ul>
                     <li><a class="nav-link scrollto active" href="index.html">Home</a></li>
-                    <li><a class="nav-link scrollto " href="product.html">Products</a></li>
+                    <li><a class="nav-link scrollto " href="product.php">Products</a></li>
                     <li><a class="nav-link scrollto" href="pre_built.html">Pre built PC</a></li>
                     <li><a class="nav-link scrollto" href="pc_create.html">PC builder</a></li>
                     <li><a class="nav-link scrollto active" href="blog.html">Guide</a></li>
                     <li><a class="nav-link scrollto" href="about_us.html">About us</a></li>
                     <li><a class="nav-link scrollto" href="index.html#services">Services</a></li>
-                    <li><a class="getstarted scrollto" href="login.html"><i class="ri-login-box-line" style="font-size: 20px;"></i>Login/Sign up</a></li>
+                    <button class="snipcart-customer-signin getstarted scrollto" style="background-color: rgba(240, 255, 255, 0); max-height: 40px;"><i class="ri-login-box-line" style="font-size: 10px;"></i>My account</button>
+                    <button class="snipcart-checkout">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart"
+                            viewBox="0 0 16 16">
+                            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1
+                                    .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5
+                                    0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61
+                                    2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313
+                                    7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0
+                                    0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1
+                                    0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" fill="white"></path>
+                        </svg>
+                        <span class="snipcart-total-price" class="snipcart-checkout">$0.00</span>
+                    </button>
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
             </nav>
@@ -166,7 +183,7 @@
         <div class="tab">
             <div class="btns">
                 <button class="tablinks" onclick="openblog(event, 'blog1')" id="defaultOpen">What is computer?</button>
-                <button class="tablinks" onclick="openblog(event, 'blog2')">blog2</button>
+                <button class="tablinks" onclick="openblog(event, 'blog2')">About computer components</button>
                 <button class="tablinks" onclick="openblog(event, 'blog3')">blog3</button>
                 <button class="tablinks" onclick="openblog(event, 'blog4')">blog4</button>
                 <button class="tablinks" onclick="openblog(event, 'blog5')">blog5</button>
@@ -187,8 +204,25 @@
         </div>
 
         <div id="blog2" class="tabcontent">
-            <h3>blog2</h3>
-            <p>blog2 is the capital of France.</p>
+            <h3>2.Computer components</h3>
+            <p> 1.CPU (Central Processing Unit) - This is the "brain" of the computer and is responsible for executing instructions and performing calculations. The CPU is typically the most important component in determining overall system performance. CPU
+                performance is measured in GHz (clock speed) and core count, with higher numbers indicating better performance. Popular CPU brands include Intel and AMD.<img src="assets/img/AMD_R5_5600.jpg" /><br><br>2.GPU (Graphics Processing Unit) -
+                This is responsible for rendering images and video on your computer. A good GPU is important for gaming, video editing, and other graphics-intensive tasks. GPU performance is measured in CUDA cores (for NVIDIA GPUs) and stream processors
+                (for AMD GPUs), with higher numbers indicating better performance. Popular GPU brands include NVIDIA and AMD.
+                <p><img src="assets/img/gtx1080.png" /><br><br>3.RAM (Random Access Memory) - This is the memory that your computer uses to store data that is currently in use. The more RAM your computer has, the more applications and files it can handle
+                    at once. RAM capacity is measured in GB, with higher numbers indicating more memory. Popular RAM brands include Corsair, G.Skill, and Kingston.
+                    <p><img src="assets/img/AMD_R5_5600.jpg" /><br><br>4.Storage - There are two main types of storage: hard disk drives (HDDs) and solid-state drives (SSDs). HDDs are cheaper and have higher storage capacities, while SSDs are faster and
+                        more reliable. Storage capacity is measured in GB or TB, with higher numbers indicating more storage. Popular storage brands include Western Digital, Seagate, and Samsung.
+                        <p><img src="assets/img/AMD_R5_5600.jpg" /><br><br>5.Motherboard - This is the main circuit board that connects all of the other components in your computer. It is responsible for allowing communication between these components and
+                            providing power to them. The motherboard you choose will depend on the CPU and other components you plan to use in your build. Popular motherboard brands include ASUS, MSI, and Gigabyte.
+                            <p><img src="assets/img/AMD_R5_5600.jpg" /><br><br>6.Power Supply - This is responsible for providing power to all of the components in your computer. It is important to choose a power supply with enough wattage to support all
+                                of your components, as well as high efficiency to reduce energy waste. Power supply wattage is measured in watts (W), with higher numbers indicating more power. Popular power supply brands include Corsair, EVGA, and Seasonic.
+                                <p><img src="assets/img/AMD_R5_5600.jpg" /><br><br>7.Case - This is the enclosure that houses all of the components in your computer. It is important to choose a case that is the right size for your components, has good ventilation
+                                    for cooling, and has enough space for cable management. Cases come in a variety of sizes and styles, from small form-factor cases to large gaming cases with RGB lighting. Popular case brands include Fractal Design,
+                                    NZXT, and Corsair. These are just some of the main components that make up a PC.
+                                    <p><img src="assets/img/pre_built/game2.png" /><br><br>8.Other components include cooling solutions (such as CPU coolers and case fans), peripherals (such as keyboards and mice), and monitors. When building a custom PC,
+                                        it's important to choose components that are compatible with each other and fit your specific needs and budget.
+                                        <img src="assets/img/Blog1.jpg" class="bimg">
         </div>
 
         <div id="blog3" class="tabcontent">
@@ -330,6 +364,66 @@
             e: "p"
         });
     </script>
+    <script>
+        if (!window.jQuery) document.write('<script src="js/jquery-3.0.0.min.js"><\/script>');
+
+
+        window.SnipcartSettings = {
+            publicApiKey: 'NTM3NDYyOTAtYjMxOC00YTU4LThmYTQtZjMwZDhlNGU4OTU1NjM4MTM1Mjk2OTg0MjU2NjY5',
+            loadStrategy: 'on-user-interaction',
+            addProductBehavior: "none",
+
+
+        };
+
+        (() => {
+            var c, d;
+            (d = (c = window.SnipcartSettings).version) != null || (c.version = "3.0");
+            var s, S;
+            (S = (s = window.SnipcartSettings).timeoutDuration) != null || (s.timeoutDuration = 2750);
+            var l, p;
+            (p = (l = window.SnipcartSettings).domain) != null || (l.domain = "cdn.snipcart.com");
+            var w, u;
+            (u = (w = window.SnipcartSettings).protocol) != null || (w.protocol = "https");
+            var f = window.SnipcartSettings.version.includes("v3.0.0-ci") || window.SnipcartSettings.version != "3.0" && window.SnipcartSettings.version.localeCompare("3.4.0", void 0, {
+                    numeric: !0,
+                    sensitivity: "base"
+                }) === -1,
+                m = ["focus", "mouseover", "touchmove", "scroll", "keydown"];
+            window.LoadSnipcart = o;
+            document.readyState === "loading" ? document.addEventListener("DOMContentLoaded", r) : r();
+
+            function r() {
+                window.SnipcartSettings.loadStrategy ? window.SnipcartSettings.loadStrategy === "on-user-interaction" && (m.forEach(t => document.addEventListener(t, o)), setTimeout(o, window.SnipcartSettings.timeoutDuration)) : o()
+            }
+            var a = !1;
+
+            function o() {
+                if (a) return;
+                a = !0;
+                let t = document.getElementsByTagName("head")[0],
+                    e = document.querySelector("#snipcart"),
+                    i = document.querySelector(`src[src^="${window.SnipcartSettings.protocol}://${window.SnipcartSettings.domain}"][src$="snipcart.js"]`),
+                    n = document.querySelector(`link[href^="${window.SnipcartSettings.protocol}://${window.SnipcartSettings.domain}"][href$="snipcart.css"]`);
+                e || (e = document.createElement("div"), e.id = "snipcart", e.setAttribute("hidden", "true"), document.body.appendChild(e)), v(e), i || (i = document.createElement("script"), i.src = `${window.SnipcartSettings.protocol}://${window.SnipcartSettings.domain}/themes/v${window.SnipcartSettings.version}/default/snipcart.js`, i.async = !0, t.appendChild(i)), n || (n = document.createElement("link"), n.rel = "stylesheet", n.type = "text/css", n.href = `${window.SnipcartSettings.protocol}://${window.SnipcartSettings.domain}/themes/v${window.SnipcartSettings.version}/default/snipcart.css`, t.prepend(n)), m.forEach(g => document.removeEventListener(g, o))
+            }
+
+            function v(t) {
+                !f || (t.dataset.apiKey = window.SnipcartSettings.publicApiKey, window.SnipcartSettings.addProductBehavior && (t.dataset.configAddProductBehavior = window.SnipcartSettings.addProductBehavior), window.SnipcartSettings.modalStyle && (t.dataset.configModalStyle = window.SnipcartSettings.modalStyle), window.SnipcartSettings.currency && (t.dataset.currency = window.SnipcartSettings.currency), window.SnipcartSettings.templatesUrl && (t.dataset.templatesUrl = window.SnipcartSettings.templatesUrl))
+            }
+        })();
+        document.addEventListener('snipcart.ready', function() {
+            Snipcart.api.session.setLanguage('en', {
+                "payment": {
+                    "form": {
+                        "deferred_payment_title": "Pay at delivery",
+                        "deferred_payment_instructions": "Payment will be made with a credit card at the delivery of your order."
+                    }
+                }
+            });
+        });
+    </script>
+    <script async src="https://cdn.snipcart.com/themes/v3.3.0/default/snipcart.js"></script>
 </body>
 
 </html>
